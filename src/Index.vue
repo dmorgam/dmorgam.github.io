@@ -27,6 +27,7 @@ export default {
             items: [
                { title: 'Inicio', link: '#' },
                { title: 'Quien soy', link: '#who' },
+               { title: 'Tecnologías', link: '#tech' },
             ] 
       }
       

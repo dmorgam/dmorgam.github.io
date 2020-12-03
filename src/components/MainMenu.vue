@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
              <router-link v-for="item in menus" :key="item.name" class="nav-link" :to="item.src"
-                :class="{'active': item.name == selected}">
+                          :class="{'active': $route.name == item.route }">
                 
                 <!-- Icono del Home -->
                 <svg v-if="item.src == '/'" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -26,19 +26,24 @@
 </template>
 
 <script lang="ts">
-import { ref } from 'vue'
+
+interface MenuItem {
+  route: string,
+  name: string,
+  src: string
+}
+
+import {  } from 'vue'
 
 export default {
    setup(){
-      const selected = ref('Home')
       
-      let menus = [
-                   { name: 'Home', src: '/' },
-                   { name: 'Proyectos', src: '/projects' },
+     let menus: MenuItem[] = [
+                    { route: 'Home',name: 'Home', src: '/' },
+                    { route: 'Projects',name: 'Proyectos', src: '/projects' },
                   ]
    
       return {
-         selected,
          menus
       }
    }

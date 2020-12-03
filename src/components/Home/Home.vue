@@ -37,14 +37,27 @@
               <p>
                 Desarrollo aplicaciones Web basadas en <b><a href="https://laravel.com/">Laravel</a></b>, php, 
                 <b><a href="https://vuejs.org/">Vue.js</a></b> y eventualmente en vanilla js.
+                Tambien gestiono el servidor donde se aloja y su stack LAMP.
               </p>
               <p>
-                 Tambien gestiono un servidor <b>VPS</b> ubuntu con su stack LAMP.
+                Soy usuario de Arch linux, fan de la terminal, recientemente cambiado al mundo del
+                desarroyo web desde la administracion de sistemas.
               </p>
             </div>
          </div>
       </div>
-
+      <br>
+      <div class="row">
+         <div class="col" id="tech"> 
+            <div class="alert alert-success text-center" role="alert">
+              <h1>Tecnologías</h1>
+              <br>
+              <p><b>Lenguajes: </b> PHP, Javascript, Typescript (en desarrollo), Shell Scripting</p>
+              <p><b>Frameworks: </b> Vue.js, Laravel</p>
+              <p><b>Tecnologías: </b>Git, Docker, Kubernetes, Virtualización</p>
+            </div>
+         </div>
+      </div>
 
    </div>
 </template>
