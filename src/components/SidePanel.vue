@@ -4,7 +4,7 @@
     <div class="bg-light border-right" id="sidebar-wrapper" :style="{ 'margin-left': toggle + 'rem' }" >
       <div class="sidebar-heading">{{ props.title }}</div>
       <div class="list-group list-group-flush">
-        <a v-for="i in sections" :key="i.title" :href="i.link" class="list-group-item list-group-item-action bg-light">
+        <a v-for="i in sections" :key="i.title" :href="i.link" class="list-group-item list-group-item-action bg-light" @click="toggleBar()">
           {{ i.title }}
         </a>
       </div>
@@ -33,13 +33,13 @@ export default {
      const toggle = ref(0)
        
      function toggleBar(){
-        toggle.value = toggle.value == 0 ? -15 : 0
+       if(window.innerWidth < 768){
+          toggle.value = toggle.value == 0 ? -15 : 0
+       }
      }
 
      onMounted(() => {
-       if(window.innerWidth < 768){
-          toggleBar()
-       }
+        toggleBar()
     })
     
      return{
