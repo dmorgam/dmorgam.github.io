@@ -1,6 +1,6 @@
 <template>
-   <div class="container-fluid home-back">
-      <br> 
+   <div class="container-fluid home-back left-sidebar-margin">
+      <br><br><br><br> 
 
    </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
-   <div class="container-fluid home-back">
-      <br> 
+   <div class="container-fluid home-back left-sidebar-margin">
+      <br><br><br><br> 
       <!-- HEADER -->
       <div class="row">
 
@@ -53,7 +53,7 @@
               <h1>Tecnologías</h1>
               <br>
               <p><b>Lenguajes: </b> PHP, Javascript, Typescript (en desarrollo), Shell Scripting</p>
-              <p><b>Frameworks: </b> Vue.js, Laravel</p>
+              <p><b>Frameworks: </b> Vue.js, Laravel, Bootstrap</p>
               <p><b>Tecnologías: </b>Git, Docker, Kubernetes, Virtualización</p>
             </div>
          </div>
