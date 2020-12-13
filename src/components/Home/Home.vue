@@ -16,7 +16,7 @@
                       <div class="card-body">
                         <h5 class="card-title">David Moreno Gámez</h5>
                         <p class="card-text">
-                        Administrador de Sistemas y Fullstack Developer
+                           Fullstack Developer y Administrador de Sistemas
                         </p>
                       </div>
                     </div>
@@ -40,8 +40,8 @@
                 Tambien gestiono el servidor donde se aloja y su stack LAMP.
               </p>
               <p>
-                Soy usuario de Arch linux, fan de la terminal, recientemente cambiado al mundo del
-                desarroyo web desde la administracion de sistemas.
+                Soy usuario de Gnu/Linux, uso la Terminal y Vim como mis herramientas de trabajo,
+                he ido migrando desde el mundo de la administración de sistemas al desarrollo Web.
               </p>
             </div>
          </div>
