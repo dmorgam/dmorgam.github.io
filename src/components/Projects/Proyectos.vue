@@ -17,17 +17,39 @@
           <hr>
           <div class="row">
             <div class="col-sm-6">
-               <Carousel :slides="CaceresSlides"/>
+               <Carousel name="Caceres" :slides="CaceresSlides"/>
             </div>  
             <div class="col-sm-6">
-              <p>Página web creada con laravel y Vue js, es una tienda web que carga todos los productos y maneja la galería con componentes de vue
-              y las api ajax en laravel, asegurando una experiencia fluida. Todo enlazado con el sqlserver del erp de la empresa.</p>
-              <p>Además dispone de varias webapps internas para la gestion de bodega, stock y un sistema de gestión de reservas personalizado con exportación a excel, pdf
+              <p>Página web creada con laravel,  Vue js y DB mysql. Es una tienda web que carga todos los productos y maneja la galería con componentes de Vue
+              y las API AJAX en laravel, asegurando una experiencia fluida. Todo enlazado con el sqlserver del ERP de la empresa.</p>
+              <p>Además, dispone de varias webapps internas para la gestion de bodega, stock y un sistema de gestión de reservas personalizado con exportación a excel, pdf
                  y generación de reportes.</p>
 
              <a target="_blank" href="https://comercialcaceres.cl/caceres/" >
                Ir a la web
              </a>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <h3><span class="badge badge-info">PHP</span> + <span class="badge badge-warning">Vanilla js</span> - Antigua Web Comercial Caceres (Mejoras)</h3>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6">
+               <Carousel name="oldCaceres" :slides="oldCaceresSlides"/>
+            </div>  
+            <div class="col-sm-6">
+              <p>Web creada con php, js y DB mysql. Contribución mejorando la web y añadiendo módulos.</p>
+              <p>Generación de hojas de ruta en pdf, trazado de rutas con la API de google maps, sistemas de gestión de permisos,
+                 gestión de reservas y estadísticas de venta de los productos.</p>
+              <p>Catálogo automatizado conectado al ERP. </p>
+              <p>Generación de reportes en pdf con FPDF y hojas excel con PHPexcel. </p>
+              <a target="_blank" href="https://comercialcaceres.cl/" >
+                 Ir a la web
+              </a>
             </div>  
           </div>
         </div>
@@ -44,11 +66,49 @@
 
       <div class="card">
         <div class="card-body">
+          <h3><span class="badge badge-info">PHP</span> + <span class="badge badge-warning">Vanilla JS</span> + <span class="badge badge-info">Kotlin</span> - Aplicación de Gestion de horarios de colación</h3>
+          <hr>
+            <div class="row">
+              <div class="col-sm-6">
+                 <Carousel name="colacionslides" :slides="colacionSlides"/>
+              </div>  
+              <div class="col-sm-6">
+                <p>Aplicación para administrar el tiempo de colación de los trabajadores con temporizador, ticket de colación y registro de colaciones por cada trabajador.</p>
+                <p>El servidor en PHP y DB mysql dispone de una api a la que se conectan los front cliente web y la aplicación android.</p>
+                <p>El front web dispone de la pantalla de colación y el formulario que registra las entradas y salidas de trabajadores. El apk android consta de controles con los cuales, 
+                   los jefes de tienda pueden ver quien está en colación y liberar los asientos.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <h3><span class="badge badge-info">PHP</span> + <span class="badge badge-warning">Vanilla JS</span> - Afiche publicitario automático </h3>
+          <hr>
+            <div class="row">
+              <div class="col-sm-6">
+                 <Carousel name="aficheslides" :slides="aficheSlides"/>
+              </div>  
+              <div class="col-sm-6">
+                <p>El afiche consiste en una pantalla en html y js recibiendo mediante AJAX la lista de productos a mostrar, y los descarga de la DB del ERP para mostrarlos.</p>
+                <p>El backend en php dispone de un endpoint donde muestra los productos en lista, también dispone de varias categorías para poder mostrar afiches de distinto tipo.</p>
+                <p>Dispone de una interfaz de gestión de los productos en cada catagoría para gestionar los productos mostrados.</p>
+              <a target="_blank" href="https://comercialcaceres.cl/afiche/rotiseria.php" >
+                 Ir a la web
+              </a>
+              </div>  
+            </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
           <h3><span class="badge badge-success">Vue.js 3</span> + <span class="badge badge-info">Typescript</span> - Web personal en github pages</h3>
           <hr>
             <div class="row">
               <div class="col-sm-6">
-                 <Carousel :slides="WebSlides"/>
+                 <Carousel name="webslides" :slides="WebSlides"/>
               </div>  
               <div class="col-sm-6">
                 <p>En esta web se presentan los proyectos principales que he llevado a cabo y una muestra de mis habilidades en forma de widgets y
@@ -75,7 +135,7 @@
           <hr>
             <div class="row">
               <div class="col-sm-6">
-                 <Carousel :slides="SnakeSlides"/>
+                 <Carousel name="snakeslide" :slides="SnakeSlides"/>
               </div>  
               <div class="col-sm-6">
                 <p>Juego de snake con canvas y js puro, con velocidad ajustable, sonidos, texturas, generacion de comida y puntaje variable,
@@ -111,6 +171,30 @@ export default {
                     { id: 3, src: "img/caceres/navidad.png" },   
                 ]
 
+     let oldCaceresSlides = [
+                    { id: 0, src: "img/caceres/hojasruta.png" },
+                    { id: 1, src: "img/caceres/catalogo.png" },
+                    { id: 2, src: "img/caceres/mercaderia.png" },
+                    { id: 3, src: "img/caceres/reporteventaprod.png" },
+                    { id: 4, src: "img/caceres/fallaperm.png" },
+                    { id: 5, src: "img/caceres/fallapermpdf.png" },
+                    { id: 6, src: "img/caceres/hojasrutapdf.png" },
+                    { id: 7, src: "img/caceres/resdiecio.png" },
+                ]
+
+     let aficheSlides = [
+                    { id: 0, src: "img/caceres/afiche.gif" },
+                    { id: 1, src: "img/caceres/aficheCarga.png" },
+                ]
+
+     let colacionSlides = [
+                    { id: 0, src: "img/caceres/colacion.png" },
+                    { id: 1, src: "img/caceres/colacionapk.png" },
+                    { id: 2, src: "img/caceres/colacionapk2.png" },
+                    { id: 3, src: "img/caceres/colacionSolicita.png" },
+                    { id: 4, src: "img/caceres/colacionTicket.png" },
+                ]
+
      let WebSlides = [
                     { id: 0, src: "img/webpersonal/dmorgam.png" },   
                 ]
@@ -124,6 +208,9 @@ export default {
         CaceresSlides,
         WebSlides,
         SnakeSlides,
+        oldCaceresSlides,
+        colacionSlides,
+        aficheSlides
       }
 
    }

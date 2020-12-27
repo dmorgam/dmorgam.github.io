@@ -32,17 +32,19 @@
       <div class="row">
          <div class="col" id="who"> 
             <div class="alert alert-info text-center" role="alert">
-              <h1>¿Quien soy?</h1>
+              <h1>¿A qué me dedico?</h1>
               <br>
               <p>
                 Desarrollo aplicaciones Web basadas en <b><a href="https://laravel.com/">Laravel</a></b>, php, 
                 <b><a href="https://vuejs.org/">Vue.js</a></b> y eventualmente en vanilla js.
-                Tambien gestiono el servidor donde se aloja y su stack LAMP.
+                También, gestiono los servidores donde se alojan y su stack LAMP.
               </p>
               <p>
-                Soy usuario de Gnu/Linux, uso la Terminal y Vim como mis herramientas de trabajo,
-                he ido migrando desde el mundo de la administración de sistemas al desarrollo Web.
+                Soy usuario de Gnu/Linux. Uso la Terminal y el editor de texto Vim como mis 
+                herramientas de trabajo, igualmente, he ido migrando desde el mundo de los 
+                sistemas al desarrollo Web.
               </p>
+              <p>Puede ver algunos de mis proyectos <a href="projects">aquí</a>.</p>
             </div>
          </div>
       </div>
@@ -55,6 +57,7 @@
               <p><b>Lenguajes: </b> PHP, Javascript, Typescript (en desarrollo), Shell Scripting</p>
               <p><b>Frameworks: </b> Vue.js, Laravel, Bootstrap</p>
               <p><b>Tecnologías: </b>Git, Docker, Kubernetes, Virtualización</p>
+              <p><b>Herramientas: </b>Vim, npm, composer, zsh, Android Studio(básico)</p>
             </div>
          </div>
       </div>

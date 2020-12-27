@@ -26,7 +26,7 @@ export default {
             title: 'Secciones', 
             items: [
                { title: 'Inicio', link: '#' },
-               { title: 'Quien soy', link: '#who' },
+               { title: 'A qué me dedico', link: '#who' },
                { title: 'Tecnologías', link: '#tech' },
             ] 
       }
