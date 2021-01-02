@@ -44,7 +44,7 @@
                 herramientas de trabajo, igualmente, he ido migrando desde el mundo de los 
                 sistemas al desarrollo Web.
               </p>
-              <p>Puede ver algunos de mis proyectos <a href="projects">aquí</a>.</p>
+              <p>Puede ver algunos de mis proyectos <router-link to="projects">aquí</router-link>.</p>
             </div>
          </div>
       </div>
