@@ -66,6 +66,33 @@
 
       <div class="card">
         <div class="card-body">
+          <h3><span class="badge badge-danger">Laravel</span> + <span class="badge badge-success">Vue.js</span> - Aplicación de Venta mayorista en terreno</h3>
+          <hr>
+            <div class="row">
+              <div class="col-sm-4">
+                <video style="height: 30em;" controls>
+                    <source src="img/caceres/appMayorista.mp4" type="video/mp4">
+                </video>
+              </div>  
+              <div class="col-sm-8">
+                 [ En proceso, proyecto actual ]<br><br>
+
+                  Aplicación de gestión de ventas mayoristas, hecha en vue.js y con la api ajax en laravel.<br><br>
+
+                  Gestiona pedidos y clientes, deudas de clientes, dispone de un catalogo con los últimos precios y stock real
+                  con imágenes para la venta directa en terreno.<br><br>
+
+                  Para la comunicación entre la app y el backend, se usa la libreria axios haciendo peticiones get, post y put para obtener
+                  los datos, ingresar nuevos y actualizar.<br><br>
+
+                  El front dispone de varios componentes los cuales se van alternando cargando dinamicamente según el modo en el que esté (estado inicial o cliente cargado).
+              </div>
+            </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
           <h3><span class="badge badge-info">PHP</span> + <span class="badge badge-warning">Vanilla JS</span> + <span class="badge badge-info">Kotlin</span> - Aplicación de Gestion de horarios de colación</h3>
           <hr>
             <div class="row">

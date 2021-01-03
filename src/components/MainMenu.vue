@@ -6,7 +6,7 @@
               aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarNavAltMarkup">
           <div class="navbar-nav">
              <router-link v-for="item in menus" :key="item.name" class="nav-link" :to="item.src"
                           :class="{'active': $route.name == item.route }">
@@ -20,6 +20,11 @@
                  {{ item.name }} 
              </router-link>
           </div>
+        <div class="navbar-nav ml-auto">
+            <div class="nav-item">
+              <weatherApplet />
+            </div>
+        </div>
       </div>
   </nav>
 
@@ -34,8 +39,13 @@ interface MenuItem {
 }
 
 import {  } from 'vue'
+import weatherApplet from './Applets/WeatherComponent.vue'
+
 
 export default {
+   components: {
+        weatherApplet
+   },
    setup(){
       
      let menus: MenuItem[] = [
