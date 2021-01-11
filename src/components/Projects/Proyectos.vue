@@ -25,7 +25,7 @@
               <p>Además, dispone de varias webapps internas para la gestion de bodega, stock y un sistema de gestión de reservas personalizado con exportación a excel, pdf
                  y generación de reportes.</p>
 
-             <a target="_blank" href="https://comercialcaceres.cl/caceres/" >
+             <a target="_blank" href="https://comercialcaceres.cl/" >
                Ir a la web
              </a>
             </div>  
@@ -47,7 +47,7 @@
                  gestión de reservas y estadísticas de venta de los productos.</p>
               <p>Catálogo automatizado conectado al ERP. </p>
               <p>Generación de reportes en pdf con FPDF y hojas excel con PHPexcel. </p>
-              <a target="_blank" href="https://comercialcaceres.cl/" >
+              <a target="_blank" href="https://comercialcaceres.cl/caceres/" >
                  Ir a la web
               </a>
             </div>  
@@ -75,8 +75,6 @@
                 </video>
               </div>  
               <div class="col-sm-8">
-                 [ En proceso, proyecto actual ]<br><br>
-
                   Aplicación de gestión de ventas mayoristas, hecha en vue.js y con la api ajax en laravel.<br><br>
 
                   Gestiona pedidos y clientes, deudas de clientes, dispone de un catalogo con los últimos precios y stock real
@@ -121,7 +119,7 @@
                 <p>El afiche consiste en una pantalla en html y js recibiendo mediante AJAX la lista de productos a mostrar, y los descarga de la DB del ERP para mostrarlos.</p>
                 <p>El backend en php dispone de un endpoint donde muestra los productos en lista, también dispone de varias categorías para poder mostrar afiches de distinto tipo.</p>
                 <p>Dispone de una interfaz de gestión de los productos en cada catagoría para gestionar los productos mostrados.</p>
-              <a target="_blank" href="https://comercialcaceres.cl/afiche/rotiseria.php" >
+              <a target="_blank" href="https://comercialcaceres.cl/caceres/afiche/rotiseria.php" >
                  Ir a la web
               </a>
               </div>  
