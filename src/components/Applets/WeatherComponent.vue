@@ -13,76 +13,67 @@
      </div>
      <div v-if="!weatherInfo.changeUb" class="d-inline">
         <img style="width: 3em;" :src="'https://openweathermap.org/img/w/'+weatherInfo.icon+'.png'">
-        {{ Math.floor(weatherInfo.degrees) }} ºC, {{ weatherInfo.info }} -  
+        {{ Math.floor(weatherInfo.degrees) }} ºC, {{ weatherInfo.info }} -
         {{ weatherInfo.city }}, {{ weatherInfo.country }}
      </div>
    </div>
 </template>
 
 <script lang="ts">
-import { reactive,onMounted } from 'vue'
+import { reactive, onMounted } from 'vue'
 import { BIconCheck, BIconGeoAlt } from 'bootstrap-icons-vue'
-import axios from "axios" 
+import axios from 'axios'
 
 export default {
 
-   components: {
-        BIconCheck,
-        BIconGeoAlt
-   },
-   setup(){
-
+  components: {
+    BIconCheck,
+    BIconGeoAlt
+  },
+  setup () {
     const weatherInfo = reactive({
-        icon: '',
-        city: '',
-        country: '',
-        info: '',
-        degrees: 0,
-        changeUb: false,
-        apiKey: 'OWQ1Y2VkYWRmZTBjMzdhZjk5MDMwNTcyNDM5NjVlMDY=',
-    }) 
-
+      icon: '',
+      city: '',
+      country: '',
+      info: '',
+      degrees: 0,
+      changeUb: false,
+      apiKey: 'OWQ1Y2VkYWRmZTBjMzdhZjk5MDMwNTcyNDM5NjVlMDY='
+    })
 
     onMounted(() => {
-        fetchLocWh()
+      fetchLocWh()
     })
-     
-     function fetchLocWh(){
-          
-         // Location fetching
-         axios.get('https://ipapi.co/json').then((response) => {
-            weatherInfo.city    = response.data.city
-            weatherInfo.country = response.data.country_code
 
-            fetchWeather()
+    function fetchLocWh () {
+      // Location fetching
+      axios.get('https://ipapi.co/json').then((response) => {
+        weatherInfo.city = response.data.city
+        weatherInfo.country = response.data.country_code
 
-         })
-      }
-
-      function fetchWeather(){
-            // Forecast fetching
-            axios.get('https://api.openweathermap.org/data/2.5/weather?q='+weatherInfo.city+','+weatherInfo.country+'&lang=es&appid='+atob(weatherInfo.apiKey))
-            .then((forecast) => {
-                
-                weatherInfo.icon    = forecast.data.weather[0].icon
-                weatherInfo.info    = forecast.data.weather[0].description
-                weatherInfo.degrees = forecast.data.main.temp - 273.15
-
-            })
-      }
-
-     function refreshWeather(){
         fetchWeather()
-        weatherInfo.changeUb = false
-     }
+      })
+    }
 
+    function fetchWeather () {
+      // Forecast fetching
+      axios.get('https://api.openweathermap.org/data/2.5/weather?q=' + weatherInfo.city + ',' + weatherInfo.country + '&lang=es&appid=' + atob(weatherInfo.apiKey))
+        .then((forecast) => {
+          weatherInfo.icon = forecast.data.weather[0].icon
+          weatherInfo.info = forecast.data.weather[0].description
+          weatherInfo.degrees = forecast.data.main.temp - 273.15
+        })
+    }
 
-     return {
-        weatherInfo,
-        refreshWeather,
-     }
+    function refreshWeather () {
+      fetchWeather()
+      weatherInfo.changeUb = false
+    }
 
-
-   }
+    return {
+      weatherInfo,
+      refreshWeather
+    }
+  }
 }
 </script>

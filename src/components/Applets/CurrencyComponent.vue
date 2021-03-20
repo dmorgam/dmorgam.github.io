@@ -15,47 +15,38 @@
 </template>
 
 <script lang="ts">
-import { reactive,onMounted } from 'vue'
+import { reactive, onMounted } from 'vue'
 import { BIconCash } from 'bootstrap-icons-vue'
-import axios from "axios" 
+import axios from 'axios'
 
 export default {
 
-   components: {
-     BIconCash,
-   },
-   setup(){
-
+  components: {
+    BIconCash
+  },
+  setup () {
     const currency = reactive({
       rates: [],
       base: '',
       selected: '0.0',
-      start: 'USD',
-    }) 
-
+      start: 'USD'
+    })
 
     onMounted(() => {
-        fetchCurrency()
+      fetchCurrency()
     })
-     
-     function fetchCurrency(){
-          
-       axios.get('https://api.exchangeratesapi.io/latest?base=EUR').then((response) =>{
-          currency.rates    = response.data.rates
-          currency.base     = response.data.base
-          currency.selected = response.data.rates[currency.start]
 
-       })
+    function fetchCurrency () {
+      axios.get('https://api.exchangeratesapi.io/latest?base=EUR').then((response) => {
+        currency.rates = response.data.rates
+        currency.base = response.data.base
+        currency.selected = response.data.rates[currency.start]
+      })
+    }
 
-
-      }
-
-
-     return {
-        currency,
-     }
-
-
-   }
+    return {
+      currency
+    }
+  }
 }
 </script>

@@ -1,23 +1,23 @@
-import { createWebHistory, createRouter } from "vue-router"
-import Index from "../Index.vue"
-import Projects from "../Projects.vue"
+import { createWebHistory, createRouter } from 'vue-router'
+import Index from '../Index.vue'
+import Projects from '../Projects.vue'
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    component: Index,
+    path: '/',
+    name: 'Home',
+    component: Index
   },
   {
-    path: "/projects",
-    name: "Projects",
-    component: Projects,
-  },
+    path: '/projects',
+    name: 'Projects',
+    component: Projects
+  }
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes
 })
 
 export default router

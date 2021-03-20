@@ -1,5 +1,7 @@
 # dmorgam.github.io
 
+New deploy location: ***dmorgam.com
+
 ## Project setup
 ```
 npm install

@@ -19,24 +19,20 @@
 </div>
 </template>
 
-
 <script lang="ts">
-import {  } from 'vue'
-
+// import {  } from 'vue'
 
 export default {
-   props: {
-     slides: Array,
-     name: String
-   },
+  props: {
+    slides: Array,
+    name: String
+  },
 
-   setup(props: any){
-      
-     return{
+  setup (props: any) {
+    return {
       props
-     }
-
-   }
+    }
+  }
 }
 
 </script>

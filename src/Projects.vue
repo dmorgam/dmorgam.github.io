@@ -9,30 +9,30 @@
 </template>
 
 <script lang="ts">
-import {  } from 'vue'
+// import {  } from 'vue'
 
 import Proyectos from './components/Projects/Proyectos.vue'
 import SidePanel from './components/SidePanel.vue'
 
 export default {
-   components: {
-      SidePanel,
-      Proyectos,
-   },
-   setup(){
-    
-      let menus = { 
-            title: 'Proyectos', 
-            items: [
-               { title: 'Proyectos Web', link: '#web' },
-               { title: 'Aplicaciones Web', link: '#webapps' },
-               { title: 'Juegos', link: '#games' },
-            ] 
-      }
-      
-     return {
-       menus,
-     }
-   }
+  components: {
+    SidePanel,
+    Proyectos
+  },
+
+  setup () {
+    const menus = {
+      title: 'Proyectos',
+      items: [
+        { title: 'Proyectos Web', link: '#web' },
+        { title: 'Aplicaciones Web', link: '#webapps' },
+        { title: 'Juegos', link: '#games' }
+      ]
+    }
+
+    return {
+      menus
+    }
+  }
 }
 </script>

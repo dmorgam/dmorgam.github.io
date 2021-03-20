@@ -1,15 +1,14 @@
 <template>
    <div class="container-fluid home-back left-sidebar-margin">
-      <br><br><br><br> 
+      <br><br><br><br>
       <!-- HEADER -->
       <div class="row">
 
          <div class="col-md-5">
-            
-               
+
          </div>
 
-         <div class="col-md-7"> 
+         <div class="col-md-7">
             <div class="card mb-3">
                   <div class="row no-gutters">
                     <div class="col-md-8">
@@ -30,18 +29,18 @@
          </div>
       <br>
       <div class="row">
-         <div class="col" id="who"> 
+         <div class="col" id="who">
             <div class="alert alert-info text-center" role="alert">
               <h1>¿A qué me dedico?</h1>
               <br>
               <p>
-                Desarrollo aplicaciones Web basadas en <b><a href="https://laravel.com/">Laravel</a></b>, php, 
+                Desarrollo aplicaciones Web basadas en <b><a href="https://laravel.com/">Laravel</a></b>, php,
                 <b><a href="https://vuejs.org/">Vue.js</a></b> y eventualmente en vanilla js.
                 También, gestiono los servidores donde se alojan y su stack LAMP.
               </p>
               <p>
-                Soy usuario de Gnu/Linux. Uso la Terminal y el editor de texto Vim como mis 
-                herramientas de trabajo, igualmente, he ido migrando desde el mundo de los 
+                Soy usuario de Gnu/Linux. Uso la Terminal y el editor de texto Vim como mis
+                herramientas de trabajo, igualmente, he ido migrando desde el mundo de los
                 sistemas al desarrollo Web.
               </p>
               <p>Puede ver algunos de mis proyectos <router-link to="projects">aquí</router-link>.</p>
@@ -50,7 +49,7 @@
       </div>
       <br>
       <div class="row">
-         <div class="col" id="tech"> 
+         <div class="col" id="tech">
             <div class="alert alert-success text-center" role="alert">
               <h1>Tecnologías</h1>
               <br>
@@ -66,15 +65,13 @@
 </template>
 
 <script lang="ts">
-import {  onMounted } from 'vue'
+import { onMounted } from 'vue'
 
 export default {
-   setup(){
-      
-     onMounted(() => {
+  setup () {
+    onMounted(() => {
 
-     })
-
-   }
+    })
+  }
 }
 </script>

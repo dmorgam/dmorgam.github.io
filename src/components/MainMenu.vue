@@ -2,7 +2,7 @@
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="javascript: void(0)">Dmorgam</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
               aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
@@ -10,11 +10,11 @@
           <div class="navbar-nav">
              <router-link v-for="item in menus" :key="item.name" class="nav-link" :to="item.src"
                           :class="{'active': $route.name == item.route }">
-                
+
                 <!-- Icono del Home -->
                 <BIconHouseFill v-if="item.name == 'Home'" />
 
-                 {{ item.name }} 
+                 {{ item.name }}
              </router-link>
           </div>
         <div class="navbar-nav ml-auto">
@@ -28,6 +28,9 @@
 </template>
 
 <script lang="ts">
+// import {  } from 'vue'
+import weatherApplet from './Applets/WeatherComponent.vue'
+import { BIconHouseFill } from 'bootstrap-icons-vue'
 
 interface MenuItem {
   route: string,
@@ -35,26 +38,20 @@ interface MenuItem {
   src: string
 }
 
-import {  } from 'vue'
-import weatherApplet from './Applets/WeatherComponent.vue'
-import { BIconHouseFill } from 'bootstrap-icons-vue'
-
-
 export default {
-   components: {
-        weatherApplet,
-        BIconHouseFill,
-   },
-   setup(){
-      
-     let menus: MenuItem[] = [
-                    { route: 'Home',name: 'Home', src: '/' },
-                    { route: 'Projects',name: 'Proyectos', src: '/projects' },
-                  ]
-   
-      return {
-         menus
-      }
-   }
+  components: {
+    weatherApplet,
+    BIconHouseFill
+  },
+  setup () {
+    const menus: MenuItem[] = [
+      { route: 'Home', name: 'Home', src: '/' },
+      { route: 'Projects', name: 'Proyectos', src: '/projects' }
+    ]
+
+    return {
+      menus
+    }
+  }
 }
 </script>

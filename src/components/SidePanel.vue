@@ -26,33 +26,31 @@ import { ref, onMounted } from 'vue'
 
 export default {
   components: {
-    currencyApplet,
+    currencyApplet
   },
-   props: {
-     title: String,
-     sections: { required: true },
-   },
+  props: {
+    title: String,
+    sections: { required: true }
+  },
 
+  setup (props: any) {
+    const toggle = ref(0)
 
-   setup(props: any){
+    function toggleBar () {
+      if (window.innerWidth < 768) {
+        toggle.value = toggle.value === 0 ? -15 : 0
+      }
+    }
 
-     const toggle = ref(0)
-       
-     function toggleBar(){
-       if(window.innerWidth < 768){
-          toggle.value = toggle.value == 0 ? -15 : 0
-       }
-     }
-
-     onMounted(() => {
-        toggleBar()
+    onMounted(() => {
+      toggleBar()
     })
-    
-     return{
-       props,
-       toggle,
-       toggleBar,
-     }
-   }
+
+    return {
+      props,
+      toggle,
+      toggleBar
+    }
+  }
 }
 </script>
