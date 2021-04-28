@@ -1,0 +1,112 @@
+[
+  {
+    "type": "web",
+    "name": "Caceres",
+    "title": "<span class='badge badge-danger'>Laravel</span> + <span class='badge badge-success'>Vue.js</span> - Web Comercial Caceres",
+    "slides": [
+      { "id": 0, "src": "img/caceres/inventario.gif" },
+      { "id": 1, "src": "img/caceres/products.gif" },
+      { "id": 2, "src": "img/caceres/productos.gif" },
+      { "id": 3, "src": "img/caceres/navidad.png" }
+    ],
+    "texts": [
+      { "text": "Página web creada con laravel,  Vue js y DB mysql. Es una tienda web que carga todos los productos y maneja la galería con componentes de Vue y las API AJAX en laravel, asegurando una experiencia fluida. Todo enlazado con el sqlserver del ERP de la empresa." },
+      { "text": "Además, dispone de varias webapps internas para la gestion de bodega, stock y un sistema de gestión de reservas personalizado con exportación a excel, pdf y generación de reportes." }
+    ],
+    "link": { "text": "Ir a la Web", "link": "https://comercialcaceres.cl/" }
+  },
+  {
+    "type": "web",
+    "name": "OldCaceres",
+    "title": "<span class='badge badge-info'>PHP</span> + <span class='badge badge-warning'>Vanilla js</span> - Antigua Web Comercial Caceres (Mejoras)",
+    "slides": [
+      { "id": 0, "src": "img/caceres/hojasruta.png" },
+      { "id": 1, "src": "img/caceres/catalogo.png" },
+      { "id": 2, "src": "img/caceres/mercaderia.png" },
+      { "id": 3, "src": "img/caceres/reporteventaprod.png" },
+      { "id": 4, "src": "img/caceres/fallaperm.png" },
+      { "id": 5, "src": "img/caceres/fallapermpdf.png" },
+      { "id": 6, "src": "img/caceres/hojasrutapdf.png" },
+      { "id": 7, "src": "img/caceres/resdiecio.png" }
+    ],
+    "texts": [
+      { "text": "Web creada con php, js y DB mysql. Contribución mejorando la web y añadiendo módulos." },
+      { "text": "Generación de hojas de ruta en pdf, trazado de rutas con la API de google maps, sistemas de gestión de permisos, gestión de reservas y estadísticas de venta de los productos." },
+      { "text": "Catálogo automatizado conectado al ERP." },
+      { "text": "Generación de reportes en pdf con FPDF y hojas excel con PHPexcel." }
+    ],
+    "link": { "text": "Ir a la Web", "link": "https://comercialcaceres.cl/caceres/" }
+  },
+  {
+    "type": "webapp",
+    "name": "Mayorista",
+    "title": "<span class='badge badge-danger'>Laravel</span> + <span class='badge badge-success'>Vue.js</span> - Aplicación de Venta mayorista en terreno",
+    "slides": [],
+    "video": { "src": "img/caceres/appMayorista.mp4", "type": "video/mp4", "style": "height: 30em" },
+    "texts": [
+      { "text": "Aplicación de gestión de ventas mayoristas, hecha en vue.js y con la api ajax en laravel." },
+      { "text": "Gestiona pedidos y clientes, deudas de clientes, dispone de un catalogo con los últimos precios y stock real con imágenes para la venta directa en terreno." },
+      { "text": "Para la comunicación entre la app y el backend, se usa la libreria axios haciendo peticiones get, post y put para obtener los datos, ingresar nuevos y actualizar." },
+      { "text": "El front dispone de varios componentes los cuales se van alternando cargando dinamicamente según el modo en el que esté (estado inicial o cliente cargado)." }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "webapp",
+    "name": "Colacion",
+    "title": "<span class='badge badge-info'>PHP</span> + <span class='badge badge-warning'>Vanilla JS</span> + <span class='badge badge-info'>Kotlin</span> - Aplicación de Gestion de horarios de colación",
+    "slides": [
+      { "id": 0, "src": "img/caceres/colacion.png" },
+      { "id": 1, "src": "img/caceres/colacionapk.png" },
+      { "id": 2, "src": "img/caceres/colacionapk2.png" },
+      { "id": 3, "src": "img/caceres/colacionSolicita.png" },
+      { "id": 4, "src": "img/caceres/colacionTicket.png" }
+    ],
+    "texts": [
+      { "text": "Aplicación para administrar el tiempo de colación de los trabajadores con temporizador, ticket de colación y registro de colaciones por cada trabajador." },
+      { "text": "El servidor en PHP y DB mysql dispone de una api a la que se conectan los front cliente web y la aplicación android." },
+      { "text": "El front web dispone de la pantalla de colación y el formulario que registra las entradas y salidas de trabajadores. El apk android consta de controles con los cuales, los jefes de tienda pueden ver quien está en colación y liberar los asientos." }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "webapp",
+    "name": "Afiche",
+    "title": "<span class='badge badge-info'>PHP</span> + <span class='badge badge-warning'>Vanilla JS</span> - Afiche publicitario automático ",
+    "slides": [
+      { "id": 0, "src": "img/caceres/afiche.gif" },
+      { "id": 1, "src": "img/caceres/aficheCarga.png" }
+    ],
+    "texts": [
+      { "text": "El afiche consiste en una pantalla en html y js recibiendo mediante AJAX la lista de productos a mostrar, y los descarga de la DB del ERP para mostrarlos." },
+      { "text": "El backend en php dispone de un endpoint donde muestra los productos en lista, también dispone de varias categorías para poder mostrar afiches de distinto tipo." },
+      { "text": "Dispone de una interfaz de gestión de los productos en cada catagoría para gestionar los productos mostrados." }
+    ],
+    "link": { "text": "Ir a la Web", "link": "https://comercialcaceres.cl/caceres/afiche/rotiseria.php" }
+  },
+  {
+    "type": "webapp",
+    "name": "Personal",
+    "title": "<span class='badge badge-success'>Vue.js 3</span> + <span class='badge badge-info'>Typescript</span> - Web personal en github pages",
+    "slides": [
+      { "id": 0, "src": "img/webpersonal/dmorgam.png" }
+    ],
+    "texts": [
+      { "text": "En esta web se presentan los proyectos principales que he llevado a cabo y una muestra de mis habilidades en forma de widgets y pequeños proyectos demostrativos." }
+    ],
+    "link": { "text": "Puede ver el repositorio aquí.", "link": "https://github.com/dmorgam/dmorgam.github.io" }
+  },
+  {
+    "type": "game",
+    "name": "Snake",
+    "title": "<span class='badge badge-danger'>Vanilla JS</span> - Juego de snake con canvas y vanilla js",
+    "slides": [
+      { "id": 0, "src": "img/snakejs.png" }
+    ],
+    "texts": [
+      { "text": "Juego de snake con canvas y js puro, con velocidad ajustable, sonidos, texturas, generacion de comida y puntaje variable, responsivo calculando el tama;o del canvas." }
+    ],
+    "link": { "text": "Puede ver el repositorio aquí.", "link": "https://github.com/dmorgam/snakejs" },
+    "link2": { "text": "Puede probarlo aquí.", "link": "https://dmorgam.com/snakejs/" }
+  }
+]

@@ -29,7 +29,8 @@ export default {
       rates: [],
       base: '',
       selected: '0.0',
-      start: 'USD'
+      start: 'CLP',
+      secret: 'MWVkMDdiNjgwNDZiMDhlY2UyYTgxZTdhYmYxMTczYmE='
     })
 
     onMounted(() => {
@@ -37,11 +38,23 @@ export default {
     })
 
     function fetchCurrency () {
-      axios.get('https://api.exchangeratesapi.io/latest?base=EUR').then((response) => {
-        currency.rates = response.data.rates
-        currency.base = response.data.base
-        currency.selected = response.data.rates[currency.start]
-      })
+      const exchageStr:any = sessionStorage.getItem('exchange')
+
+      if (exchageStr === null) {
+        axios.get('http://api.exchangeratesapi.io/latest?base=EUR&access_key=' + window.atob(currency.secret))
+          .then((response) => {
+            currency.rates = response.data.rates
+            currency.base = response.data.base
+            currency.selected = response.data.rates[currency.start]
+
+            sessionStorage.setItem('exchange', JSON.stringify(response.data))
+          })
+      } else { // Get data from session storage
+        const exchange:any = JSON.parse(exchageStr)
+        currency.rates = exchange.rates
+        currency.base = exchange.base
+        currency.selected = exchange.rates[currency.start]
+      }
     }
 
     return {
