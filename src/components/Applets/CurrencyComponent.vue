@@ -41,7 +41,7 @@ export default {
       const exchageStr:any = sessionStorage.getItem('exchange')
 
       if (exchageStr === null) {
-        axios.get('http://api.exchangeratesapi.io/latest?base=EUR&access_key=' + window.atob(currency.secret))
+        axios.get('/api/proxy-pass/exchangerates?base=EUR&access_key=' + window.atob(currency.secret))
           .then((response) => {
             currency.rates = response.data.rates
             currency.base = response.data.base
