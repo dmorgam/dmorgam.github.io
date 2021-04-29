@@ -87,12 +87,14 @@
   {
     "type": "webapp",
     "name": "Personal",
-    "title": "<span class='badge badge-success'>Vue.js 3</span> + <span class='badge badge-info'>Typescript</span> - Web personal en github pages",
+    "title": "<span class='badge badge-success'>Vue.js 3</span> + <span class='badge badge-info'>Typescript</span> - Web personal en mi VPS",
     "slides": [
-      { "id": 0, "src": "img/webpersonal/dmorgam.png" }
+      { "id": 0, "src": "img/webpersonal/dmorgam.png" },
+      { "id": 1, "src": "img/webpersonal/qr.png" }
     ],
     "texts": [
-      { "text": "En esta web se presentan los proyectos principales que he llevado a cabo y una muestra de mis habilidades en forma de widgets y pequeños proyectos demostrativos." }
+      { "text": "En esta web se presentan los proyectos principales que he llevado a cabo y una muestra de mis habilidades en forma de widgets y pequeños proyectos demostrativos." },
+      { "text": "Generación de códigos QR, consulta de cmabio de divisas, widget del tiempo etc..." }
     ],
     "link": { "text": "Puede ver el repositorio aquí.", "link": "https://github.com/dmorgam/dmorgam.github.io" }
   },

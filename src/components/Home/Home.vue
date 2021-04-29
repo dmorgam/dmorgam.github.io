@@ -13,9 +13,15 @@
                   <div class="row no-gutters">
                     <div class="col-md-8">
                       <div class="card-body">
-                        <h5 class="card-title">David Moreno Gámez</h5>
+                        <h5 class="card-title font-weight-bold">David Moreno Gámez</h5>
                         <p class="card-text">
-                           Fullstack Developer y Administrador de Sistemas
+                           Desarrollador Web y Administrador de Sistemas
+                        </p>
+                        <p>
+                          <small class="text-muted">
+                            Autodidacta, siempre con ganas de aprender nuevas tecnologías que
+                            aporten valor y avance tecnológico.
+                          </small>
                         </p>
                       </div>
                     </div>
@@ -34,14 +40,13 @@
               <h1>¿A qué me dedico?</h1>
               <br>
               <p>
-                Desarrollo aplicaciones Web basadas en <b><a href="https://laravel.com/">Laravel</a></b>, php,
-                <b><a href="https://vuejs.org/">Vue.js</a></b> y eventualmente en vanilla js.
-                También, gestiono los servidores donde se alojan y su stack LAMP.
+                Desarrollo aplicaciones Web <b><a href="https://laravel.com/">Laravel</a></b>, php,
+                <b><a href="https://vuejs.org/">Vue.js</a></b> y Javascript.
+                También, gestiono servidores LAMP con apache y Nginx.
               </p>
               <p>
-                Soy usuario de Gnu/Linux. Uso la Terminal y el editor de texto Vim como mis
-                herramientas de trabajo, igualmente, he ido migrando desde el mundo de los
-                sistemas al desarrollo Web.
+                Soy usuario habitual de Gnu/Linux. Usando la terminal, zsh, tmux y vim para
+                trabajar, he ido aprendiendo desde el mundo de los sistemas al desarrollo Web.
               </p>
               <p>Puede ver algunos de mis proyectos <router-link to="projects">aquí</router-link>.</p>
             </div>
@@ -55,7 +60,7 @@
               <br>
               <p><b>Lenguajes: </b> PHP, Javascript, Typescript (en desarrollo), Shell Scripting</p>
               <p><b>Frameworks: </b> Vue.js, Laravel, Bootstrap</p>
-              <p><b>Tecnologías: </b>Git, Docker, Kubernetes, Virtualización</p>
+              <p><b>Tecnologías: </b>Git, Docker, Kubernetes,Linux, Virtualización</p>
               <p><b>Herramientas: </b>Vim, npm, composer, zsh, Android Studio(básico)</p>
             </div>
          </div>
