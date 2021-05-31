@@ -1,0 +1,48 @@
+{
+  "caceres": {
+    "title": "Comercial Caceres Web",
+    "text1": "Web page created with Laravel, Vue.js and MySQL db. It's a web store that loads all products and manage the gallery with Vue components and AJAX apis in Laravel ensuring a smooth experience. All integrated with the business ERP sqlserver.",
+    "text2": "In addition, it has several internal web applications for warehouse and stock management and a personalized reservation management system with export to excel, pdf and report generation.",
+    "text3": "Go to Web"
+  },
+  "caceresLegacy": {
+    "title": "Old Comercial Caceres Web (Improvements)",
+    "text1": "Web created with php, js and Mysql. Contribution improving the web and adding new modules.",
+    "text2": "Generation of roadmaps in pdf, route tracing with the google maps API, permission management systems, reservation management and product sales statistics. Contribution by improving the web and adding new modules.",
+    "text3": "Automated catalog connected to ERP.",
+    "text4": "Generation of reports in pdf with FPDF and excel sheets with PHPexcel.",
+    "text5": "Go to Web"
+  },
+  "mayorista": {
+    "title": "Field Wholesale Application",
+    "text1": "Wholesale sales management application, made in Vue.js and with the AJAX api in Laravel.",
+    "text2": "Manage orders and customers, customer debts. It has a catalog with the latest prices and real stock with images for product sale in field.",
+    "text3": "For communication between the app and the backend, the axios library is used by making get, post and put requests to get the data, enter new data and update.",
+    "text4": "The front has several components which alternate dynamically loading according to the mode in which it is (initial state or client loaded)."
+  },
+  "colacion": {
+    "title": "Snack time management application",
+    "text1": "Application to manage the snack time of workers with a timer, ticket and a log for each worker.",
+    "text2": "The PHP and Mysql server has an api to which the front web client and the android application connect.",
+    "text3": "The front web has the seats screen and the form that registers the entries and exits of workers. The android apk consists of controls with which the store managers can see who is in the seats and release the seats."
+  },
+  "afiche": {
+    "title": "Auto advertising screen",
+    "text1": "The app consists of a screen in html and js receiving through AJAX the list of products to show, and downloading them from the ERP DB to show them.",
+    "text2": "The backend in php has an endpoint where it shows the products in the list, it also has several categories to show posters of different types.",
+    "text3": "It has a product management interface in each category to manage the products displayed.",
+    "text4": "Go to Web"
+  },
+  "personal": {
+    "title": "Personal Web in my VPS",
+    "text1": "This website shows the main projects that I have worked in and a sample of my skills in the form of widgets and small demonstration projects.",
+    "text2": "Generation of QR codes, currency exchange query, weather widget etc...",
+    "text3": "You can see the repository here"
+  },
+  "snake": {
+    "title": "Snake game with canvas and vanilla js",
+    "text1": "Snake game with canvas and pure js, with adjustable speed, sounds, textures, food generation and variable score. Responsive calculating the size of the canvas.",
+    "text2": "You can see the repository here",
+    "text3": "You can test it here"
+  }
+}

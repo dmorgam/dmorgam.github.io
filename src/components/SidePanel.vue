@@ -5,7 +5,7 @@
       <div class="sidebar-heading">{{ props.title }}</div>
       <div class="list-group list-group-flush">
         <a v-for="i in sections" :key="i.title" :href="i.link" class="list-group-item list-group-item-action bg-light" @click="toggleBar()">
-          {{ i.title }}
+          {{ $t(i.title) }}
         </a>
       </div>
       <button type="button" class="btn btn-info menu-toggle" @click="toggleBar()" >

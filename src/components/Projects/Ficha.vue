@@ -1,7 +1,7 @@
 <template>
       <div class="card mb-4">
         <div class="card-body">
-          <h3 v-html="data.title"></h3>
+          <h3><span v-html="data.tags"></span> {{ $t(data.title) }}</h3>
           <hr>
           <div class="row">
             <div class="col-sm-6">
@@ -11,15 +11,15 @@
                <Carousel v-else :name="data.name + 'Slides'" :slides="data.slides"/>
             </div>
             <div class="col-sm-6">
-              <p v-for="(item, index) in data.texts" :key="index">{{ item.text }}</p>
+              <p v-for="(item, index) in data.texts" :key="index">{{ $t(item.text) }}</p>
               <p>
                 <a target="_blank" :href="data.link.link" >
-                  {{ data.link.text }}
+                  {{ $t(data.link.text) }}
                 </a>
               </p>
               <p v-if="data.link2 !== undefined">
                 <a target="_blank" :href="data.link2.link" >
-                  {{ data.link2.text }}
+                  {{ $t(data.link2.text) }}
                 </a>
               </p>
             </div>

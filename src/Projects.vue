@@ -13,7 +13,6 @@
 
 import Proyectos from './components/Projects/Proyectos.vue'
 import SidePanel from './components/SidePanel.vue'
-import i18n from '@/i18n'
 
 export default {
   components: {
@@ -25,9 +24,9 @@ export default {
     const menus = {
       title: 'Proyectos',
       items: [
-        { title: i18n.global.t('menus.projectsSidebar.webp'), link: '#web' },
-        { title: i18n.global.t('menus.projectsSidebar.webapps'), link: '#webapps' },
-        { title: i18n.global.t('menus.projectsSidebar.games'), link: '#games' }
+        { title: 'menus.projectsSidebar.webp', link: '#web' },
+        { title: 'menus.projectsSidebar.webapps', link: '#webapps' },
+        { title: 'menus.projectsSidebar.games', link: '#games' }
       ]
     }
 

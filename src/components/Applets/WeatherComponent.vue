@@ -23,6 +23,7 @@
 import { reactive, onMounted } from 'vue'
 import { BIconCheck, BIconGeoAlt } from 'bootstrap-icons-vue'
 import axios from 'axios'
+import i18n from '@/i18n'
 
 export default {
 
@@ -57,7 +58,7 @@ export default {
 
     function fetchWeather () {
       // Forecast fetching
-      axios.get('https://api.openweathermap.org/data/2.5/weather?q=' + weatherInfo.city + ',' + weatherInfo.country + '&lang=es&appid=' + atob(weatherInfo.apiKey))
+      axios.get('https://api.openweathermap.org/data/2.5/weather?q=' + weatherInfo.city + ',' + weatherInfo.country + '&lang=' + i18n.global.locale + '&appid=' + atob(weatherInfo.apiKey))
         .then((forecast) => {
           weatherInfo.icon = forecast.data.weather[0].icon
           weatherInfo.info = forecast.data.weather[0].description
