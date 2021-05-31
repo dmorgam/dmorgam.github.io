@@ -13,6 +13,7 @@
 
 import Home from './components/Home/Home.vue'
 import SidePanel from './components/SidePanel.vue'
+import i18n from '@/i18n'
 
 export default {
 
@@ -25,9 +26,9 @@ export default {
     const menus = {
       title: 'Secciones',
       items: [
-        { title: 'Inicio', link: '#' },
-        { title: 'A qué me dedico', link: '#who' },
-        { title: 'Tecnologías', link: '#tech' }
+        { title: i18n.global.t('menus.indexSidebar.start'), link: '#' },
+        { title: i18n.global.t('menus.indexSidebar.who'), link: '#who' },
+        { title: i18n.global.t('menus.indexSidebar.tech'), link: '#tech' }
       ]
     }
 

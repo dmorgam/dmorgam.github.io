@@ -1,0 +1,77 @@
+{
+  "index": {
+    "card": {
+      "title": "David Moreno Gámez",
+      "subtitle": "Web Developer & System Administrator",
+      "text": "Self taught, always trying to learn new technologies in order to add more value and technological progress."
+    }
+  },
+  "who": {
+    "title": "What I do?",
+    "text1": "I code web applications in",
+    "text2": "and Javascript.",
+    "text3": "Also, I manage LAMP servers with apache and Nginx.",
+    "text4": "I am a regular user of Gnu/Linux. I use terminal, zsh, tmux and vim for work. I has been moving from the system administration area to web developement.",
+    "text5": "You can see some of my projects",
+    "text6": "here"
+  },
+  "tech": {
+    "title": "Technologies",
+    "text1": "Languages:",
+    "text2": "Frameworks:",
+    "text3": "Technologies:",
+    "text4": "Tools:",
+    "text5": "PHP, Javascript, Typescript (learning), Shell Scripting.",
+    "text6": "Vue.js, Laravel, Bootstrap.",
+    "text7": "Git, Docker, Kubernetes, Linux, Virtualization.",
+    "text8": "Vim, npm, composer, zsh, Android Studio (basic)."
+  },
+  "menus": {
+    "navbar": {
+      "home": "Home",
+      "projects": "Projects",
+      "tools": "Tools",
+      "toolsMenu": {
+        "qrcode": "QR code generator"
+      }
+    },
+    "indexSidebar": {
+      "start": "Start",
+      "who": "What I do?",
+      "tech": "Technologies"
+    },
+    "projectsSidebar": {
+      "webp": "Web Projects",
+      "webapps": "Web Applications",
+      "games": "Games"
+    }
+  },
+  "currencyApplet": {
+    "title": "Forex rates"
+  },
+  "qrcode": {
+    "title": "QR code generator",
+    "format": "Format",
+    "formatMenu": {
+      "url": "Url",
+      "vcard": "Vcard",
+      "text": "Text"
+    },
+    "button": "Generate QR",
+    "download": "Download QR",
+    "resultTitle": "Generated Code",
+    "vcard": {
+      "name": "Name",
+      "surn": "Surname",
+      "tlf": "Tlf",
+      "cell": "Cell",
+      "email": "Email",
+      "web": "Web",
+      "org": "Organization",
+      "title": "Title",
+      "st": "Street",
+      "city": "City",
+      "country": "Country"
+    }
+  }
+}

@@ -3,18 +3,18 @@
      <div class="container">
         <br><br><br><br>
         <h1 class="mb-5">
-          <span class="badge badge-pill badge-secondary">Generador de QR</span>
+          <span class="badge badge-pill badge-secondary">{{ $t('qrcode.title') }}</span>
         </h1>
         <div class="row">
           <div class="col-sm-6">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
-                <label class="input-group-text">Formato</label>
+                <label class="input-group-text">{{ $t('qrcode.format') }}</label>
               </div>
               <select v-model="tipo" class="custom-select">
-                <option value="url">Url</option>
-                <option value="vcard">Vcard</option>
-                <option value="text">Texto</option>
+                <option value="url">{{ $t('qrcode.formatMenu.url') }}</option>
+                <option value="vcard">{{ $t('qrcode.formatMenu.vcard') }}</option>
+                <option value="text">{{ $t('qrcode.formatMenu.text') }}</option>
               </select>
             </div>
             <hr>
@@ -25,13 +25,13 @@
           <div class="col-sm-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Código Generado</h5>
+                <h5 class="card-title">{{ $t('qrcode.resultTitle') }}</h5>
                 <hr>
                 <img :src="imageData">
 
                 <div class="w-100">
                   <button v-if="imageData !== ''" v-on:click="downloadImg()" class="btn btn-info">
-                    Descargar
+                    {{ $t('qrcode.download') }}
                   </button>
                 </div>
               </div>

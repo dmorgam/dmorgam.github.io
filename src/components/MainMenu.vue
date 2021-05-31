@@ -13,20 +13,26 @@
 
                 <!-- Icono del Home -->
                 <BIconHouseFill v-if="item.name == 'Home'" />
-                 {{ item.name }}
+                 {{ $t(item.name) }}
              </router-link>
              <li class="nav-item dropdown" v-for="(item, idx) in menus.filter(i => i.submenu.length > 0)" :key="idx">
                <a class="nav-link dropdown-toggle" href="javascript:void(0)" :id="item.name" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 {{ item.name }}
+                 {{ $t(item.name) }}
                </a>
                <div class="dropdown-menu" v-for="(itm, index) in item.submenu" :key="index">
-                 <router-link class="dropdown-item" :to="itm.src">{{ itm.name }}</router-link>
+                 <router-link class="dropdown-item" :to="itm.src">{{ $t(itm.name) }}</router-link>
                 </div>
              </li>
           </div>
         <div class="navbar-nav ml-auto">
             <div class="nav-item">
               <weatherApplet />
+            </div>
+            <div class="nav-item d-flex align-items-center">
+              <select class="form-control form-control-sm ml-2" v-model="$root.$i18n.locale">
+                <option value="en">🇬🇧 English</option>
+                <option value="es">🇪🇸 Español</option>
+              </select>
             </div>
         </div>
       </div>
@@ -53,13 +59,13 @@ export default {
   },
   setup () {
     const menus: MenuItem[] = [
-      { route: 'Home', name: 'Home', src: '/', submenu: [] as MenuItem[] },
-      { route: 'Projects', name: 'Proyectos', src: '/projects', submenu: [] as MenuItem[] },
+      { route: 'Home', name: 'menus.navbar.home', src: '/', submenu: [] as MenuItem[] },
+      { route: 'Projects', name: 'menus.navbar.projects', src: '/projects', submenu: [] as MenuItem[] },
       {
         route: 'Tools',
-        name: 'Herramientas',
+        name: 'menus.navbar.tools',
         src: '',
-        submenu: [{ route: 'Qrcode', name: 'Qr code generator', src: '/qrcode', submenu: [] as MenuItem[] }]
+        submenu: [{ route: 'Qrcode', name: 'menus.navbar.toolsMenu.qrcode', src: '/qrcode', submenu: [] as MenuItem[] }]
       }
     ]
 

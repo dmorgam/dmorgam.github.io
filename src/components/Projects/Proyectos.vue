@@ -4,7 +4,7 @@
       <h1 class="text-light" id="web">
         <span class="badge badge-pill badge-secondary">
           <BIconCaretRightFill />
-          Proyectos Web
+          {{ $t('menus.projectsSidebar.webp') }}
         </span>
       </h1><br><br>
 
@@ -14,7 +14,7 @@
       <h1 class="text-light" id="webapps">
         <span class="badge badge-pill badge-info">
           <BIconCaretRightFill />
-          Webapps
+          {{ $t('menus.projectsSidebar.webapps') }}
         </span>
       </h1><br><br>
 
@@ -24,7 +24,7 @@
       <h1 class="text-light" id="games">
         <span class="badge badge-pill badge-light">
           <BIconCaretRightFill />
-          Juegos
+          {{ $t('menus.projectsSidebar.games') }}
         </span>
       </h1><br><br>
 

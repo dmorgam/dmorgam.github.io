@@ -1,0 +1,77 @@
+{
+  "index": {
+    "card": {
+      "title": "David Moreno Gámez",
+      "subtitle": "Desarrollador Web y Administrador de Sistemas",
+      "text": "Autodidacta, siempre con ganas de aprender nuevas tecnologías que aporten valor y avance tecnológico."
+    }
+  },
+  "who": {
+    "title": "¿A qué me dedico?",
+    "text1": "Desarrollo aplicaciones Web",
+    "text2": "y Javascript.",
+    "text3": "También, gestiono servidores LAMP con apache y Nginx.",
+    "text4": "Soy usuario habitual de Gnu/Linux. Usando la terminal, zsh, tmux y vim para trabajar, he ido aprendiendo desde el mundo de los sistemas al desarrollo Web.",
+    "text5": "Puede ver algunos de mis proyectos",
+    "text6": "aquí"
+  },
+  "tech": {
+    "title": "Tecnologías",
+    "text1": "Lenguajes:",
+    "text2": "Frameworks:",
+    "text3": "Tecnologías:",
+    "text4": "Herramientas:",
+    "text5": "PHP, Javascript, Typescript (en desarrollo), Shell Scripting.",
+    "text6": "Vue.js, Laravel, Bootstrap.",
+    "text7": "Git, Docker, Kubernetes, Linux, Virtualización.",
+    "text8": "Vim, npm, composer, zsh, Android Studio (básico)."
+  },
+  "menus": {
+    "navbar": {
+      "home": "Inicio",
+      "projects": "Proyectos",
+      "tools": "Herramientas",
+      "toolsMenu": {
+        "qrcode": "Generador de QR"
+      }
+    },
+    "indexSidebar": {
+      "start": "Inicio",
+      "who": "A qué me dedico",
+      "tech": "Tecnologías"
+    },
+    "projectsSidebar": {
+      "webp": "Proyectos Web",
+      "webapps": "Aplicaciones Web",
+      "games": "Juegos"
+    }
+  },
+  "currencyApplet": {
+    "title": "Cambio de divisas"
+  },
+  "qrcode": {
+    "title": "Generador de QR",
+    "format": "Formato",
+    "formatMenu": {
+      "url": "Url",
+      "vcard": "Vcard",
+      "text": "Texto"
+    },
+    "button": "Generar QR",
+    "download": "Descargar QR",
+    "resultTitle": "Código Generado",
+    "vcard": {
+      "name": "Nombre",
+      "surn": "Apellidos",
+      "tlf": "Tlf",
+      "cell": "Celular",
+      "email": "Email",
+      "web": "Web",
+      "org": "Organización",
+      "title": "Cargo",
+      "st": "Calle",
+      "city": "Ciudad",
+      "country": "País"
+    }
+  }
+}

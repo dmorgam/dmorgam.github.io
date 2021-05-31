@@ -13,14 +13,13 @@
                   <div class="row no-gutters">
                     <div class="col-md-8">
                       <div class="card-body">
-                        <h5 class="card-title font-weight-bold">David Moreno Gámez</h5>
+                        <h5 class="card-title font-weight-bold">{{ $t('index.card.title') }}</h5>
                         <p class="card-text">
-                           Desarrollador Web y Administrador de Sistemas
+                          {{ $t('index.card.subtitle') }}
                         </p>
                         <p>
                           <small class="text-muted">
-                            Autodidacta, siempre con ganas de aprender nuevas tecnologías que
-                            aporten valor y avance tecnológico.
+                            {{ $t('index.card.text') }}
                           </small>
                         </p>
                       </div>
@@ -37,18 +36,17 @@
       <div class="row">
          <div class="col" id="who">
             <div class="alert alert-info text-center" role="alert">
-              <h1>¿A qué me dedico?</h1>
+              <h1>{{ $t('who.title') }}</h1>
               <br>
               <p>
-                Desarrollo aplicaciones Web <b><a href="https://laravel.com/">Laravel</a></b>, php,
-                <b><a href="https://vuejs.org/">Vue.js</a></b> y Javascript.
-                También, gestiono servidores LAMP con apache y Nginx.
+                {{ $t('who.text1') }} <b><a href="https://laravel.com/">Laravel</a></b>, php,
+                <b><a href="https://vuejs.org/">Vue.js</a></b> {{ $t('who.text2') }}
+                {{ $t('who.text3')}}
               </p>
               <p>
-                Soy usuario habitual de Gnu/Linux. Usando la terminal, zsh, tmux y vim para
-                trabajar, he ido aprendiendo desde el mundo de los sistemas al desarrollo Web.
+                {{ $t('who.text4')}}
               </p>
-              <p>Puede ver algunos de mis proyectos <router-link to="projects">aquí</router-link>.</p>
+                <p>{{ $t('who.text5') }} <router-link to="projects">{{ $t('who.text6') }}</router-link>.</p>
             </div>
          </div>
       </div>
@@ -56,12 +54,12 @@
       <div class="row">
          <div class="col" id="tech">
             <div class="alert alert-success text-center" role="alert">
-              <h1>Tecnologías</h1>
+              <h1>{{ $t('tech.title') }}</h1>
               <br>
-              <p><b>Lenguajes: </b> PHP, Javascript, Typescript (en desarrollo), Shell Scripting</p>
-              <p><b>Frameworks: </b> Vue.js, Laravel, Bootstrap</p>
-              <p><b>Tecnologías: </b>Git, Docker, Kubernetes,Linux, Virtualización</p>
-              <p><b>Herramientas: </b>Vim, npm, composer, zsh, Android Studio(básico)</p>
+              <p><b>{{ $t('tech.text1') }}</b> {{ $t('tech.text5') }}</p>
+              <p><b>{{ $t('tech.text2') }}</b> {{ $t('tech.text6') }}</p>
+              <p><b>{{ $t('tech.text3') }}</b> {{ $t('tech.text7') }}</p>
+              <p><b>{{ $t('tech.text4') }}</b> {{ $t('tech.text8') }}</p>
             </div>
          </div>
       </div>
