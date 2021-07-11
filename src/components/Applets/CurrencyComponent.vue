@@ -29,8 +29,7 @@ export default {
       rates: [],
       base: '',
       selected: '0.0',
-      start: 'CLP',
-      secret: 'MWVkMDdiNjgwNDZiMDhlY2UyYTgxZTdhYmYxMTczYmE='
+      start: 'CLP'
     })
 
     onMounted(() => {
@@ -41,7 +40,7 @@ export default {
       const exchageStr:any = sessionStorage.getItem('exchange')
 
       if (exchageStr === null) {
-        axios.get('/api/proxy-pass/exchangerates?base=EUR&access_key=' + window.atob(currency.secret))
+        axios.get('https://pcmt93kogj.execute-api.eu-central-1.amazonaws.com/exchange')
           .then((response) => {
             currency.rates = response.data.rates
             currency.base = response.data.base

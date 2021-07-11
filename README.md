@@ -1,6 +1,7 @@
 # dmorgam.github.io
 
-New deploy location: ***dmorgam.com
+New deployment location: https://***dmorgam.com
+Serverless setup in aws
 
 ## Project setup
 ```
