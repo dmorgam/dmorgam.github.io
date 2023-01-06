@@ -8,10 +8,10 @@
   },
   "who": {
     "title": "What I do?",
-    "text1": "I code web applications in",
-    "text2": "and Javascript.",
-    "text3": "Also, I manage LAMP servers with apache and Nginx.",
-    "text4": "I am a regular user of Gnu/Linux. I use terminal, zsh, tmux and vim for work. I has been moving from the system administration area to web developement.",
+    "text1": "I am a System Administrator and Developer who code web applications in",
+    "text2": ", Javascript Django and Flask.",
+    "text3": "System administration of Linux and RedHat, automation with Ansible and Python.",
+    "text4": "LPIC-1 Certified in Linux. With Web Development experience. I'm moving to the world of DevOps.",
     "text5": "You can see some of my projects",
     "text6": "here"
   },
@@ -21,10 +21,10 @@
     "text2": "Frameworks:",
     "text3": "Technologies:",
     "text4": "Tools:",
-    "text5": "PHP, Javascript, Typescript (learning), Shell Scripting.",
-    "text6": "Vue.js, Laravel, Bootstrap.",
-    "text7": "Git, Docker, Kubernetes, Linux, Virtualization.",
-    "text8": "Vim, npm, composer, zsh, Android Studio (basic)."
+    "text5": "Python, PHP, Javascript, Typescript (learning), Shell Scripting.",
+    "text6": "Django, Flask, Vue.js, Laravel, Bootstrap.",
+    "text7": "Ansible, Git, Docker, Kubernetes, Linux, Virtualization.",
+    "text8": "Vim, pip, npm, composer, zsh, Android Studio (basic)."
   },
   "menus": {
     "navbar": {

@@ -8,10 +8,10 @@
   },
   "who": {
     "title": "¿A qué me dedico?",
-    "text1": "Desarrollo aplicaciones Web",
-    "text2": "y Javascript.",
-    "text3": "También, gestiono servidores LAMP con apache y Nginx.",
-    "text4": "Soy usuario habitual de Gnu/Linux. Usando la terminal, zsh, tmux y vim para trabajar, he ido aprendiendo desde el mundo de los sistemas al desarrollo Web.",
+    "text1": "Administrador de Sistemas y desarrollo aplicaciones Web",
+    "text2": ", Javascript y en Django y Flask.",
+    "text3": "Administración de Sistemas Linux y RedHat, automatización con Ansible y Python.",
+    "text4": "Certificado con LPIC-1 en Administración de Sistemas Gnu/Linux. Con experiencia en desarrollo web, me estoy orientando al mundo devops.",
     "text5": "Puede ver algunos de mis proyectos",
     "text6": "aquí"
   },
@@ -21,10 +21,10 @@
     "text2": "Frameworks:",
     "text3": "Tecnologías:",
     "text4": "Herramientas:",
-    "text5": "PHP, Javascript, Typescript (en desarrollo), Shell Scripting.",
-    "text6": "Vue.js, Laravel, Bootstrap.",
-    "text7": "Git, Docker, Kubernetes, Linux, Virtualización.",
-    "text8": "Vim, npm, composer, zsh, Android Studio (básico)."
+    "text5": "Python, PHP, Javascript, Typescript (en desarrollo), Shell Scripting.",
+    "text6": "Django, Flask, Vue.js, Laravel, Bootstrap.",
+    "text7": "Ansible, Git, Docker, Kubernetes, Linux, Virtualización.",
+    "text8": "Vim, pip, npm, composer, zsh, Android Studio (básico)."
   },
   "menus": {
     "navbar": {
