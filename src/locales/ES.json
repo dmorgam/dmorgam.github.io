@@ -2,29 +2,27 @@
   "index": {
     "card": {
       "title": "David Moreno Gámez",
-      "subtitle": "Desarrollador Web y Administrador de Sistemas",
-      "text": "Autodidacta, siempre con ganas de aprender nuevas tecnologías que aporten valor y avance tecnológico."
+      "subtitle": "SRE/Administrador de Sistemas Linux",
+      "text": "Certified Linux SysAdmin, Certified Kubernetes Administrator, Automation, IaC, Cloud enthusiast"
     }
   },
   "who": {
     "title": "¿A qué me dedico?",
-    "text1": "Administrador de Sistemas y desarrollo aplicaciones Web",
-    "text2": ", Javascript y en Django y Flask.",
-    "text3": "Administración de Sistemas Linux y RedHat, automatización con Ansible y Python.",
-    "text4": "Certificado con LPIC-1 en Administración de Sistemas Gnu/Linux. Con experiencia en desarrollo web, me estoy orientando al mundo devops.",
-    "text5": "Puede ver algunos de mis proyectos",
-    "text6": "aquí"
+    "text1": "Administrador certificado de Linux (LPIC-1) y administrador de Kubernetes (CKA) con una sólida base en automatización e infraestructura como código (Ansible, Shell, Python y Terraform).",
+    "text2": "Competente en tecnologías de containerización, Kubernetes, VMware Tanzu y Docker/Podman/Containerd.",
+    "text3": "Actualmente centrado en ampliar las habilidades de (SRE) y DevOps dentro de entornos de nube pública. Comprometido con la resolución colaborativa de problemas y el impulso de la excelencia en el campo de TI.",
+    "text4": "También tengo experiencia como Desarrollador Web."
   },
   "tech": {
     "title": "Tecnologías",
-    "text1": "Lenguajes:",
-    "text2": "Frameworks:",
-    "text3": "Tecnologías:",
+    "text1": "Sistemas/IaC/Configuración:",
+    "text2": "Contenedores:",
+    "text3": "Lenguajes Programación:",
     "text4": "Herramientas:",
-    "text5": "Python, PHP, Javascript, Typescript (en desarrollo), Shell Scripting.",
-    "text6": "Django, Flask, Vue.js, Laravel, Bootstrap.",
-    "text7": "Ansible, Git, Docker, Kubernetes, Linux, Virtualización.",
-    "text8": "Vim, pip, npm, composer, zsh, Android Studio (básico)."
+    "text5": "Linux, Rhel, Ansible, Ansible Automation Platform, Terraform, Tomcat, Apache, Nginx, Mysql.",
+    "text6": "Kubernetes, VMware Tanzu, Docker, Podman, Containerd, Helm.",
+    "text7": "Python/Flask/Django, Shell, Javascript/Node, PHP/Laravel.",
+    "text8": "Git, Gitlab, pip, Hashicorp Vault, Grafana."
   },
   "menus": {
     "navbar": {
@@ -41,6 +39,7 @@
       "tech": "Tecnologías"
     },
     "projectsSidebar": {
+      "cd": "Herramientas CD/IaC",
       "webp": "Proyectos Web",
       "webapps": "Aplicaciones Web",
       "games": "Juegos"
@@ -74,5 +73,6 @@
       "country": "País"
     }
   },
+  "projects-info-alert": "Aqui se presenta una pequeña muestra orientativa de algunos de los proyectos de desarrollo que he llevado a cabo.",
   "projects": {}
 }

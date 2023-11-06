@@ -1,5 +1,47 @@
 [
   {
+    "type": "cd",
+    "name": "Ansible",
+    "tags": "<span class='badge badge-danger'>Ansible</span> + <span class='badge badge-success'>Python</span>",
+    "title": "projects.ansible.title",
+    "slides": [
+      { "id": 0, "src": "img/ansible.png" }
+    ],
+    "texts": [
+      { "text": "projects.ansible.text1" },
+      { "text": "projects.ansible.text2" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "cd",
+    "name": "CDtools",
+    "tags": "<span class='badge badge-info'>Flask</span> + <span class='badge badge-success'>Python</span>",
+    "title": "projects.cdtools.title",
+    "slides": [
+      { "id": 0, "src": "img/flask.png" }
+    ],
+    "texts": [
+      { "text": "projects.cdtools.text1" },
+      { "text": "projects.cdtools.text2" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "cd",
+    "name": "Terraform",
+    "tags": "<span class='badge badge-primary'>Terraform</span>",
+    "title": "projects.terraform.title",
+    "slides": [
+      { "id": 0, "src": "img/terraform.png" }
+    ],
+    "texts": [
+      { "text": "projects.terraform.text1" },
+      { "text": "projects.terraform.text2" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
     "type": "web",
     "name": "Caceres",
     "tags": "<span class='badge badge-danger'>Laravel</span> + <span class='badge badge-success'>Vue.js</span>",
@@ -115,7 +157,6 @@
     "texts": [
       { "text": "projects.snake.text1" }
     ],
-    "link": { "text": "projects.snake.text2", "link": "https://github.com/dmorgam/snakejs" },
-    "link2": { "text": "projects.snake.text3", "link": "https://dmorgam.com/snakejs/" }
+    "link": { "text": "projects.snake.text2", "link": "https://github.com/dmorgam/snakejs" }
   }
 ]

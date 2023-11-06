@@ -1,6 +1,25 @@
 <template>
    <div class="container-fluid home-back left-sidebar-margin">
       <br><br><br><br>
+
+      <div class="alert alert-info">
+        <h5>
+          <BIconInfoCircle />
+          {{ $t('projects-info-alert') }}
+        </h5>
+      </div>
+
+      <br>
+      <h1 class="text-light" id="cd">
+        <span class="badge badge-pill badge-secondary">
+          <BIconCaretRightFill />
+          {{ $t('menus.projectsSidebar.cd') }}
+        </span>
+      </h1><br><br>
+
+      <Ficha v-for="(item, index) in projectsData.filter(i => i.type === 'cd')" :key="index" :item="item" />
+
+      <br><br>
       <h1 class="text-light" id="web">
         <span class="badge badge-pill badge-secondary">
           <BIconCaretRightFill />
@@ -38,12 +57,13 @@
 import { } from 'vue'
 import json from '../../projects.json'
 import Ficha from './Ficha.vue'
-import { BIconCaretRightFill } from 'bootstrap-icons-vue'
+import { BIconCaretRightFill, BIconInfoCircle } from 'bootstrap-icons-vue'
 
 export default {
   components: {
     Ficha,
-    BIconCaretRightFill
+    BIconCaretRightFill,
+    BIconInfoCircle
   },
 
   setup () {

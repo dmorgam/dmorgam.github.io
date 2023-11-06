@@ -2,29 +2,27 @@
   "index": {
     "card": {
       "title": "David Moreno Gámez",
-      "subtitle": "Web Developer & System Administrator",
-      "text": "Self taught, always trying to learn new technologies in order to add more value and technological progress."
+      "subtitle": "SRE/Linux System Administrator",
+      "text": "Certified Linux SysAdmin, Certified Kubernetes Administrator, Automation, IaC, Cloud enthusiast"
     }
   },
   "who": {
     "title": "What I do?",
-    "text1": "I am a System Administrator and Developer who code web applications in",
-    "text2": ", Javascript Django and Flask.",
-    "text3": "System administration of Linux and RedHat, automation with Ansible and Python.",
-    "text4": "LPIC-1 Certified in Linux. With Web Development experience. I'm moving to the world of DevOps.",
-    "text5": "You can see some of my projects",
-    "text6": "here"
+    "text1": "Certified Linux Administrator (LPIC-1) and Kubernetes Administrator (CKA) with a strong foundation in automation and Infrastructure as Code (Ansible, Shell, Python, and Terraform).",
+    "text2": "Proficient in containerization technologies, including Kubernetes, VMware Tanzu, and Docker/Podman/Containerd.",
+    "text3": "Currently focusing on expanding skills in Site Reliability Engineering (SRE) and DevOps within public cloud environments. Committed to collaborative problem-solving and driving excellence in the IT field.",
+    "text4": "I also have experience as Web Developer."
   },
   "tech": {
     "title": "Technologies",
-    "text1": "Languages:",
-    "text2": "Frameworks:",
-    "text3": "Technologies:",
+    "text1": "Systems/IaC/Configuration:",
+    "text2": "Containers:",
+    "text3": "Programming Languages:",
     "text4": "Tools:",
-    "text5": "Python, PHP, Javascript, Typescript (learning), Shell Scripting.",
-    "text6": "Django, Flask, Vue.js, Laravel, Bootstrap.",
-    "text7": "Ansible, Git, Docker, Kubernetes, Linux, Virtualization.",
-    "text8": "Vim, pip, npm, composer, zsh, Android Studio (basic)."
+    "text5": "Linux, Rhel, Ansible, Ansible Automation Platform, Terraform, Tomcat, Apache, Nginx, Mysql.",
+    "text6": "Kubernetes, VMware Tanzu, Docker, Podman, Containerd, Helm.",
+    "text7": "Python/Flask/Django, Shell, Javascript/Node, PHP/Laravel.",
+    "text8": "Git, Gitlab, pip, Hashicorp Vault, Grafana."
   },
   "menus": {
     "navbar": {
@@ -41,6 +39,7 @@
       "tech": "Technologies"
     },
     "projectsSidebar": {
+      "cd": "Tools for CD/IaC",
       "webp": "Web Projects",
       "webapps": "Web Applications",
       "games": "Games"
@@ -74,5 +73,6 @@
       "country": "Country"
     }
   },
+  "projects-info-alert": "Here is a small indicative sample of some of the development projects that I have carried out.",
   "projects": {}
 }
