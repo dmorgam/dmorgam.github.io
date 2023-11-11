@@ -25,7 +25,7 @@
                       </div>
                     </div>
                     <div class="col-md-4">
-                     <img src="img/dmorgam.png" class="card-img-top" alt="">
+                     <img src="img/dmorgam.png" class="card-img-top borderless-round" alt="">
                     </div>
                   </div>
                 </div>

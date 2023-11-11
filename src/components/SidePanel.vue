@@ -3,6 +3,7 @@
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper" :style="{ 'margin-left': toggle + 'rem' }" >
       <div class="sidebar-heading">{{ props.title }}</div>
+      <br>
       <div class="list-group list-group-flush">
         <a v-for="i in sections" :key="i.title" :href="i.link" class="list-group-item list-group-item-action bg-light" @click="toggleBar()">
           {{ $t(i.title) }}

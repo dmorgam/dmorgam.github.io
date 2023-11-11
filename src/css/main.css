@@ -4,3 +4,31 @@
   background-image: url('/img/home.png');
   background-size: cover;
 }
+
+
+/* Add more radious and no borders */
+.card                  { border-radius: 2em; border: 0em; }
+.borderless-round      { border-radius: 2em; border: 0em; }
+.alert                 { border-radius: 2em; border: 0em; }
+.btn                   { border-radius: 2em; border: 0em; }
+.form-control          { border-radius: 2em; border: 0em; }
+.dropdown-menu         { border-radius: 2em; border: 0em; }
+.input-group-prepend   { border-radius: 2em; border: 0em; }
+.input-group-text      { border-radius: 2em; border: 0em; }
+.carousel-inner        { border-radius: 2em; border: 0em; }
+.custom-select         { border-radius: 2em; border: 0em; }
+.dropdown-item:hover   { border-radius: 2em; }
+.list-group-item:hover { border-radius: 2em; }
+.list-group-item       { border: 0em; }
+.nav-link:hover        { border-radius: 2em; border: 1px solid; margin: -1px; }
+.navbar-brand          { border-radius: 2em; padding-left: 1em; padding-right: 1em; }
+.navbar-brand:hover    { transition: all 1s ease; background-color: white; color: #212529 !important; }
+.menu-toggle           { border-radius: 0em 2em 2em 0em; }
+
+
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
