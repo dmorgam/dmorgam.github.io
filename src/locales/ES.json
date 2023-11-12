@@ -36,9 +36,12 @@
     "indexSidebar": {
       "start": "Inicio",
       "who": "A qué me dedico",
-      "tech": "Tecnologías"
+      "tech": "Tecnologías",
+      "credly": "Credenciales Digitales"
     },
     "projectsSidebar": {
+      "container": "Containers/Kubernetes",
+      "systems": "Sistemas Linux",
       "cd": "Herramientas CD/IaC",
       "webp": "Proyectos Web",
       "webapps": "Aplicaciones Web",
@@ -73,6 +76,6 @@
       "country": "País"
     }
   },
-  "projects-info-alert": "Aqui se presenta una pequeña muestra orientativa de algunos de los proyectos de desarrollo que he llevado a cabo.",
+  "projects-info-alert": "Aqui se presenta una pequeña muestra orientativa de algunos de los proyectos que he llevado a cabo.",
   "projects": {}
 }

@@ -24,7 +24,9 @@ export default {
     const menus = {
       title: 'Proyectos',
       items: [
+        { title: 'menus.projectsSidebar.container', link: '#container' },
         { title: 'menus.projectsSidebar.cd', link: '#cd' },
+        { title: 'menus.projectsSidebar.systems', link: '#systems' },
         { title: 'menus.projectsSidebar.webp', link: '#web' },
         { title: 'menus.projectsSidebar.webapps', link: '#webapps' },
         { title: 'menus.projectsSidebar.games', link: '#games' }

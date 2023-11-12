@@ -18,9 +18,9 @@
                           {{ $t('index.card.subtitle') }}
                         </p>
                         <p>
-                          <small class="text-muted">
+                          <span class="text-muted">
                             {{ $t('index.card.text') }}
-                          </small>
+                          </span>
                         </p>
                       </div>
                     </div>
@@ -35,8 +35,11 @@
       <br>
       <div class="row">
          <div class="col" id="who">
-            <div class="alert alert-info text-center" role="alert">
-              <h1>{{ $t('who.title') }}</h1>
+            <div class="alert alert-info" role="alert">
+              <h1>
+                <BIconInfoCircle />
+                {{ $t('who.title') }}
+              </h1>
               <br>
               <p>
                 {{ $t('who.text1') }}
@@ -56,8 +59,11 @@
       <br>
       <div class="row">
          <div class="col" id="tech">
-            <div class="alert alert-success text-center" role="alert">
-              <h1>{{ $t('tech.title') }}</h1>
+            <div class="alert alert-primary" role="alert">
+              <h1>
+                <BIconServer />
+                {{ $t('tech.title') }}
+              </h1>
               <br>
               <p><b>{{ $t('tech.text1') }}</b> {{ $t('tech.text5') }}</p>
               <p><b>{{ $t('tech.text2') }}</b> {{ $t('tech.text6') }}</p>
@@ -71,12 +77,27 @@
          <div class="col" id="credly">
             <div class="alert alert-light text-center" role="alert">
 
-              <div class="container">
-                <div class="row">
+              <div class="container-fluid">
+                <div class="row flex-nowrap overflow-auto">
                   <!-- Kubernetes Badge -->
                   <div class="col-sm m1">
                     <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8dcbf360-1bda-4406-a372-9bff3ba56ca2"
                          data-share-badge-host="https://www.credly.com"></div>
+                  </div>
+                  <!-- LPIC Badge -->
+                  <div class="col-sm m1 d-flex justify-content-center">
+                    <div class="card text-center border" style="border-radius: 1px;width: 10em;height: 15em;">
+                      <div class="card-body">
+                        <a target="_blank" href="https://lpi.org/v/LPI000516556/asr4dtr22v">
+                          <img class="mb-4" style="width: 60%;" src="https://www.lpi.org/wp-content/uploads/2023/04/cropped-favicon-192x192.png">
+                        </a>
+                        <p class="card-title nowrap-text">LPIC-1: Linux Administrator</p>
+                        <p class="nowrap-text"><small class="card-text">Issuer: Linux Professional Institute</small></p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Linux Institute</small>
+                      </div>
+                    </div>
                   </div>
                   <!-- Google Automation Badge -->
                   <div class="col-sm m1">
@@ -125,8 +146,14 @@
 
 <script lang="ts">
 import { onMounted } from 'vue'
+import { BIconServer, BIconInfoCircle } from 'bootstrap-icons-vue'
 
 export default {
+  components: {
+    BIconServer,
+    BIconInfoCircle
+  },
+
   setup () {
     onMounted(() => {
       // Load credly badges script on mounted

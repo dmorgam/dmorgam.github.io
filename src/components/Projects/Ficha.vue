@@ -1,9 +1,15 @@
 <template>
       <div class="card mb-4">
         <div class="card-body">
-          <h3><span v-html="data.tags"></span> {{ $t(data.title) }}</h3>
-          <hr>
-          <div class="row">
+          <button type="button" class="btn" v-on:click="toggleData()">
+            <h3>
+              <span v-html="data.tags"></span> {{ $t(data.title) }}
+              <BIconChevronUp v-if="showData" />
+              <BIconChevronDown v-if="!showData" />
+            </h3>
+          </button>
+          <hr v-show="showData">
+          <div class="row" v-show="showData">
             <div class="col-sm-6">
                <video v-if="data.video !== undefined" :style="data.video.style" controls>
                   <source :src="data.video.src" :type="data.video.type">
@@ -29,12 +35,15 @@
 </template>
 
 <script lang="ts">
-import { } from 'vue'
+import { ref } from 'vue'
 import Carousel from '../Carousel.vue'
+import { BIconChevronUp, BIconChevronDown } from 'bootstrap-icons-vue'
 
 export default {
   components: {
-    Carousel
+    Carousel,
+    BIconChevronUp,
+    BIconChevronDown
   },
 
   props: {
@@ -42,8 +51,16 @@ export default {
   },
 
   setup (props: any) {
+    const showData = ref(true)
+
+    const toggleData = () => {
+      showData.value = !showData.value
+    }
+
     return {
-      data: props.item
+      data: props.item,
+      showData,
+      toggleData
     }
   }
 }

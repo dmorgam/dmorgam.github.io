@@ -2,7 +2,7 @@
    <div class="container-fluid home-back left-sidebar-margin">
       <br><br><br><br>
 
-      <div class="alert alert-info">
+      <div class="alert alert-info text-center">
         <h5>
           <BIconInfoCircle />
           {{ $t('projects-info-alert') }}
@@ -10,6 +10,17 @@
       </div>
 
       <br>
+      <h1 class="text-light" id="container">
+        <span class="badge badge-pill ">
+          <BIconCaretRightFill />
+          {{ $t('menus.projectsSidebar.container') }}
+        </span>
+        <hr style="opacity: 0%;">
+      </h1><br><br>
+
+      <Ficha v-for="(item, index) in projectsData.filter(i => i.type === 'container')" :key="index" :item="item" />
+
+      <br><br>
       <h1 class="text-light" id="cd">
         <span class="badge badge-pill ">
           <BIconCaretRightFill />
@@ -19,6 +30,17 @@
       </h1><br><br>
 
       <Ficha v-for="(item, index) in projectsData.filter(i => i.type === 'cd')" :key="index" :item="item" />
+
+      <br><br>
+      <h1 class="text-light" id="systems">
+        <span class="badge badge-pill ">
+          <BIconCaretRightFill />
+          {{ $t('menus.projectsSidebar.systems') }}
+        </span>
+        <hr style="opacity: 0%;">
+      </h1><br><br>
+
+      <Ficha v-for="(item, index) in projectsData.filter(i => i.type === 'systems')" :key="index" :item="item" />
 
       <br><br>
       <h1 class="text-light" id="web">

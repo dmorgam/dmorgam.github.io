@@ -1,4 +1,22 @@
 {
+  "rhel-sgad": {
+    "title": "Administración de Red Hat Enterprise Linux - 2022,2023 - SGAD",
+    "text1": "Configuración de servidores Rhel, configuración del sistema (firewalld, iptables, packages, NetworkManager, Grub, etc..).",
+    "text2": "Configuración de demonios cliente como el de Red Hat Satellite, CheckMK",
+    "text3": "Configuración de servidores y servidores de aplicaciones como Tomcat, WebLogic, PHP fpm, Apache, Nginx."
+  },
+  "docker-sgad": {
+    "title": "Gestion entornos containerizados - 2022,2023 - SGAD",
+    "text1": "Containerización de aplicaciones internas (algunas mantenidas por mí) para habilitar el despliegue en entornos containerizados.",
+    "text2": "Mantenimiento de diferentes Docker Stacks (Swarm,compose), arreglando entornos.",
+    "text3": "Construcción de contenedores auxiliares para ayudar a los despliegues de diferentes proyectos."
+  },
+  "tanzu": {
+    "title": "Administración de clústeres Kubernetes de VMware Tanzu - 2023 - SGAD",
+    "text1": "Administration de VMware Tanzu kubernetes clúster, aprovisionamiento de clústeres, namespaces, policies etc...",
+    "text2": "Despliegue de applicaciones en los clústeres, usando yamls en crudo y herramientas de templating como HELM.",
+    "text3": "Configuración de Operadores y plugins dentro de los clústeres."
+  },
   "ansible": {
     "title": "Desarrollo Playbooks en Ansible - 2022,2023 - SGAD",
     "text1": "Desarrollo/Mejora de playbooks de Ansible para la configuración automatizada de servidores RedHat Enterprise Linux.",

@@ -27,7 +27,8 @@ export default {
       items: [
         { title: 'menus.indexSidebar.start', link: '#' },
         { title: 'menus.indexSidebar.who', link: '#who' },
-        { title: 'menus.indexSidebar.tech', link: '#tech' }
+        { title: 'menus.indexSidebar.tech', link: '#tech' },
+        { title: 'menus.indexSidebar.credly', link: '#credly' }
       ]
     }
 

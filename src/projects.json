@@ -1,5 +1,35 @@
 [
   {
+    "type": "container",
+    "name": "Tanzu",
+    "tags": "<span class='badge badge-primary'>Kubernetes</span>",
+    "title": "projects.tanzu.title",
+    "slides": [
+      { "id": 0, "src": "img/tanzu.jpg" }
+    ],
+    "texts": [
+      { "text": "projects.tanzu.text1" },
+      { "text": "projects.tanzu.text2" },
+      { "text": "projects.tanzu.text3" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "container",
+    "name": "DockerSgad",
+    "tags": "<span class='badge badge-primary'>Docker</span> + <span class='badge badge-danger'>Podman</span>",
+    "title": "projects.docker-sgad.title",
+    "slides": [
+      { "id": 0, "src": "img/docker.jpg" }
+    ],
+    "texts": [
+      { "text": "projects.docker-sgad.text1" },
+      { "text": "projects.docker-sgad.text2" },
+      { "text": "projects.docker-sgad.text3" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
     "type": "cd",
     "name": "Ansible",
     "tags": "<span class='badge badge-danger'>Ansible</span> + <span class='badge badge-success'>Python</span>",
@@ -38,6 +68,21 @@
     "texts": [
       { "text": "projects.terraform.text1" },
       { "text": "projects.terraform.text2" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "systems",
+    "name": "RhelSgad",
+    "tags": "<span class='badge badge-danger'>RHEL</span>",
+    "title": "projects.rhel-sgad.title",
+    "slides": [
+      { "id": 0, "src": "img/rhel.jpg" }
+    ],
+    "texts": [
+      { "text": "projects.rhel-sgad.text1" },
+      { "text": "projects.rhel-sgad.text2" },
+      { "text": "projects.rhel-sgad.text3" }
     ],
     "link": { "text": "", "link": "" }
   },

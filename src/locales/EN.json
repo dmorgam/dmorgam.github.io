@@ -36,9 +36,12 @@
     "indexSidebar": {
       "start": "Start",
       "who": "What I do?",
-      "tech": "Technologies"
+      "tech": "Technologies",
+      "credly": "Digital Credentials"
     },
     "projectsSidebar": {
+      "container": "Containers/Kubernetes",
+      "systems": "Linux Systems",
       "cd": "Tools for CD/IaC",
       "webp": "Web Projects",
       "webapps": "Web Applications",
@@ -73,6 +76,6 @@
       "country": "Country"
     }
   },
-  "projects-info-alert": "Here is a small indicative sample of some of the development projects that I have carried out.",
+  "projects-info-alert": "Here is a small indicative sample of some of the projects that I have carried out.",
   "projects": {}
 }
