@@ -3,15 +3,16 @@
     "card": {
       "title": "David Moreno Gámez",
       "subtitle": "SRE/Linux System Administrator",
-      "text": "Certified Linux SysAdmin, Certified Kubernetes Administrator, Automation, IaC, Cloud enthusiast"
+      "text": "Certified Linux SysAdmin, Certified Kubernetes Administrator, Automation, Infrastructure as code, Cloud enthusiast."
     }
   },
   "who": {
     "title": "What I do?",
-    "text1": "Certified Linux Administrator (LPIC-1) and Kubernetes Administrator (CKA) with a strong foundation in automation and Infrastructure as Code (Ansible, Shell, Python, and Terraform).",
-    "text2": "Proficient in containerization technologies, including Kubernetes, VMware Tanzu, and Docker/Podman/Containerd.",
-    "text3": "Currently focusing on expanding skills in Site Reliability Engineering (SRE) and DevOps within public cloud environments. Committed to collaborative problem-solving and driving excellence in the IT field.",
-    "text4": "I also have experience as Web Developer."
+    "text1": "Linux (LPIC-1) and Kubernetes (CKA) certified, I also have a solid foundation in automation and infrastructure as code, using tools such as (Ansible, Shell, Python and Terraform).",
+    "text2": "Expert in containerization technologies, configuring and maintaining Kubernetes environments, cluster management with VMware Tanzu/Tanzu Mission Control. Management of containerized environments with Docker/Podman/Containerd.",
+    "text3": "Experienced in the administration of Linux environments, specifically RHEL and Ubuntu. Configuring various services such as httpd, networkmanager, firewalld, iptables and applications such as Tomcat, Weblogic, php-fpm, etc...",
+    "text4": "Currently focused on expanding (SRE) and DevOps skills within public cloud environments. I consider myself a professional committed to collaborative problem solving and driving excellence in the IT field.",
+    "text5": "I also have experience as a Web Developer, which makes it easier for me to create and modify code."
   },
   "tech": {
     "title": "Technologies",

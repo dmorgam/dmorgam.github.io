@@ -1,9 +1,14 @@
 <template>
 
-   <div class="d-flex" id="wrapper">
-      <SidePanel :title="menus.title" :sections="menus.items"/>
+   <div>
+     <div class="d-flex" id="wrapper">
+        <SidePanel :title="menus.title" :sections="menus.items"/>
 
-      <Home />
+        <Home />
+     </div>
+     <div class="bg-dark left-sidebar-margin d-flex">
+      <Footer />
+     </div>
    </div>
 
 </template>
@@ -13,12 +18,14 @@
 
 import Home from './components/Home/Home.vue'
 import SidePanel from './components/SidePanel.vue'
+import Footer from './components/Footer/Footer.vue'
 
 export default {
 
   components: {
     SidePanel,
-    Home
+    Home,
+    Footer
   },
 
   setup () {

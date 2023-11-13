@@ -11,8 +11,6 @@
             <router-link v-for="item in menus.filter(i => i.submenu.length === 0)" :key="item.name"
                 class="nav-link" :to="item.src" :class="{'active': $route.name == item.route }">
 
-                <!-- Icono del Home -->
-                <BIconHouseFill v-if="item.name == 'Home'" />
                  {{ $t(item.name) }}
              </router-link>
              <li class="nav-item dropdown" v-for="(item, idx) in menus.filter(i => i.submenu.length > 0)" :key="idx">
@@ -43,7 +41,6 @@
 <script lang="ts">
 // import {  } from 'vue'
 import weatherApplet from './Applets/WeatherComponent.vue'
-import { BIconHouseFill } from 'bootstrap-icons-vue'
 
 interface MenuItem {
   route: string,
@@ -54,8 +51,7 @@ interface MenuItem {
 
 export default {
   components: {
-    weatherApplet,
-    BIconHouseFill
+    weatherApplet
   },
   setup () {
     const menus: MenuItem[] = [

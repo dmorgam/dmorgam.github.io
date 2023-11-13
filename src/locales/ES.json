@@ -3,15 +3,16 @@
     "card": {
       "title": "David Moreno Gámez",
       "subtitle": "SRE/Administrador de Sistemas Linux",
-      "text": "Certified Linux SysAdmin, Certified Kubernetes Administrator, Automation, IaC, Cloud enthusiast"
+      "text": "Linux SysAdmin Certificado, Administrador de Kubernetes Certificado, Automatización, Infraestructura como código, Entusiasta del Cloud."
     }
   },
   "who": {
     "title": "¿A qué me dedico?",
-    "text1": "Administrador certificado de Linux (LPIC-1) y administrador de Kubernetes (CKA) con una sólida base en automatización e infraestructura como código (Ansible, Shell, Python y Terraform).",
-    "text2": "Experto en tecnologías de containerización, Kubernetes, VMware Tanzu y Docker/Podman/Containerd.",
-    "text3": "Actualmente centrado en ampliar las habilidades de (SRE) y DevOps dentro de entornos de nube pública. Comprometido con la resolución colaborativa de problemas y el impulso de la excelencia en el campo de TI.",
-    "text4": "También tengo experiencia como Desarrollador Web."
+    "text1": "Certificado de Linux (LPIC-1) y Kubernetes (CKA), además tengo una sólida base en automatización e infraestructura como código, usando herramientas como (Ansible, Shell, Python y Terraform).",
+    "text2": "Experto en tecnologías de containerización, configurando y manteniendo entornos de Kubernetes, gestión de clústeres con VMware Tanzu/Tanzu Mission Control. Gestión de entornos containerizados con Docker/Podman/Containerd.",
+    "text3": "Experimentado en la administración de entornos Linux, en concreto RHEL y Ubuntu. Configurando diversos servicios como httpd, networkmanager, firewalld, iptables y aplicaciones como Tomcat, Weblogic, php-fpm, etc...",
+    "text4": "Actualmente centrado en ampliar las habilidades de (SRE) y DevOps dentro de entornos de nube pública. Me considero un profesional comprometido con la resolución colaborativa de problemas y el impulso de la excelencia en el campo de TI.",
+    "text5": "También tengo experiencia como Desarrollador Web, la cual me da mas facilidad a la hora de crear y modificar código."
   },
   "tech": {
     "title": "Tecnologías",

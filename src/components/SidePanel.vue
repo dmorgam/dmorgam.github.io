@@ -6,7 +6,7 @@
       <br>
       <div class="list-group list-group-flush">
         <a v-for="i in sections" :key="i.title" :href="i.link" class="list-group-item list-group-item-action bg-light" @click="toggleBar()">
-          {{ $t(i.title) }}
+          <BIconPlayFill /> {{ $t(i.title) }}
         </a>
       </div>
       <button type="button" class="btn btn-info menu-toggle" @click="toggleBar()" >
@@ -24,10 +24,12 @@
 <script lang="ts">
 import currencyApplet from './Applets/CurrencyComponent.vue'
 import { ref, onMounted } from 'vue'
+import { BIconPlayFill } from 'bootstrap-icons-vue'
 
 export default {
   components: {
-    currencyApplet
+    currencyApplet,
+    BIconPlayFill
   },
   props: {
     title: String,

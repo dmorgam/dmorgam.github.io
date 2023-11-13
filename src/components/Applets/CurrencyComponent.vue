@@ -1,7 +1,8 @@
 <template>
-   <div class="alert alert-secondary w-100" style="position:absolute; bottom: 0px">
+   <div class="alert w-100" style="position:absolute; bottom: 0px">
+     <hr>
      <b><BIconCash /> {{ $t('currencyApplet.title') }}</b><hr style="opacity: 0%;">
-     <div class="row">
+     <div class="row alert alert-secondary">
        <div class="col-sm-8">
          <b>€ EUR </b> {{ currency.selected }}
        </div>

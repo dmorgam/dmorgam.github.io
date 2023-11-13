@@ -17,6 +17,7 @@
                         <p class="card-text">
                           {{ $t('index.card.subtitle') }}
                         </p>
+                        <hr>
                         <p>
                           <span class="text-muted">
                             {{ $t('index.card.text') }}
@@ -33,51 +34,70 @@
 
          </div>
       <br>
-      <div class="row">
+      <div class="row mt-5">
          <div class="col" id="who">
             <div class="alert alert-info" role="alert">
-              <h1>
+              <h1 class="ml-5">
                 <BIconInfoCircle />
                 {{ $t('who.title') }}
               </h1>
-              <br>
-              <p>
-                {{ $t('who.text1') }}
-              </p>
-              <p>
-                {{ $t('who.text2') }}
-              </p>
-              <p>
-                {{ $t('who.text3')}}
-              </p>
-              <p>
-                {{ $t('who.text4')}}
-              </p>
+              <div class="alert bg-white text-dark">
+                <br>
+                <div class="row">
+                  <div class="col">
+                    <p>
+                      {{ $t('who.text1') }}
+                    </p>
+                    <p>
+                      {{ $t('who.text2') }}
+                    </p>
+                    <p>
+                      {{ $t('who.text3')}}
+                    </p>
+                  </div>
+                  <div class="col">
+                    <p>
+                      {{ $t('who.text4')}}
+                    </p>
+                    <p>
+                      {{ $t('who.text5')}}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
          </div>
       </div>
       <br>
-      <div class="row">
+      <div class="row mt-5">
          <div class="col" id="tech">
-            <div class="alert alert-primary" role="alert">
-              <h1>
+            <div class="alert alert-primary text-dark" role="alert">
+              <h1 class="ml-5">
                 <BIconServer />
                 {{ $t('tech.title') }}
               </h1>
-              <br>
-              <p><b>{{ $t('tech.text1') }}</b> {{ $t('tech.text5') }}</p>
-              <p><b>{{ $t('tech.text2') }}</b> {{ $t('tech.text6') }}</p>
-              <p><b>{{ $t('tech.text3') }}</b> {{ $t('tech.text7') }}</p>
-              <p><b>{{ $t('tech.text4') }}</b> {{ $t('tech.text8') }}</p>
+              <div class="alert bg-white">
+                <br>
+                <div class="row">
+                  <div class="col">
+                    <p><b>{{ $t('tech.text1') }}</b> {{ $t('tech.text5') }}</p>
+                    <p><b>{{ $t('tech.text2') }}</b> {{ $t('tech.text6') }}</p>
+                  </div>
+                  <div class="col">
+                    <p><b>{{ $t('tech.text3') }}</b> {{ $t('tech.text7') }}</p>
+                    <p><b>{{ $t('tech.text4') }}</b> {{ $t('tech.text8') }}</p>
+                  </div>
+                </div>
+              </div>
             </div>
          </div>
       </div>
       <br>
-      <div class="row">
+      <div class="row mt-5">
          <div class="col" id="credly">
-            <div class="alert alert-light text-center" role="alert">
+            <div class="text-center" role="alert">
 
-              <div class="container-fluid">
+              <div class="container alert alert-light p-4">
                 <div class="row flex-nowrap overflow-auto">
                   <!-- Kubernetes Badge -->
                   <div class="col-sm m1">
@@ -140,7 +160,8 @@
             </div>
          </div>
       </div>
-
+    <br>
+    <br>
    </div>
 </template>
 

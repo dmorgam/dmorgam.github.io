@@ -1,11 +1,12 @@
 <template>
+  <div>
    <div class="d-flex home-back min-vh-100" id="wrapper">
      <div class="container">
         <br><br><br><br>
         <h1 class="mb-5">
           <span class="badge badge-pill badge-secondary">{{ $t('qrcode.title') }}</span>
         </h1>
-        <div class="row">
+        <div class="row alert alert-secondary p-4">
           <div class="col-sm-6">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -40,16 +41,22 @@
         </div>
      </div>
    </div>
+   <div class="bg-dark d-flex">
+    <Footer />
+   </div>
+  </div>
 </template>
 
 <script lang="ts">
 import { ref } from 'vue'
 import FillDataForm from './components/QR/DataForm.vue'
+import Footer from './components/Footer/Footer.vue'
 import QRCode from 'qrcode'
 
 export default {
   components: {
-    FillDataForm
+    FillDataForm,
+    Footer
   },
 
   setup () {

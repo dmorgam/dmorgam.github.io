@@ -1,9 +1,14 @@
 <template>
 
-   <div class="d-flex" id="wrapper">
-     <SidePanel :title="menus.title" :sections="menus.items"/>
-    <Proyectos />
+   <div>
+     <div class="d-flex" id="wrapper">
+       <SidePanel :title="menus.title" :sections="menus.items"/>
+      <Proyectos />
 
+     </div>
+     <div class="bg-dark left-sidebar-margin d-flex">
+      <Footer />
+     </div>
    </div>
 
 </template>
@@ -13,11 +18,13 @@
 
 import Proyectos from './components/Projects/Proyectos.vue'
 import SidePanel from './components/SidePanel.vue'
+import Footer from './components/Footer/Footer.vue'
 
 export default {
   components: {
     SidePanel,
-    Proyectos
+    Proyectos,
+    Footer
   },
 
   setup () {
