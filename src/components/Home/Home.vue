@@ -44,7 +44,7 @@
               <div class="alert bg-white text-dark">
                 <br>
                 <div class="row">
-                  <div class="col">
+                  <div class="col-md-6">
                     <p>
                       {{ $t('who.text1') }}
                     </p>
@@ -55,7 +55,7 @@
                       {{ $t('who.text3')}}
                     </p>
                   </div>
-                  <div class="col">
+                  <div class="col-md-6">
                     <p>
                       {{ $t('who.text4')}}
                     </p>
@@ -79,11 +79,11 @@
               <div class="alert bg-white">
                 <br>
                 <div class="row">
-                  <div class="col">
+                  <div class="col-md-6">
                     <p><b>{{ $t('tech.text1') }}</b> {{ $t('tech.text5') }}</p>
                     <p><b>{{ $t('tech.text2') }}</b> {{ $t('tech.text6') }}</p>
                   </div>
-                  <div class="col">
+                  <div class="col-md-6">
                     <p><b>{{ $t('tech.text3') }}</b> {{ $t('tech.text7') }}</p>
                     <p><b>{{ $t('tech.text4') }}</b> {{ $t('tech.text8') }}</p>
                   </div>
