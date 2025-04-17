@@ -3,11 +3,11 @@
    <div>
      <div class="d-flex" id="wrapper">
        <SidePanel :title="menus.title" :sections="menus.items"/>
-      <Proyectos />
+      <AppProyectos />
 
      </div>
      <div class="bg-dark left-sidebar-margin d-flex">
-      <Footer />
+      <AppFooter />
      </div>
    </div>
 
@@ -16,15 +16,15 @@
 <script lang="ts">
 // import {  } from 'vue'
 
-import Proyectos from './components/Projects/Proyectos.vue'
+import AppProyectos from './components/Projects/AppProyectos.vue'
 import SidePanel from './components/SidePanel.vue'
-import Footer from './components/Footer/Footer.vue'
+import AppFooter from './components/Footer/AppFooter.vue'
 
 export default {
   components: {
     SidePanel,
-    Proyectos,
-    Footer
+    AppProyectos,
+    AppFooter
   },
 
   setup () {

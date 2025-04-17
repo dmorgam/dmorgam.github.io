@@ -2,7 +2,7 @@
   <div class="w-100 mb-4">
     <div v-if="tipo === 'url'" class="w-100">
       <div class="input-group mb-3">
-        <div class="input-group-prepend">
+        <div class="input-group-text">
           <label class="input-group-text">{{ $t('qrcode.formatMenu.url') }}</label>
         </div>
         <input type="text" class="form-control" v-model="urlFormatted">
@@ -16,13 +16,13 @@
     <div v-if="tipo === 'vcard'" class="w-100">
       <div class="row">
         <div class="input-group mb-3 col-sm-6">
-          <div class="input-group-prepend">
+          <div class="input-group-text">
             <label class="input-group-text">{{ $t('qrcode.vcard.name') }}</label>
           </div>
           <input type="text" v-model="vCardData.name" class="form-control">
         </div>
         <div class="input-group mb-3 col-sm-6">
-          <div class="input-group-prepend">
+          <div class="input-group-text">
             <label class="input-group-text">{{ $t('qrcode.vcard.surn') }}</label>
           </div>
           <input type="text" v-model="vCardData.last" class="form-control">
@@ -30,13 +30,13 @@
       </div>
       <div class="row">
         <div class="input-group mb-3 col-sm-6">
-          <div class="input-group-prepend">
+          <div class="input-group-text">
             <label class="input-group-text">{{ $t('qrcode.vcard.tlf') }}</label>
           </div>
           <input type="text" v-model="vCardData.tlf" class="form-control">
         </div>
         <div class="input-group mb-3 col-sm-6">
-          <div class="input-group-prepend">
+          <div class="input-group-text">
             <label class="input-group-text">{{ $t('qrcode.vcard.cell') }}</label>
           </div>
           <input type="text" v-model="vCardData.cell" class="form-control">
@@ -44,7 +44,7 @@
       </div>
       <div class="row">
         <div class="input-group mb-3 col-sm-12">
-          <div class="input-group-prepend">
+          <div class="input-group-text">
             <label class="input-group-text">{{ $t('qrcode.vcard.email') }}</label>
           </div>
           <input type="text" v-model="vCardData.email" class="form-control">
@@ -52,7 +52,7 @@
       </div>
       <div class="row">
         <div class="input-group mb-3 col-sm-12">
-          <div class="input-group-prepend">
+          <div class="input-group-text">
             <label class="input-group-text">{{ $t('qrcode.vcard.web') }}</label>
           </div>
           <input type="text" v-model="vCardData.web" class="form-control">
@@ -60,13 +60,13 @@
       </div>
       <div class="row">
         <div class="input-group mb-3 col-sm-6">
-          <div class="input-group-prepend">
+          <div class="input-group-text">
             <label class="input-group-text">{{ $t('qrcode.vcard.org') }}</label>
           </div>
           <input type="text" v-model="vCardData.org" class="form-control">
         </div>
         <div class="input-group mb-3 col-sm-6">
-          <div class="input-group-prepend">
+          <div class="input-group-text">
             <label class="input-group-text">{{ $t('qrcode.vcard.title') }}</label>
           </div>
           <input type="text" v-model="vCardData.title" class="form-control">
@@ -74,7 +74,7 @@
       </div>
       <div class="row">
         <div class="input-group mb-3 col-sm-12">
-          <div class="input-group-prepend">
+          <div class="input-group-text">
             <label class="input-group-text">{{ $t('qrcode.vcard.st') }}</label>
           </div>
           <input type="text" v-model="vCardData.street" class="form-control">
@@ -82,13 +82,13 @@
       </div>
       <div class="row">
         <div class="input-group mb-3 col-sm-6">
-          <div class="input-group-prepend">
+          <div class="input-group-text">
             <label class="input-group-text">{{ $t('qrcode.vcard.city') }}</label>
           </div>
           <input type="text" v-model="vCardData.city" class="form-control">
         </div>
         <div class="input-group mb-3 col-sm-6">
-          <div class="input-group-prepend">
+          <div class="input-group-text">
             <label class="input-group-text">{{ $t('qrcode.vcard.country') }}</label>
           </div>
           <input type="text" v-model="vCardData.country" class="form-control">

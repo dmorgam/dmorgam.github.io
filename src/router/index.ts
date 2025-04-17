@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router'
-import Index from '../Index.vue'
-import Projects from '../Projects.vue'
+import Index from '../AppIndex.vue'
+import AppProjects from '../AppProjects.vue'
 import QrCode from '../QrCode.vue'
 
 const routes = [
@@ -11,8 +11,8 @@ const routes = [
   },
   {
     path: '/projects',
-    name: 'Projects',
-    component: Projects
+    name: 'AppProjects',
+    component: AppProjects
   },
   {
     path: '/qrcode',

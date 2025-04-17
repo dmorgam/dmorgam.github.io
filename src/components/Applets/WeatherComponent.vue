@@ -5,7 +5,7 @@
      </button>
      <div v-else class="input-group">
          <input type="text" class="form-control" v-model="weatherInfo.city">
-         <div class="input-group-append">
+         <div class="input-group-text">
            <button class="btn btn-sm btn-success" v-on:click="refreshWeather()">
              <BIconCheck />
            </button>

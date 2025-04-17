@@ -2,7 +2,7 @@
   {
     "type": "container",
     "name": "Tanzu",
-    "tags": "<span class='badge badge-primary'>Kubernetes</span>",
+    "tags": "<span class='badge bg-primary'>Kubernetes</span>",
     "title": "projects.tanzu.title",
     "slides": [
       { "id": 0, "src": "img/tanzu.jpg" }
@@ -17,7 +17,7 @@
   {
     "type": "container",
     "name": "DockerSgad",
-    "tags": "<span class='badge badge-primary'>Docker</span> + <span class='badge badge-danger'>Podman</span>",
+    "tags": "<span class='badge bg-primary'>Docker</span> + <span class='badge bg-danger'>Podman</span>",
     "title": "projects.docker-sgad.title",
     "slides": [
       { "id": 0, "src": "img/docker.jpg" }
@@ -32,7 +32,7 @@
   {
     "type": "cd",
     "name": "Ansible",
-    "tags": "<span class='badge badge-danger'>Ansible</span> + <span class='badge badge-success'>Python</span>",
+    "tags": "<span class='badge bg-danger'>Ansible</span> + <span class='badge bg-success'>Python</span>",
     "title": "projects.ansible.title",
     "slides": [
       { "id": 0, "src": "img/ansible.png" }
@@ -46,7 +46,7 @@
   {
     "type": "cd",
     "name": "CDtools",
-    "tags": "<span class='badge badge-info'>Flask</span> + <span class='badge badge-success'>Python</span>",
+    "tags": "<span class='badge bg-info'>Flask</span> + <span class='badge bg-success'>Python</span>",
     "title": "projects.cdtools.title",
     "slides": [
       { "id": 0, "src": "img/flask.png" }
@@ -60,7 +60,7 @@
   {
     "type": "cd",
     "name": "Terraform",
-    "tags": "<span class='badge badge-primary'>Terraform</span>",
+    "tags": "<span class='badge bg-primary'>Terraform</span>",
     "title": "projects.terraform.title",
     "slides": [
       { "id": 0, "src": "img/terraform.png" }
@@ -74,7 +74,7 @@
   {
     "type": "systems",
     "name": "RhelSgad",
-    "tags": "<span class='badge badge-danger'>RHEL</span>",
+    "tags": "<span class='badge bg-danger'>RHEL</span>",
     "title": "projects.rhel-sgad.title",
     "slides": [
       { "id": 0, "src": "img/rhel.jpg" }
@@ -89,7 +89,7 @@
   {
     "type": "web",
     "name": "Caceres",
-    "tags": "<span class='badge badge-danger'>Laravel</span> + <span class='badge badge-success'>Vue.js</span>",
+    "tags": "<span class='badge bg-danger'>Laravel</span> + <span class='badge bg-success'>Vue.js</span>",
     "title": "projects.caceres.title",
     "slides": [
       { "id": 0, "src": "img/caceres/inventario.gif" },
@@ -106,7 +106,7 @@
   {
     "type": "web",
     "name": "OldCaceres",
-    "tags": "<span class='badge badge-info'>PHP</span> + <span class='badge badge-warning'>Vanilla js</span>",
+    "tags": "<span class='badge bg-info'>PHP</span> + <span class='badge bg-warning'>Vanilla js</span>",
     "title": "projects.caceresLegacy.title",
     "slides": [
       { "id": 0, "src": "img/caceres/hojasruta.png" },
@@ -129,7 +129,7 @@
   {
     "type": "webapp",
     "name": "Mayorista",
-    "tags": "<span class='badge badge-danger'>Laravel</span> + <span class='badge badge-success'>Vue.js</span>",
+    "tags": "<span class='badge bg-danger'>Laravel</span> + <span class='bg bg-success'>Vue.js</span>",
     "title": "projects.mayorista.title",
     "slides": [],
     "video": { "src": "img/caceres/appMayorista.mp4", "type": "video/mp4", "style": "height: 30em" },
@@ -144,7 +144,7 @@
   {
     "type": "webapp",
     "name": "Colacion",
-    "tags": "<span class='badge badge-info'>PHP</span> + <span class='badge badge-warning'>Vanilla JS</span>",
+    "tags": "<span class='badge bg-info'>PHP</span> + <span class='badge bg-warning'>Vanilla JS</span>",
     "title": "projects.colacion.title",
     "slides": [
       { "id": 0, "src": "img/caceres/colacion.png" },
@@ -163,7 +163,7 @@
   {
     "type": "webapp",
     "name": "Afiche",
-    "tags": "<span class='badge badge-info'>PHP</span> + <span class='badge badge-warning'>Vanilla JS</span>",
+    "tags": "<span class='badge bg-info'>PHP</span> + <span class='badge bg-warning'>Vanilla JS</span>",
     "title": "projects.afiche.title",
     "slides": [
       { "id": 0, "src": "img/caceres/afiche.gif" },
@@ -179,7 +179,7 @@
   {
     "type": "webapp",
     "name": "Personal",
-    "tags": "<span class='badge badge-success'>Vue.js 3</span> + <span class='badge badge-info'>Typescript</span>",
+    "tags": "<span class='badge bg-success'>Vue.js 3</span> + <span class='badge bg-info'>Typescript</span>",
     "title": "projects.personal.title",
     "slides": [
       { "id": 0, "src": "img/webpersonal/dmorgam.png" },
@@ -194,7 +194,7 @@
   {
     "type": "game",
     "name": "Snake",
-    "tags": "<span class='badge badge-danger'>Vanilla JS</span>",
+    "tags": "<span class='badge bg-danger'>Vanilla JS</span>",
     "title": "projects.snake.title",
     "slides": [
       { "id": 0, "src": "img/snakejs.png" }

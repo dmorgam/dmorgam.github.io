@@ -14,7 +14,7 @@
                <video v-if="data.video !== undefined" :style="data.video.style" controls>
                   <source :src="data.video.src" :type="data.video.type">
                </video>
-               <Carousel v-else :name="data.name + 'Slides'" :slides="data.slides"/>
+               <AppCarousel v-else :name="data.name + 'Slides'" :slides="data.slides"/>
             </div>
             <div class="col-sm-6">
               <p v-for="(item, index) in data.texts" :key="index">{{ $t(item.text) }}</p>
@@ -36,12 +36,12 @@
 
 <script lang="ts">
 import { ref } from 'vue'
-import Carousel from '../Carousel.vue'
+import AppCarousel from '../AppCarousel.vue'
 import { BIconChevronUp, BIconChevronDown } from 'bootstrap-icons-vue'
 
 export default {
   components: {
-    Carousel,
+    AppCarousel,
     BIconChevronUp,
     BIconChevronDown
   },

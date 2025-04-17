@@ -37,7 +37,7 @@
       <div class="row mt-5">
          <div class="col" id="who">
             <div class="alert alert-info" role="alert">
-              <h1 class="ml-5">
+              <h1 class="ms-5">
                 <BIconInfoCircle />
                 {{ $t('who.title') }}
               </h1>
@@ -72,7 +72,7 @@
       <div class="row mt-5">
          <div class="col" id="tech">
             <div class="alert alert-primary text-dark" role="alert">
-              <h1 class="ml-5">
+              <h1 class="ms-5">
                 <BIconServer />
                 {{ $t('tech.title') }}
               </h1>

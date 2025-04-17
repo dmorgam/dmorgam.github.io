@@ -2,7 +2,7 @@
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="javascript: void(0)">Dmorgam</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      <button class="navbar-toggler me-2 ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
               aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
       </button>
@@ -14,7 +14,7 @@
                  {{ $t(item.name) }}
              </router-link>
              <li class="nav-item dropdown" v-for="(item, idx) in menus.filter(i => i.submenu.length > 0)" :key="idx">
-               <a class="nav-link dropdown-toggle" href="javascript:void(0)" :id="item.name" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <a class="nav-link dropdown-toggle" href="javascript:void(0)" :id="item.name" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  {{ $t(item.name) }}
                </a>
                <div class="dropdown-menu" v-for="(itm, index) in item.submenu" :key="index">
@@ -22,12 +22,12 @@
                 </div>
              </li>
           </div>
-        <div class="navbar-nav ml-auto">
+        <div class="navbar-nav ms-auto">
             <div class="nav-item">
               <weatherApplet />
             </div>
             <div class="nav-item d-flex align-items-center">
-              <select class="form-control form-control-sm ml-2" v-model="$root.$i18n.locale">
+              <select class="form-control form-control-sm ms-2 me-2" v-model="$root.$i18n.locale">
                 <option value="en">🇬🇧 English</option>
                 <option value="es">🇪🇸 Español</option>
               </select>

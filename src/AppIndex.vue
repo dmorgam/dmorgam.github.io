@@ -4,10 +4,10 @@
      <div class="d-flex" id="wrapper">
         <SidePanel :title="menus.title" :sections="menus.items"/>
 
-        <Home />
+        <AppHome />
      </div>
      <div class="bg-dark left-sidebar-margin d-flex">
-      <Footer />
+      <AppFooter />
      </div>
    </div>
 
@@ -16,16 +16,16 @@
 <script lang="ts">
 // import {  } from 'vue'
 
-import Home from './components/Home/Home.vue'
+import AppHome from './components/Home/AppHome.vue'
 import SidePanel from './components/SidePanel.vue'
-import Footer from './components/Footer/Footer.vue'
+import AppFooter from './components/Footer/AppFooter.vue'
 
 export default {
 
   components: {
     SidePanel,
-    Home,
-    Footer
+    AppHome,
+    AppFooter
   },
 
   setup () {

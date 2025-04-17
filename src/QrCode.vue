@@ -4,12 +4,12 @@
      <div class="container">
         <br><br><br><br>
         <h1 class="mb-5">
-          <span class="badge badge-pill badge-secondary">{{ $t('qrcode.title') }}</span>
+          <span class="badge bg-pill bg-secondary">{{ $t('qrcode.title') }}</span>
         </h1>
         <div class="row alert alert-secondary p-4">
           <div class="col-sm-6">
             <div class="input-group mb-3">
-              <div class="input-group-prepend">
+              <div class="input-group-text">
                 <label class="input-group-text">{{ $t('qrcode.format') }}</label>
               </div>
               <select v-model="tipo" class="custom-select">
@@ -42,7 +42,7 @@
      </div>
    </div>
    <div class="bg-dark d-flex">
-    <Footer />
+    <AppFooter />
    </div>
   </div>
 </template>
@@ -50,13 +50,13 @@
 <script lang="ts">
 import { ref } from 'vue'
 import FillDataForm from './components/QR/DataForm.vue'
-import Footer from './components/Footer/Footer.vue'
+import AppFooter from './components/Footer/AppFooter.vue'
 import QRCode from 'qrcode'
 
 export default {
   components: {
     FillDataForm,
-    Footer
+    AppFooter
   },
 
   setup () {
