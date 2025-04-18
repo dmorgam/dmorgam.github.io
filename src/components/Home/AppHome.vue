@@ -80,12 +80,52 @@
                 <br>
                 <div class="row">
                   <div class="col-md-6">
-                    <p><b>{{ $t('tech.text1') }}</b> {{ $t('tech.text5') }}</p>
-                    <p><b>{{ $t('tech.text2') }}</b> {{ $t('tech.text6') }}</p>
+                      <p><b>{{ $t('tech.text1') }}</b></p>
+                      <div class="row mb-2" v-for="item in $tm('tech.text5')" :key="item.name">
+                          <div class="progress col-3 p-0">
+                              <div class="progress-bar bg-success" role="progressbar" :style="{ width: item.skill + '%' }"
+                                   :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100">
+                              </div>
+                          </div>
+                          <div class="col-9">
+                              {{ item.name }}
+                          </div>
+                      </div>
+                      <p><b>{{ $t('tech.text2') }}</b></p>
+                      <div class="row mb-2" v-for="item in $tm('tech.text6')" :key="item.name">
+                          <div class="progress col-3 p-0">
+                              <div class="progress-bar bg-info" role="progressbar" :style="{ width: item.skill + '%' }"
+                                   :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100">
+                              </div>
+                          </div>
+                          <div class="col-9">
+                              {{ item.name }}
+                          </div>
+                      </div>
                   </div>
                   <div class="col-md-6">
-                    <p><b>{{ $t('tech.text3') }}</b> {{ $t('tech.text7') }}</p>
-                    <p><b>{{ $t('tech.text4') }}</b> {{ $t('tech.text8') }}</p>
+                      <p><b>{{ $t('tech.text3') }}</b></p>
+                      <div class="row mb-2" v-for="item in $tm('tech.text7')" :key="item.name">
+                          <div class="progress col-3 p-0">
+                              <div class="progress-bar bg-warning" role="progressbar" :style="{ width: item.skill + '%' }"
+                                   :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100">
+                              </div>
+                          </div>
+                          <div class="col-9">
+                              {{ item.name }}
+                          </div>
+                      </div>
+                      <p><b>{{ $t('tech.text4') }}</b></p>
+                      <div class="row mb-2" v-for="item in $tm('tech.text8')" :key="item.name">
+                          <div class="progress col-3 p-0">
+                              <div class="progress-bar" role="progressbar" :style="{ width: item.skill + '%' }"
+                                   :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100">
+                              </div>
+                          </div>
+                          <div class="col-9">
+                              {{ item.name }}
+                          </div>
+                      </div>
                   </div>
                 </div>
               </div>

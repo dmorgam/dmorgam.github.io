@@ -1,82 +1,116 @@
 {
-  "index": {
-    "card": {
-      "title": "David Moreno Gámez",
-      "subtitle": "SRE/Linux System Administrator",
-      "text": "Certified Linux SysAdmin, Certified Kubernetes Administrator, Automation, Infrastructure as code, Cloud enthusiast."
-    }
-  },
-  "who": {
-    "title": "What I do?",
-    "text1": "Linux (LPIC-1) and Kubernetes (CKA) certified, I also have a solid foundation in automation and infrastructure as code, using tools such as (Ansible, Shell, Python and Terraform).",
-    "text2": "Expert in containerization technologies, configuring and maintaining Kubernetes environments, cluster management with VMware Tanzu/Tanzu Mission Control. Management of containerized environments with Docker/Podman/Containerd.",
-    "text3": "Experienced in the administration of Linux environments, specifically RHEL and Ubuntu. Configuring various services such as httpd, networkmanager, firewalld, iptables and applications such as Tomcat, Weblogic, php-fpm, etc...",
-    "text4": "Currently focused on expanding (SRE) and DevOps skills within public cloud environments. I consider myself a professional committed to collaborative problem solving and driving excellence in the IT field.",
-    "text5": "I also have experience as a Web Developer, which makes it easier for me to create and modify code."
-  },
-  "tech": {
-    "title": "Technologies",
-    "text1": "Systems/IaC/Configuration:",
-    "text2": "Containers:",
-    "text3": "Programming Languages:",
-    "text4": "Tools:",
-    "text5": "Linux, Rhel, Ansible, Ansible Automation Platform, Terraform, Tomcat, Apache, Nginx, Mysql.",
-    "text6": "Kubernetes, VMware Tanzu, Docker, Podman, Containerd, Helm.",
-    "text7": "Python/Flask/Django, Shell, Javascript/Node, PHP/Laravel.",
-    "text8": "Git, Gitlab, pip, Hashicorp Vault, Grafana."
-  },
-  "menus": {
-    "navbar": {
-      "home": "Home",
-      "projects": "Projects",
-      "tools": "Tools",
-      "toolsMenu": {
-        "qrcode": "QR code generator"
-      }
+    "index": {
+        "card": {
+            "title": "David Moreno Gámez",
+            "subtitle": "SRE/DevOps Engineer",
+            "text": "SRE/DevOps focused on the Kubernetes/OpenShift and cloud world, supporter of GitOps and everything as code."
+        }
     },
-    "indexSidebar": {
-      "start": "Start",
-      "who": "What I do?",
-      "tech": "Technologies",
-      "credly": "Digital Credentials"
+    "who": {
+        "title": "What I do?",
+        "text1": "Certified Kubernetes and Linux expert (CKA and LPIC-1). I can highlight my ability to manage Kubernetes and Linux environments, with various technologies through infrastructure as code. Furthermore, I know very well how the orchestrator works. This has allowed me to find and solve various infrastructure problems in projects, successfully bringing them to productive environments.",
+        "text2": "I also have great knowledge managing and automating the configuration of Linux Systems, mainly REDHAT, and infrastructure as code, through tools such as Ansible, Python, Shell Script and some Terraform. Aways with a GitOps approach and trying to give a Kubernetes-style declarative approach.",
+        "text3": "On the other hand, I also have experience as a Web Developer, therefore, I developed a great command of Git and programming, paving the way for me to an \"everything as code\" approach.",
+        "text4": "Currently, I am focused on expanding (SRE) and DevOps skills within OnPremise, hybrid and public cloud environments. Always committed to collaborative problem solving and driving excellence in the IT field",
+        "text5": ""
     },
-    "projectsSidebar": {
-      "container": "Containers/Kubernetes",
-      "systems": "Linux Systems",
-      "cd": "Tools for CD/IaC",
-      "webp": "Web Projects",
-      "webapps": "Web Applications",
-      "games": "Games"
-    }
-  },
-  "currencyApplet": {
-    "title": "Forex rates"
-  },
-  "qrcode": {
-    "title": "QR code generator",
-    "format": "Format",
-    "formatMenu": {
-      "url": "Url",
-      "vcard": "Vcard",
-      "text": "Text"
+    "tech": {
+        "title": "Technologies",
+        "text1": "Systems/IaC/Configuration:",
+        "text2": "Containers:",
+        "text3": "Programming Languages:",
+        "text4": "Tools:",
+        "text5": [
+            { "name": "Linux", "skill": "90" },
+            { "name": "Rhel", "skill": "80" },
+            { "name": "Ansible", "skill": "80" },
+            { "name": "Ansible Automation Platform", "skill": "70" },
+            { "name": "Terraform", "skill": "30" },
+            { "name": "AWS", "skill": "40" },
+            { "name": "Azure", "skill": "30" },
+            { "name": "Nginx" , "skill": "60"},
+            { "name": "Mysql", "skill": "40" }
+        ],
+        "text6": [
+            { "name": "Openshift", "skill": "80" },
+            { "name": "Kubernetes", "skill": "90" },
+            { "name": "VMware Tanzu", "skill": "80" },
+            { "name": "Docker", "skill": "80" },
+            { "name": "Podman", "skill": "80" },
+            { "name": "Containerd", "skill": "60" },
+            { "name": "Helm", "skill": "70" }
+        ],
+        "text7": [
+            { "name": "Python/Flask/Django", "skill": "80" },
+            { "name": "Shell", "skill": "80" },
+            { "name": "Powershell", "skill": "50" },
+            { "name": "Javascript/Node", "skill": "60" },
+            { "name": "Go", "skill": "30" },
+            { "name": "PHP/Laravel", "skill": "40" }
+        ],
+        "text8": [
+            { "name": "Git", "skill": "80" },
+            { "name": "Gitlab", "skill": "60" },
+            { "name": "pip", "skill": "60" },
+            { "name": "Jenkins", "skill": "60" },
+            { "name": "Azure DevOps", "skill": "60" },
+            { "name": "Hashicorp Vault", "skill": "50" },
+            { "name": "Grafana", "skill": "60" },
+            { "name": "Prometheus", "skill": "60" }
+        ]
     },
-    "button": "Generate QR",
-    "download": "Download QR",
-    "resultTitle": "Generated Code",
-    "vcard": {
-      "name": "Name",
-      "surn": "Surname",
-      "tlf": "Tlf",
-      "cell": "Cell",
-      "email": "Email",
-      "web": "Web",
-      "org": "Organization",
-      "title": "Title",
-      "st": "Street",
-      "city": "City",
-      "country": "Country"
-    }
-  },
-  "projects-info-alert": "Here is a small indicative sample of some of the projects that I have carried out.",
-  "projects": {}
+    "menus": {
+        "navbar": {
+            "home": "Home",
+            "projects": "Projects",
+            "tools": "Tools",
+            "toolsMenu": {
+                "qrcode": "QR code generator"
+            }
+        },
+        "indexSidebar": {
+            "start": "Start",
+            "who": "What I do?",
+            "tech": "Technologies",
+            "credly": "Digital Credentials"
+        },
+        "projectsSidebar": {
+            "container": "Containers/Kubernetes",
+            "systems": "Linux Systems",
+            "cd": "Tools for CD/IaC",
+            "webp": "Web Projects",
+            "webapps": "Web Applications",
+            "games": "Games"
+        }
+    },
+    "currencyApplet": {
+        "title": "Forex rates"
+    },
+    "qrcode": {
+        "title": "QR code generator",
+        "format": "Format",
+        "formatMenu": {
+            "url": "Url",
+            "vcard": "Vcard",
+            "text": "Text"
+        },
+        "button": "Generate QR",
+        "download": "Download QR",
+        "resultTitle": "Generated Code",
+        "vcard": {
+            "name": "Name",
+            "surn": "Surname",
+            "tlf": "Tlf",
+            "cell": "Cell",
+            "email": "Email",
+            "web": "Web",
+            "org": "Organization",
+            "title": "Title",
+            "st": "Street",
+            "city": "City",
+            "country": "Country"
+        }
+    },
+    "projects-info-alert": "Here is a small indicative sample of some of the projects that I have carried out.",
+    "projects": {}
 }
