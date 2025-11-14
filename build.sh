@@ -32,7 +32,7 @@ buildAws () {
     aws s3 rm s3://${AWS_BUCKET}/web/ --recursive
 
     # Upload new objects
-    aws s3 cp ${BASEDIR}/dist/ s3://${AWS_BUCKET}/web/ --recursive --acl public-read
+    aws s3 cp ${BASEDIR}/dist/ s3://${AWS_BUCKET}/web/ --recursive
 
     echo 'Invalidando cache de cloudfront...'
     # Invalidate cloudfront cache

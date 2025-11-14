@@ -1,0 +1,54 @@
+---
+name: Build and deploy
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  AWS_BUCKET: "public-dmorgam-web"
+  CLOUDFRONT_DIST: "E7J6SXEMEFQ77"
+
+jobs:
+  build:
+    name: Build an deploy to pro
+    runs-on: self-hosted
+    defaults:
+      run:
+        working-directory: .
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run build
+        run: npm run build
+
+      - name: Copy index to 404
+        run: cp dist/index.html dist/404.html
+
+      - name: Subir a aws
+        run: |
+          aws s3 rm s3://${AWS_BUCKET}/web/ --recursive
+          aws s3 cp dist/ s3://${AWS_BUCKET}/web/ --recursive
+          aws cloudfront create-invalidation \
+                         --distribution-id ${CLOUDFRONT_DIST} \
+                         --paths "/*" \
+                         --no-cli-pager
