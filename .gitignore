@@ -9,6 +9,9 @@ node_modules
 # Dist folder
 dist/*
 
+# Generated json
+./src/locales/generated
+
 # Log files
 npm-debug.log*
 yarn-debug.log*
