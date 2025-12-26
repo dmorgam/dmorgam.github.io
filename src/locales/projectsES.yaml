@@ -1,104 +1,216 @@
+---
 rhel-sgad:
   title: Administración de Red Hat Enterprise Linux - 2022,2023 - SGAD
-  text1: Configuración de servidores Rhel, configuración del sistema (firewalld, iptables,
-    packages, NetworkManager, Grub, etc..).
-  text2: Configuración de demonios cliente como el de Red Hat Satellite, CheckMK
-  text3: Configuración de servidores y servidores de aplicaciones como Tomcat, WebLogic,
-    PHP fpm, Apache, Nginx.
+  text1: >-
+    Configuración de servidores Rhel, configuración del sistema (firewalld,
+    iptables, packages, NetworkManager, Grub, etc..).
+
+  text2: >-
+    Configuración de demonios cliente como el de Red Hat Satellite, CheckMK
+
+  text3: >-
+    Configuración de servidores y servidores de aplicaciones como Tomcat,
+    WebLogic, PHP fpm, Apache, Nginx.
+
 docker-sgad:
   title: Gestion entornos containerizados - 2022,2023 - SGAD
-  text1: Containerización de aplicaciones internas (algunas mantenidas por mí) para
+  text1: >-
+    Containerización de aplicaciones internas (algunas mantenidas por mí) para
     habilitar el despliegue en entornos containerizados.
-  text2: Mantenimiento de diferentes Docker Stacks (Swarm,compose), arreglando entornos.
-  text3: Construcción de contenedores auxiliares para ayudar a los despliegues de
+
+  text2: >-
+    Mantenimiento de diferentes Docker Stacks (Swarm,compose), arreglando
+    entornos.
+
+  text3: >-
+    Construcción de contenedores auxiliares para ayudar a los despliegues de
     diferentes proyectos.
+
+ocp_logicalis:
+  title: Administración Openshift y Kubernetes - 2024/25 - LOGICALIS
+  text1: >-
+    Administración, actualizaciones, operadores, ciclo de vida y CI/CD.
+
+  text2: >-
+    Responsable de la gestión, automatización y soporte de infraestructuras
+    openshift y k8s en cloud y on-premise en entornos empresariales. Trabajo
+    orientado a garantizar la disponibilidad, escalabilidad y eficiencia de
+    plataformas híbridas mediante herramientas modernas de infraestructura como
+    código, observabilidad, CI/CD y GitOps.
+
+  text3: >-
+    Configuración de operadores y gestion del ciclo de vida.
+
+
 tanzu:
   title: Administración de clústeres Kubernetes de VMware Tanzu - 2023 - SGAD
-  text1: Administration de VMware Tanzu kubernetes clúster, aprovisionamiento de clústeres,
-    namespaces, policies etc...
-  text2: Despliegue de applicaciones en los clústeres, usando yamls en crudo y herramientas
-    de templating como HELM.
+  text1: >-
+    Administration de VMware Tanzu kubernetes clúster, aprovisionamiento de
+    clústeres, namespaces, policies etc...
+
+  text2: >-
+    Despliegue de applicaciones en los clústeres, usando yamls en crudo y
+    herramientas de templating como HELM.
+
   text3: Configuración de Operadores y plugins dentro de los clústeres.
+
 ansible:
   title: Desarrollo Playbooks en Ansible - 2022,2023 - SGAD
-  text1: Desarrollo/Mejora de playbooks de Ansible para la configuración automatizada
+  text1: >-
+    Desarrollo/Mejora de playbooks de Ansible para la configuración automatizada
     de servidores RedHat Enterprise Linux.
-  text2: Configuración de parametros de red, sistema, selinux, paquetería de RedHat
-    Satellite, Servidores Web como Apache, servidores de Aplicaciones como Tomcat
-    o Weblogic.
+
+  text2: >-
+    Configuración de parametros de red, sistema, selinux, paquetería de RedHat
+    Satellite, Servidores Web como Apache, servidores de Aplicaciones como
+    Tomcat o Weblogic.
+
 cdtools:
-  title: Herramientas apoyo a CD y despliegue infraestructura virtualizada - 2022,2023
-    - SGAD
-  text1: Desarrollo/Mejora de herramientas en Flask y Python para apoyar el proceso
-    de despliegue continuo, aportando automatismos e interfaces gráficas para mejorar
-    el uso.
-  text2: Desarrollo de scripts para Automatizar la configuración de infraestructura
+  title: >-
+    Herramientas apoyo a CD y despliegue infraestructura virtualizada
+    - 2022,2023 - SGAD
+
+  text1: >-
+    Desarrollo/Mejora de herramientas en Flask y Python para apoyar el proceso
+    de despliegue continuo, aportando automatismos e interfaces gráficas para
+    mejorar el uso.
+
+  text2: >-
+    Desarrollo de scripts para Automatizar la configuración de infraestructura
     virtualizada en máquinas RHEL.
+
+automation_logicalis:
+  title: Iniciativa de automatización multi equipo - 2025 - LOGICALIS
+  text1: Desarrollo de automatismos en varios lenguajes para varios equipos
+  text2: >-
+    Desarrollo de autmatismos en python, ansible, powershell ademas de con
+    tools de despliegues como Azure DevOps, GitHub actions, Helm Charts.
+    Desarrollos para varios equipos (devops, wintel, bbdd, linux, backup).
+
+terraform_rosa:
+  title: Despliegue de ROSA HCP con varias features - 2025 - LOGICALIS
+  text1: Desarrollo de codigo terraform con workspaces y multistage.
+  text2: >-
+    Automatización IAC de ROSA HCP en terraform con subdivision de varios
+    módulos, workspaces por cada entorno, y generación de roles, quotas,
+    elbs y demás necesarios. Parametrizado y extrapolable a diferentes
+    entornos y clientes.
+
 terraform:
   title: Despliegue de infraestructura con Terraform - 2023 - SGAD
   text1: Desarrollo de infraestructura como codigo en Terraform.
-  text2: Despliegue con Terraform de clústeres de Kubernetes en VMware Tanzu, a traves
-    de la api de VMware mission control.
+  text2: >-
+    Despliegue con Terraform de clústeres de Kubernetes en VMware Tanzu, a
+    través de la api de VMware mission control.
+
 caceres:
   title: Web Comercial Caceres - 2021
-  text1: Página web creada con laravel, Vue js y DB mysql. Es una tienda web que carga
-    todos los productos y maneja la galería con componentes de Vue y las API AJAX
-    en laravel, asegurando una experiencia fluida. Todo enlazado con el sqlserver
-    del ERP de la empresa.
-  text2: Además, dispone de varias webapps internas para la gestion de bodega, stock
-    y un sistema de gestión de reservas personalizado con exportación a excel, pdf
-    y generación de reportes.
+  text1: >-
+    Página web creada con laravel, Vue js y DB mysql. Es una tienda web que
+    carga todos los productos y maneja la galería con componentes de Vue y las
+    API AJAX en laravel, asegurando una experiencia fluida. Todo enlazado con el
+    sqlserver del ERP de la empresa.
+
+  text2: >-
+    Además, dispone de varias webapps internas para la gestion de bodega, stock
+    y un sistema de gestión de reservas personalizado con exportación a excel,
+    pdf y generación de reportes.
+
   text3: Ir a la Web
+
 caceresLegacy:
   title: Antigua Web Comercial Caceres (Mejoras) - 2020 - Comercial Caceres
-  text1: Web creada con php, js y DB mysql. Contribución mejorando la web y añadiendo
+  text1: >-
+    Web creada con php, js y DB mysql. Contribución mejorando la web y añadiendo
     módulos.
-  text2: Generación de hojas de ruta en pdf, trazado de rutas con la API de google
-    maps, sistemas de gestión de permisos, gestión de reservas y estadísticas de venta
-    de los productos.
+
+  text2: >-
+    Generación de hojas de ruta en pdf, trazado de rutas con la API de google
+    maps, sistemas de gestión de permisos, gestión de reservas y estadísticas de
+    venta de los productos.
+
   text3: Catálogo automatizado conectado al ERP.
+
   text4: Generación de reportes en pdf con FPDF y hojas excel con PHPexcel.
+
   text5: Ir a la Web
+
 mayorista:
   title: Aplicación de Venta mayorista en terreno - 2021 - Comercial Caceres
-  text1: Aplicación de gestión de ventas mayoristas, hecha en vue.js y con la api
+  text1: >-
+    Aplicación de gestión de ventas mayoristas, hecha en vue.js y con la api
     ajax en laravel.
-  text2: Gestiona pedidos y clientes, deudas de clientes, dispone de un catalogo con
-    los últimos precios y stock real con imágenes para la venta directa en terreno.
-  text3: Para la comunicación entre la app y el backend, se usa la libreria axios
-    haciendo peticiones get, post y put para obtener los datos, ingresar nuevos y
-    actualizar.
-  text4: El front dispone de varios componentes los cuales se van alternando cargando
-    dinamicamente según el modo en el que esté (estado inicial o cliente cargado).
+
+  text2: >-
+    Gestiona pedidos y clientes, deudas de clientes, dispone de un catalogo con
+    los últimos precios y stock real con imágenes para la venta directa en
+    terreno.
+
+  text3: >-
+    Para la comunicación entre la app y el backend, se usa la libreria axios
+    haciendo peticiones get, post y put para obtener los datos, ingresar nuevos
+    y actualizar.
+
+  text4: >-
+    El front dispone de varios componentes los cuales se van alternando cargando
+    dinamicamente según el modo en el que esté (estado inicial o cliente
+    cargado).
+
 colacion:
-  title: Aplicación de Gestion de horarios de colación - 2020 - Comercial Caceres
-  text1: Aplicación para administrar el tiempo de colación de los trabajadores con
-    temporizador, ticket de colación y registro de colaciones por cada trabajador.
-  text2: El servidor en PHP y DB mysql dispone de una api a la que se conectan los
+  title: >-
+    Aplicación de Gestion de horarios de colación - 2020 - Comercial Caceres
+  text1: >-
+    Aplicación para administrar el tiempo de colación de los trabajadores con
+    temporizador, ticket de colación y registro de colaciones por cada
+    trabajador.
+
+  text2: >-
+    El servidor en PHP y DB mysql dispone de una api a la que se conectan los
     front cliente web y la aplicación android.
-  text3: El front web dispone de la pantalla de colación y el formulario que registra
-    las entradas y salidas de trabajadores. El apk android consta de controles con
-    los cuales, los jefes de tienda pueden ver quien está en colación y liberar los
-    asientos.
+
+  text3: >-
+    El front web dispone de la pantalla de colación y el formulario que
+    registra las entradas y salidas de trabajadores. El apk android consta de
+    controles con los cuales, los jefes de tienda pueden ver quien está en
+    colación y liberar los asientos.
+
 afiche:
   title: Afiche publicitario automático - 2020 - Comercial Caceres
-  text1: El afiche consiste en una pantalla en html y js recibiendo mediante AJAX
-    la lista de productos a mostrar, y los descarga de la DB del ERP para mostrarlos.
-  text2: El backend en php dispone de un endpoint donde muestra los productos en lista,
-    también dispone de varias categorías para poder mostrar afiches de distinto tipo.
-  text3: Dispone de una interfaz de gestión de los productos en cada catagoría para
+  text1: >-
+    El afiche consiste en una pantalla en html y js recibiendo mediante AJAX
+    la lista de productos a mostrar, y los descarga de la DB del ERP para
+    mostrarlos.
+
+  text2: >-
+    El backend en php dispone de un endpoint donde muestra los productos en
+    lista, también dispone de varias categorías para poder mostrar afiches de
+    distinto tipo.
+
+  text3: >-
+    Dispone de una interfaz de gestión de los productos en cada catagoría para
     gestionar los productos mostrados.
+
   text4: Ir a la Web
+
 personal:
   title: Web personal en mi VPS - 2021 - Personal
-  text1: En esta web se presentan los proyectos principales que he llevado a cabo
-    y una muestra de mis habilidades en forma de widgets y pequeños proyectos demostrativos.
-  text2: Generación de códigos QR, consulta de cmabio de divisas, widget del tiempo
+  text1: >-
+    En esta web se presentan los proyectos principales que he llevado a cabo
+    y una muestra de mis habilidades en forma de widgets y pequeños proyectos
+    demostrativos.
+
+  text2: >-
+    Generación de códigos QR, consulta de cmabio de divisas, widget del tiempo
     etc...
+
   text3: Puede ver el repositorio aquí.
+
 snake:
   title: Juego de snake con canvas y vanilla js - 2021 - Personal
-  text1: Juego de snake con canvas y js puro, con velocidad ajustable, sonidos, texturas,
-    generacion de comida y puntaje variable, responsivo calculando el tamaño del canvas.
+  text1: >-
+    Juego de snake con canvas y js puro, con velocidad ajustable, sonidos,
+    texturas, generacion de comida y puntaje variable, responsivo calculando el
+    tamaño del canvas.
+
   text2: Puede ver el repositorio aquí
   text3: ''

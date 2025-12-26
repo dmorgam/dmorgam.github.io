@@ -10,7 +10,7 @@ node_modules
 dist/*
 
 # Generated json
-./src/locales/generated
+src/locales/generated/*
 
 # Log files
 npm-debug.log*

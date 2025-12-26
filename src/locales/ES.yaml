@@ -1,29 +1,44 @@
+---
 index:
   card:
     title: David Moreno Gámez
     subtitle: SRE/DevOps Engineer
-    text: SRE/DevOps orientado al mundo kubernetes/openshift y cloud, partidario del
-      GitOps y todo como código.
+    text: >-
+      SRE/DevOps orientado al mundo kubernetes/openshift y cloud, partidario
+      del GitOps y todo como código.
 who:
   title: ¿A qué me dedico?
-  text1: Experto certificado en Kubernetes y Linux (CKA y LPIC-1), con amplia experiencia
-    en la administración de entornos Kubernetes, OpenShift y Linux. Especializado
-    en la gestión de infraestructura como código, con un profundo conocimiento del
-    funcionamiento de Kubernetes, lo que me ha permitido identificar y resolver problemas
-    en la infraestructura, llevando proyectos con éxito a entornos productivos.
-  text2: Poseo sólidos conocimientos en la administración y automatización de sistemas
-    Linux, especialmente en entornos Red Hat, utilizando herramientas como Ansible,
-    Python, Shell Script y Terraform para entornos cloud. Adopto un enfoque GitOps
-    y promuevo la infraestructura declarativa, alineada con los principios de Kubernetes.
-  text3: Además, cuento con experiencia como desarrollador web, lo que me ha permitido
-    perfeccionar mis habilidades en Git, programación y CI/CD (Gitlab, Jenkins, Azure
-    DevOps ...), facilitando la adopción del enfoque de "todo como código".
-  text4: Actualmente, estoy enfocado en ampliar mis competencias en Site Reliability
-    Engineering (SRE) y DevOps, aplicando prácticas en entornos on-premise, híbridos
-    y de nube pública. Mi objetivo es impulsar la automatización, la resiliencia y
-    la eficiencia operativa, siempre con un enfoque colaborativo en la resolución
-    de problemas y la mejora continua en IT
+
+  text1: >-
+    Extensa experiencia en la administración de entornos Kubernetes, OpenShift
+    y Linux. Especializado en la gestión de infraestructura como código y
+    automatización (CI/CD, IaC, CaC), con un profundo conocimiento del
+    funcionamiento de Kubernetes, lo que me ha permitido identificar y resolver
+    problemas en la infraestructura, llevando proyectos con éxito a entornos
+    productivos.
+
+  text2: >-
+    Poseo sólidos conocimientos en la administración y automatización de
+    sistemas Linux, especialmente en entornos Red Hat, utilizando herramientas
+    como Ansible, Python, Shell Script y Terraform para entornos cloud. Adopto
+    un enfoque GitOps y promuevo la infraestructura declarativa, alineada con
+    los principios de Kubernetes.
+
+  text3: >-
+    Además, cuento con experiencia como desarrollador web, lo que me ha
+    permitido perfeccionar mis habilidades en Git, programación y CI/CD (Gitlab,
+    Jenkins, Azure DevOps ...), facilitando la adopción del enfoque de "todo
+    como código".
+
+  text4: >-
+    Actualmente, estoy enfocado en ampliar mis competencias en Site Reliability
+    Engineering (SRE), DevOps y Platform Engineering, en entornos on-premise,
+    híbridos y de nube pública. Mi objetivo es impulsar la automatización, la
+    resiliencia y la eficiencia operativa, siempre con un enfoque colaborativo
+    en la resolución de problemas y la mejora continua en IT.
+
   text5: ''
+
 tech:
   title: Tecnologías
   text1: 'Sistemas/IaC/Configuración:'
@@ -40,15 +55,16 @@ tech:
     - name: Ansible Automation Platform
       skill: '70'
     - name: Terraform
-      skill: '30'
+      skill: '70'
     - name: AWS
-      skill: '40'
+      skill: '60'
     - name: Azure
-      skill: '30'
+      skill: '35'
     - name: Nginx
       skill: '60'
     - name: Mysql
       skill: '40'
+
   text6:
     - name: Openshift
       skill: '80'
@@ -64,6 +80,7 @@ tech:
       skill: '60'
     - name: Helm
       skill: '70'
+
   text7:
     - name: Python/Flask/Django
       skill: '80'
@@ -77,23 +94,27 @@ tech:
       skill: '30'
     - name: PHP/Laravel
       skill: '40'
+
   text8:
     - name: Git
       skill: '80'
     - name: Gitlab
       skill: '60'
     - name: pip
-      skill: '60'
+      skill: '70'
     - name: Jenkins
       skill: '60'
     - name: Azure DevOps
       skill: '60'
-    - name: Hashicorp Vault
-      skill: '50'
-    - name: Grafana
+    - name: GitHub Actions
       skill: '60'
+    - name: Hashicorp Vault
+      skill: '40'
+    - name: Grafana
+      skill: '50'
     - name: Prometheus
       skill: '60'
+
 menus:
   navbar:
     home: Inicio
@@ -101,11 +122,13 @@ menus:
     tools: Herramientas
     toolsMenu:
       qrcode: Generador de QR
+
   indexSidebar:
     start: Inicio
     who: A qué me dedico
     tech: Tecnologías
     credly: Credenciales Digitales
+
   projectsSidebar:
     container: Containers/Kubernetes
     systems: Sistemas Linux
@@ -113,8 +136,10 @@ menus:
     webp: Proyectos Web
     webapps: Aplicaciones Web
     games: Juegos
+
 currencyApplet:
   title: Cambio de divisas
+
 qrcode:
   title: Generador de QR
   format: Formato
@@ -137,6 +162,9 @@ qrcode:
     st: Calle
     city: Ciudad
     country: País
-projects-info-alert: Aqui se presenta una pequeña muestra orientativa de algunos de
-  los proyectos que he llevado a cabo.
+
+projects-info-alert: >-
+  Aqui se presenta una pequeña muestra orientativa de algunos de los proyectos
+  que he llevado a cabo.
+
 projects: {}

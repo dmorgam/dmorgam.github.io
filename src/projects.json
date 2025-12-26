@@ -1,6 +1,21 @@
 [
   {
     "type": "container",
+    "name": "OpenShiftK8s",
+    "tags": "<span class='badge bg-danger'>OpenShift</span> + <span class='badge bg-primary'>Kubernetes</span>",
+    "title": "projects.ocp_logicalis.title",
+    "slides": [
+      { "id": 0, "src": "img/ocp.png" }
+    ],
+    "texts": [
+      { "text": "projects.ocp_logicalis.text1" },
+      { "text": "projects.ocp_logicalis.text2" },
+      { "text": "projects.ocp_logicalis.text3" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "container",
     "name": "Tanzu",
     "tags": "<span class='badge bg-primary'>Kubernetes</span>",
     "title": "projects.tanzu.title",
@@ -26,6 +41,34 @@
       { "text": "projects.docker-sgad.text1" },
       { "text": "projects.docker-sgad.text2" },
       { "text": "projects.docker-sgad.text3" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "cd",
+    "name": "AutomationLogicalis",
+    "tags": "<span class='badge bg-danger'>Ansible</span> + <span class='badge bg-success'>Python</span> + <span class='badge bg-success'>Bash</span> + <span class='badge bg-info'>Powershell</span>",
+    "title": "projects.automation_logicalis.title",
+    "slides": [
+      { "id": 0, "src": "img/python.png" }
+    ],
+    "texts": [
+      { "text": "projects.automation_logicalis.text1" },
+      { "text": "projects.automation_logicalis.text2" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "cd",
+    "name": "TerraformROSA",
+    "tags": "<span class='badge bg-primary'>Terraform</span>",
+    "title": "projects.terraform_rosa.title",
+    "slides": [
+      { "id": 0, "src": "img/terraform.png" }
+    ],
+    "texts": [
+      { "text": "projects.terraform_rosa.text1" },
+      { "text": "projects.terraform_rosa.text2" }
     ],
     "link": { "text": "", "link": "" }
   },

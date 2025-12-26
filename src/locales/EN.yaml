@@ -1,27 +1,43 @@
+---
 index:
   card:
     title: David Moreno Gámez
     subtitle: SRE/DevOps Engineer
-    text: SRE/DevOps focused on the Kubernetes/OpenShift and cloud world, supporter
+    text: >-
+      SRE/DevOps focused on the Kubernetes/OpenShift and cloud world, supporter
       of GitOps and everything as code.
 who:
   title: What I do?
-  text1: Certified Kubernetes and Linux expert (CKA and LPIC-1). I can highlight my
-    ability to manage Kubernetes and Linux environments, with various technologies
-    through infrastructure as code. Furthermore, I know very well how the orchestrator
-    works. This has allowed me to find and solve various infrastructure problems in
-    projects, successfully bringing them to productive environments.
-  text2: I also have great knowledge managing and automating the configuration of
-    Linux Systems, mainly REDHAT, and infrastructure as code, through tools such as
-    Ansible, Python, Shell Script and some Terraform. Aways with a GitOps approach
-    and trying to give a Kubernetes-style declarative approach.
-  text3: On the other hand, I also have experience as a Web Developer, therefore,
-    I developed a great command of Git and programming, paving the way for me to an
-    "everything as code" approach.
-  text4: Currently, I am focused on expanding (SRE) and DevOps skills within OnPremise,
-    hybrid and public cloud environments. Always committed to collaborative problem
-    solving and driving excellence in the IT field
+
+  text1: >-
+    Extensive experience administering Kubernetes, OpenShift, and Linux
+    environments. Specializing in infrastructure as code management and
+    automation (CI/CD, IaC, CCA), with a deep understanding of Kubernetes
+    functionality, which has allowed me to identify and resolve infrastructure
+    issues, successfully bringing projects to production.
+
+  text2: >-
+    I have solid knowledge of Linux system administration and automation,
+    especially in Red Hat environments, using tools such as Ansible, Python,
+    Shell Script, and Terraform for cloud environments. I adopt a GitOps
+    approach and promote declarative infrastructure, aligned with Kubernetes
+    principles.
+
+  text3: >-
+    In addition, I have experience as a web developer, which has allowed me to
+    hone my skills in Git, programming, and CI/CD (Gitlab, Jenkins, Azure
+    DevOps, etc.), facilitating the adoption of the "everything as code"
+    approach.
+
+  text4: >-
+    Currently, I'm focused on expanding my skills in Site Reliability
+    Engineering (SRE), DevOps, and Platform Engineering across on-premise,
+    hybrid, and public cloud environments. My goal is to drive automation,
+    resilience, and operational efficiency, always with a collaborative
+    approach to problem-solving and continuous IT improvement.
+
   text5: ''
+
 tech:
   title: Technologies
   text1: 'Systems/IaC/Configuration:'
@@ -38,15 +54,16 @@ tech:
     - name: Ansible Automation Platform
       skill: '70'
     - name: Terraform
-      skill: '30'
+      skill: '70'
     - name: AWS
-      skill: '40'
+      skill: '60'
     - name: Azure
-      skill: '30'
+      skill: '35'
     - name: Nginx
       skill: '60'
     - name: Mysql
       skill: '40'
+
   text6:
     - name: Openshift
       skill: '80'
@@ -62,6 +79,7 @@ tech:
       skill: '60'
     - name: Helm
       skill: '70'
+
   text7:
     - name: Python/Flask/Django
       skill: '80'
@@ -75,23 +93,27 @@ tech:
       skill: '30'
     - name: PHP/Laravel
       skill: '40'
+
   text8:
     - name: Git
       skill: '80'
     - name: Gitlab
       skill: '60'
     - name: pip
-      skill: '60'
+      skill: '70'
     - name: Jenkins
       skill: '60'
     - name: Azure DevOps
       skill: '60'
-    - name: Hashicorp Vault
-      skill: '50'
-    - name: Grafana
+    - name: GitHub Actions
       skill: '60'
+    - name: Hashicorp Vault
+      skill: '40'
+    - name: Grafana
+      skill: '50'
     - name: Prometheus
       skill: '60'
+
 menus:
   navbar:
     home: Home
@@ -99,11 +121,13 @@ menus:
     tools: Tools
     toolsMenu:
       qrcode: QR code generator
+
   indexSidebar:
     start: Start
     who: What I do?
     tech: Technologies
     credly: Digital Credentials
+
   projectsSidebar:
     container: Containers/Kubernetes
     systems: Linux Systems
@@ -111,15 +135,19 @@ menus:
     webp: Web Projects
     webapps: Web Applications
     games: Games
+
 currencyApplet:
   title: Forex rates
+
 qrcode:
   title: QR code generator
   format: Format
+
   formatMenu:
     url: Url
     vcard: Vcard
     text: Text
+
   button: Generate QR
   download: Download QR
   resultTitle: Generated Code
@@ -135,6 +163,8 @@ qrcode:
     st: Street
     city: City
     country: Country
-projects-info-alert: Here is a small indicative sample of some of the projects that
-  I have carried out.
+
+projects-info-alert: >-
+  Here is a small indicative sample of some of the projects that I have carried
+  out.
 projects: {}
