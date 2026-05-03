@@ -1,138 +1,132 @@
 <template>
-   <div class="container-fluid home-back left-sidebar-margin">
-      <br><br><br><br>
-      <!-- HEADER -->
-      <div class="row">
+   <div class="container-fluid home-back left-sidebar-margin px-0">
+      <!-- HERO -->
+      <section class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
 
-         <div class="col-md-5">
+        <div class="hero-inner container">
+          <img src="img/dmorgam.png" class="hero-avatar mb-4" alt="David Moreno Gámez" />
 
-         </div>
+          <h1 class="hero-title mb-2">{{ $t('index.card.title') }}</h1>
 
-         <div class="col-md-7">
-            <div class="card mb-3">
-                  <div class="row no-gutters">
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title font-weight-bold">{{ $t('index.card.title') }}</h5>
-                        <p class="card-text">
-                          {{ $t('index.card.subtitle') }}
-                        </p>
-                        <hr>
-                        <p>
-                          <span class="text-muted">
-                            {{ $t('index.card.text') }}
-                          </span>
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                     <img src="img/dmorgam.png" class="card-img-top borderless-round" alt="">
-                    </div>
-                  </div>
-                </div>
+          <p class="hero-role mb-4">
+            <span class="hero-role-dot"></span>
+            {{ $t('index.card.subtitle') }}
+          </p>
+
+          <p class="hero-bio mx-auto mb-4">
+            {{ $t('index.card.text') }}
+          </p>
+
+          <div class="hero-cta d-flex flex-wrap justify-content-center gap-2">
+            <a href="https://github.com/dmorgam/" target="_blank" class="btn btn-primary btn-lg hero-btn">
+              <BIconGithub /> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/dmorgam/" target="_blank" class="btn btn-outline-light btn-lg hero-btn">
+              <BIconLinkedin /> LinkedIn
+            </a>
+            <a href="#who" class="btn btn-link btn-lg hero-btn-link">
+              {{ $t('who.title') }}
+              <BIconArrowDown />
+            </a>
+          </div>
+          <br><br><br>
+          <div class="hero-scroll" aria-hidden="true">
+            <BIconChevronDoubleDown />
+          </div>
+        </div>
+      </section>
+
+      <div class="home-content">
+      <section class="section-block section-who" id="who">
+        <header class="section-head">
+          <span class="section-icon section-icon-blue">
+            <BIconInfoCircle />
+          </span>
+          <h2 class="section-heading">{{ $t('who.title') }}</h2>
+        </header>
+        <div class="section-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p>{{ $t('who.text1') }}</p>
+              <p>{{ $t('who.text2') }}</p>
+              <p>{{ $t('who.text3') }}</p>
             </div>
+            <div class="col-md-6">
+              <p>{{ $t('who.text4') }}</p>
+              <p>{{ $t('who.text5') }}</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-         </div>
-      <br>
-      <div class="row mt-5">
-         <div class="col" id="who">
-            <div class="alert alert-info" role="alert">
-              <h1 class="ms-5">
-                <BIconInfoCircle />
-                {{ $t('who.title') }}
-              </h1>
-              <div class="alert bg-white text-dark">
-                <br>
-                <div class="row">
-                  <div class="col-md-6">
-                    <p>
-                      {{ $t('who.text1') }}
-                    </p>
-                    <p>
-                      {{ $t('who.text2') }}
-                    </p>
-                    <p>
-                      {{ $t('who.text3')}}
-                    </p>
-                  </div>
-                  <div class="col-md-6">
-                    <p>
-                      {{ $t('who.text4')}}
-                    </p>
-                    <p>
-                      {{ $t('who.text5')}}
-                    </p>
-                  </div>
+      <section class="section-block section-tech" id="tech">
+        <header class="section-head">
+          <span class="section-icon section-icon-purple">
+            <BIconServer />
+          </span>
+          <h2 class="section-heading">{{ $t('tech.title') }}</h2>
+        </header>
+        <div class="section-body">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h6 class="skill-group-title">{{ $t('tech.text1') }}</h6>
+              <div class="skill-row" v-for="item in $tm('tech.text5')" :key="item.name">
+                <div class="skill-row-head">
+                  <span class="skill-name">{{ item.name }}</span>
+                  <span class="skill-pct">{{ item.skill }}%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar"
+                       :style="{ width: visible ? item.skill + '%' : '0%' }"
+                       :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <h6 class="skill-group-title mt-4">{{ $t('tech.text2') }}</h6>
+              <div class="skill-row" v-for="item in $tm('tech.text6')" :key="item.name">
+                <div class="skill-row-head">
+                  <span class="skill-name">{{ item.name }}</span>
+                  <span class="skill-pct">{{ item.skill }}%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-info" role="progressbar"
+                       :style="{ width: visible ? item.skill + '%' : '0%' }"
+                       :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
-         </div>
-      </div>
-      <br>
-      <div class="row mt-5">
-         <div class="col" id="tech">
-            <div class="alert alert-primary text-dark" role="alert">
-              <h1 class="ms-5">
-                <BIconServer />
-                {{ $t('tech.title') }}
-              </h1>
-              <div class="alert bg-white">
-                <br>
-                <div class="row">
-                  <div class="col-md-6">
-                      <p><b>{{ $t('tech.text1') }}</b></p>
-                      <div class="row mb-2" v-for="item in $tm('tech.text5')" :key="item.name">
-                          <div class="progress col-3 p-0">
-                              <div class="progress-bar bg-success" role="progressbar" :style="{ width: item.skill + '%' }"
-                                   :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100">
-                              </div>
-                          </div>
-                          <div class="col-9">
-                              {{ item.name }}
-                          </div>
-                      </div>
-                      <p><b>{{ $t('tech.text2') }}</b></p>
-                      <div class="row mb-2" v-for="item in $tm('tech.text6')" :key="item.name">
-                          <div class="progress col-3 p-0">
-                              <div class="progress-bar bg-info" role="progressbar" :style="{ width: item.skill + '%' }"
-                                   :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100">
-                              </div>
-                          </div>
-                          <div class="col-9">
-                              {{ item.name }}
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <p><b>{{ $t('tech.text3') }}</b></p>
-                      <div class="row mb-2" v-for="item in $tm('tech.text7')" :key="item.name">
-                          <div class="progress col-3 p-0">
-                              <div class="progress-bar bg-warning" role="progressbar" :style="{ width: item.skill + '%' }"
-                                   :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100">
-                              </div>
-                          </div>
-                          <div class="col-9">
-                              {{ item.name }}
-                          </div>
-                      </div>
-                      <p><b>{{ $t('tech.text4') }}</b></p>
-                      <div class="row mb-2" v-for="item in $tm('tech.text8')" :key="item.name">
-                          <div class="progress col-3 p-0">
-                              <div class="progress-bar" role="progressbar" :style="{ width: item.skill + '%' }"
-                                   :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100">
-                              </div>
-                          </div>
-                          <div class="col-9">
-                              {{ item.name }}
-                          </div>
-                      </div>
-                  </div>
+            <div class="col-md-6">
+              <h6 class="skill-group-title">{{ $t('tech.text3') }}</h6>
+              <div class="skill-row" v-for="item in $tm('tech.text7')" :key="item.name">
+                <div class="skill-row-head">
+                  <span class="skill-name">{{ item.name }}</span>
+                  <span class="skill-pct">{{ item.skill }}%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar"
+                       :style="{ width: visible ? item.skill + '%' : '0%' }"
+                       :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <h6 class="skill-group-title mt-4">{{ $t('tech.text4') }}</h6>
+              <div class="skill-row" v-for="item in $tm('tech.text8')" :key="item.name">
+                <div class="skill-row-head">
+                  <span class="skill-name">{{ item.name }}</span>
+                  <span class="skill-pct">{{ item.skill }}%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar"
+                       :style="{ width: visible ? item.skill + '%' : '0%' }"
+                       :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
-         </div>
-      </div>
-      <br>
+          </div>
+        </div>
+      </section>
       <div class="row mt-5">
          <div class="col" id="credly">
             <div class="text-center" role="alert">
@@ -200,28 +194,54 @@
             </div>
          </div>
       </div>
-    <br>
-    <br>
+      </div>
    </div>
 </template>
 
 <script lang="ts">
-import { onMounted } from 'vue'
-import { BIconServer, BIconInfoCircle } from 'bootstrap-icons-vue'
+import { onMounted, ref } from 'vue'
+import {
+  BIconServer,
+  BIconInfoCircle,
+  BIconGithub,
+  BIconLinkedin,
+  BIconArrowDown,
+  BIconChevronDoubleDown
+} from 'bootstrap-icons-vue'
 
 export default {
   components: {
     BIconServer,
-    BIconInfoCircle
+    BIconInfoCircle,
+    BIconGithub,
+    BIconLinkedin,
+    BIconArrowDown,
+    BIconChevronDoubleDown
   },
 
   setup () {
+    const visible = ref(false)
+
     onMounted(() => {
-      // Load credly badges script on mounted
       const credlyScript = document.createElement('script')
       credlyScript.setAttribute('src', 'https://cdn.credly.com/assets/utilities/embed.js')
       document.head.appendChild(credlyScript)
+
+      const tech = document.getElementById('tech')
+      if (!tech) { visible.value = true; return }
+
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            visible.value = true
+            obs.disconnect()
+          }
+        })
+      }, { threshold: 0.15 })
+      obs.observe(tech)
     })
+
+    return { visible }
   }
 }
 </script>

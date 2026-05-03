@@ -5,7 +5,10 @@
       <div class="sidebar-heading">{{ props.title }}</div>
       <br>
       <div class="list-group list-group-flush">
-        <a v-for="i in sections" :key="i.title" :href="i.link" class="list-group-item list-group-item-action bg-light" @click="toggleBar()">
+        <a v-for="i in sections" :key="i.title" :href="i.link"
+           class="list-group-item list-group-item-action"
+           :class="{ 'active-section': activeId === i.link.replace('#', '') }"
+           @click="toggleBar()">
           <BIconPlayFill /> {{ $t(i.title) }}
         </a>
       </div>
@@ -38,6 +41,7 @@ export default {
 
   setup (props: any) {
     const toggle = ref(0)
+    const activeId = ref<string>('')
 
     function toggleBar () {
       if (window.innerWidth < 768) {
@@ -45,14 +49,38 @@ export default {
       }
     }
 
+    let observer: IntersectionObserver | null = null
+
     onMounted(() => {
       toggleBar()
+
+      const ids = (props.sections as Array<{ link: string }>)
+        .map(s => s.link.replace('#', ''))
+        .filter(id => id.length > 0)
+
+      const targets = ids
+        .map(id => document.getElementById(id))
+        .filter((el): el is HTMLElement => el !== null)
+
+      if (targets.length === 0) return
+
+      observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+        if (visible[0]) {
+          activeId.value = visible[0].target.id
+        }
+      }, { rootMargin: '-30% 0px -55% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] })
+
+      targets.forEach(el => observer?.observe(el))
     })
 
     return {
       props,
       toggle,
-      toggleBar
+      toggleBar,
+      activeId
     }
   }
 }

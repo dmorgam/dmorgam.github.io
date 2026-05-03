@@ -1,81 +1,85 @@
 <template>
-   <div class="container-fluid home-back left-sidebar-margin">
-      <br><br><br><br>
-
-      <div class="alert alert-info text-center">
-        <h5>
-          <BIconInfoCircle />
-          {{ $t('projects-info-alert') }}
-        </h5>
+   <div class="container-fluid home-back left-sidebar-margin projects-page px-4 px-md-5">
+      <div class="projects-header">
+        <div class="alert alert-info text-center mb-0">
+          <h5 class="mb-0">
+            <BIconInfoCircle />
+            {{ $t('projects-info-alert') }}
+          </h5>
+        </div>
       </div>
 
-      <br>
-      <h1 class="text-light" id="container">
-        <span class="badge bg-pill">
-          <BIconCaretRightFill />
-          {{ $t('menus.projectsSidebar.container') }}
-        </span>
-        <hr style="opacity: 0%;">
-      </h1><br><br>
+      <section class="projects-section" id="container">
+        <h2 class="section-title">
+          <span class="badge bg-pill">
+            <BIconCaretRightFill />
+            {{ $t('menus.projectsSidebar.container') }}
+          </span>
+        </h2>
+        <div class="projects-grid">
+          <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'container')" :key="index" :item="item" />
+        </div>
+      </section>
 
-      <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'container')" :key="index" :item="item" />
+      <section class="projects-section" id="cd">
+        <h2 class="section-title">
+          <span class="badge bg-pill">
+            <BIconCaretRightFill />
+            {{ $t('menus.projectsSidebar.cd') }}
+          </span>
+        </h2>
+        <div class="projects-grid">
+          <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'cd')" :key="index" :item="item" />
+        </div>
+      </section>
 
-      <br><br>
-      <h1 class="text-light" id="cd">
-        <span class="badge bg-pill">
-          <BIconCaretRightFill />
-          {{ $t('menus.projectsSidebar.cd') }}
-        </span>
-        <hr style="opacity: 0%;">
-      </h1><br><br>
+      <section class="projects-section" id="systems">
+        <h2 class="section-title">
+          <span class="badge bg-pill">
+            <BIconCaretRightFill />
+            {{ $t('menus.projectsSidebar.systems') }}
+          </span>
+        </h2>
+        <div class="projects-grid">
+          <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'systems')" :key="index" :item="item" />
+        </div>
+      </section>
 
-      <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'cd')" :key="index" :item="item" />
+      <section class="projects-section" id="web">
+        <h2 class="section-title">
+          <span class="badge bg-pill">
+            <BIconCaretRightFill />
+            {{ $t('menus.projectsSidebar.webp') }}
+          </span>
+        </h2>
+        <div class="projects-grid">
+          <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'web')" :key="index" :item="item" />
+        </div>
+      </section>
 
-      <br><br>
-      <h1 class="text-light" id="systems">
-        <span class="badge bg-pill">
-          <BIconCaretRightFill />
-          {{ $t('menus.projectsSidebar.systems') }}
-        </span>
-        <hr style="opacity: 0%;">
-      </h1><br><br>
+      <section class="projects-section" id="webapps">
+        <h2 class="section-title">
+          <span class="badge bg-pill">
+            <BIconCaretRightFill />
+            {{ $t('menus.projectsSidebar.webapps') }}
+          </span>
+        </h2>
+        <div class="projects-grid">
+          <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'webapp')" :key="index" :item="item" />
+        </div>
+      </section>
 
-      <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'systems')" :key="index" :item="item" />
-
-      <br><br>
-      <h1 class="text-light" id="web">
-        <span class="badge bg-pill">
-          <BIconCaretRightFill />
-          {{ $t('menus.projectsSidebar.webp') }}
-        </span>
-        <hr style="opacity: 0%;">
-      </h1><br><br>
-
-      <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'web')" :key="index" :item="item" />
-
-      <br><br>
-      <h1 class="text-light" id="webapps">
-        <span class="badge bg-pill">
-          <BIconCaretRightFill />
-          {{ $t('menus.projectsSidebar.webapps') }}
-        </span>
-        <hr style="opacity: 0%;">
-      </h1><br><br>
-
-      <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'webapp')" :key="index" :item="item" />
-
-      <br><br>
-      <h1 class="text-light" id="games">
-        <span class="badge bg-pill">
-          <BIconCaretRightFill />
-          {{ $t('menus.projectsSidebar.games') }}
-        </span>
-        <hr style="opacity: 0%;">
-      </h1><br><br>
-
-      <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'game')" :key="index" :item="item" />
-
-      <br>
+      <section class="projects-section" id="games">
+        <h2 class="section-title">
+          <span class="badge bg-pill">
+            <BIconCaretRightFill />
+            {{ $t('menus.projectsSidebar.games') }}
+          </span>
+        </h2>
+        <div class="projects-grid">
+          <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'game')" :key="index" :item="item" />
+        </div>
+      </section>
    </div>
 </template>
 

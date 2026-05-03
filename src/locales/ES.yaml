@@ -2,42 +2,45 @@
 index:
   card:
     title: David Moreno Gámez
-    subtitle: SRE/DevOps Engineer
+    subtitle: >-
+      AI Platform Engineer | AIOps & AI Agents | Kubernetes, OpenShift & Cloud
+      | Python, FastAPI & Terraform
     text: >-
-      SRE/DevOps orientado al mundo kubernetes/openshift y cloud, partidario
-      del GitOps y todo como código.
+      AI Platform Engineer con sólida base en Kubernetes, Red Hat OpenShift y
+      Linux en entornos empresariales, especializado en la construcción de
+      plataformas que integran agentes de IA y capacidades AIOps en flujos
+      operativos.
 who:
   title: ¿A qué me dedico?
 
   text1: >-
-    Extensa experiencia en la administración de entornos Kubernetes, OpenShift
-    y Linux. Especializado en la gestión de infraestructura como código y
-    automatización (CI/CD, IaC, CaC), con un profundo conocimiento del
-    funcionamiento de Kubernetes, lo que me ha permitido identificar y resolver
-    problemas en la infraestructura, llevando proyectos con éxito a entornos
-    productivos.
+    Mi trayectoria combina una fuerte experiencia en automatización e
+    Infraestructura como Código con desarrollo de software backend orientado a
+    IA aplicada. Trabajo habitualmente con Python, FastAPI, Ansible, Terraform,
+    GitLab CI, Jenkins y Azure DevOps para estandarizar despliegues, reducir
+    carga operativa y promover infraestructura declarativa orientada a GitOps.
 
   text2: >-
-    Poseo sólidos conocimientos en la administración y automatización de
-    sistemas Linux, especialmente en entornos Red Hat, utilizando herramientas
-    como Ansible, Python, Shell Script y Terraform para entornos cloud. Adopto
-    un enfoque GitOps y promuevo la infraestructura declarativa, alineada con
-    los principios de Kubernetes.
+    Mantengo conocimiento práctico de los internals de Kubernetes para
+    diagnosticar y resolver problemas complejos en producción.
 
   text3: >-
-    Además, cuento con experiencia como desarrollador web, lo que me ha
-    permitido perfeccionar mis habilidades en Git, programación y CI/CD (Gitlab,
-    Jenkins, Azure DevOps ...), facilitando la adopción del enfoque de "todo
-    como código".
+    Actualmente participo en el diseño y desarrollo de una plataforma orientada
+    a AIOps, contribuyendo a la integración de agentes de IA en flujos
+    operativos.
 
   text4: >-
-    Actualmente, estoy enfocado en ampliar mis competencias en Site Reliability
-    Engineering (SRE), DevOps y Platform Engineering, en entornos on-premise,
-    híbridos y de nube pública. Mi objetivo es impulsar la automatización, la
-    resiliencia y la eficiencia operativa, siempre con un enfoque colaborativo
-    en la resolución de problemas y la mejora continua en IT.
+   Mi trabajo incluye el desarrollo de componentes backend en Python y FastAPI,
+   sistemas de Retrieval-Augmented Generation (RAG) sobre bases de datos
+   vectoriales, arquitecturas de procesado asíncrono basadas en webhooks y
+   colas, e integraciones OAuth con plataformas de colaboración corporativas.
 
-  text5: ''
+  text5: >-
+    Me defino como un perfil T-shaped, con profundidad en Platform Engineering
+    e IA aplicada, y capacidad para moverme con soltura entre infraestructura,
+    desarrollo y operación. Mi foco está en construir plataformas fiables,
+    automatizadas y bien integradas, donde las prácticas modernas de ingeniería
+    se combinan con capacidades de IA al servicio de los flujos operativos.
 
 tech:
   title: Tecnologías
@@ -82,7 +85,7 @@ tech:
       skill: '70'
 
   text7:
-    - name: Python/Flask/Django
+    - name: Python/FastAPI/Flask
       skill: '80'
     - name: Shell
       skill: '80'

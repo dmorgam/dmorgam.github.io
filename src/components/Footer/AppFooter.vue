@@ -1,28 +1,37 @@
 <template>
-     <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-        <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-secondary">© 2023 - David Moreno Gamez</span>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">DM</div>
+        <div>
+          <p class="footer-name">David Moreno Gámez</p>
+          <p class="footer-role">SRE / DevOps Engineer</p>
         </div>
+      </div>
 
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-secondary p-2" target="_blank" href="https://github.com/dmorgam/">
-              <BIconGithub /> GitHub
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="text-secondary p-2" target="_blank" href="https://www.linkedin.com/in/dmorgam/">
-              <BIconLinkedin /> LinkedIn
-            </a>
-          </li>
-        </ul>
-      </footer>
-     </div>
+      <ul class="footer-social">
+        <li>
+          <a href="https://github.com/dmorgam/" target="_blank" rel="noopener" aria-label="GitHub">
+            <BIconGithub />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/dmorgam/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <BIconLinkedin />
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© {{ year }} David Moreno Gamez</span>
+      <span class="footer-tag">Built with Vue 3 · Bootstrap 5</span>
+    </div>
+  </footer>
 </template>
 
 <script lang="ts">
-import { } from 'vue'
+import { computed } from 'vue'
 import { BIconGithub, BIconLinkedin } from 'bootstrap-icons-vue'
 
 export default {
@@ -30,8 +39,9 @@ export default {
     BIconGithub,
     BIconLinkedin
   },
-
   setup () {
+    const year = computed(() => new Date().getFullYear())
+    return { year }
   }
 }
 </script>

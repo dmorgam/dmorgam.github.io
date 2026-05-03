@@ -1,49 +1,75 @@
 <template>
-      <div class="card mb-4">
-        <div class="card-body">
-          <button type="button" class="btn" v-on:click="toggleData()">
-            <h3>
-              <span v-html="data.tags"></span> {{ $t(data.title) }}
-              <BIconChevronUp v-if="showData" />
-              <BIconChevronDown v-if="!showData" />
-            </h3>
-          </button>
-          <hr v-show="showData">
-          <div class="row" v-show="showData">
-            <div class="col-sm-6">
-               <video v-if="data.video !== undefined" :style="data.video.style" controls>
-                  <source :src="data.video.src" :type="data.video.type">
-               </video>
-               <AppCarousel v-else :name="data.name + 'Slides'" :slides="data.slides"/>
-            </div>
-            <div class="col-sm-6">
-              <p v-for="(item, index) in data.texts" :key="index">{{ $t(item.text) }}</p>
-              <p>
-                <a target="_blank" :href="data.link.link" >
-                  {{ $t(data.link.text) }}
-                </a>
-              </p>
-              <p v-if="data.link2 !== undefined">
-                <a target="_blank" :href="data.link2.link" >
-                  {{ $t(data.link2.text) }}
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
+  <div class="project-card" :class="{ 'is-expanded': showData }">
+    <div class="project-thumb" @click="toggleData()">
+      <video v-if="data.video !== undefined" muted loop playsinline preload="metadata">
+        <source :src="data.video.src" :type="data.video.type">
+      </video>
+      <img v-else-if="data.slides && data.slides[0]" :src="data.slides[0].src" :alt="$t(data.title)" />
+      <div class="project-thumb-overlay">
+        <span class="project-thumb-cta">
+          <BIconArrowsFullscreen />
+          {{ showData ? '' : 'View' }}
+        </span>
       </div>
+    </div>
+
+    <div class="project-body">
+      <div class="project-tags" v-html="data.tags"></div>
+      <h4 class="project-title" @click="toggleData()">{{ $t(data.title) }}</h4>
+
+      <p v-if="!showData && data.texts && data.texts[0]" class="project-snippet">
+        {{ $t(data.texts[0].text) }}
+      </p>
+
+      <div class="project-detail" v-show="showData">
+        <div class="project-media mb-3">
+          <video v-if="data.video !== undefined" :style="data.video.style" controls>
+            <source :src="data.video.src" :type="data.video.type">
+          </video>
+          <AppCarousel v-else :name="data.name + 'Slides'" :slides="data.slides" />
+        </div>
+        <p v-for="(item, index) in data.texts" :key="index">{{ $t(item.text) }}</p>
+        <p v-if="data.link && data.link.link">
+          <a target="_blank" :href="data.link.link">
+            <BIconBoxArrowUpRight /> {{ $t(data.link.text) }}
+          </a>
+        </p>
+        <p v-if="data.link2 !== undefined">
+          <a target="_blank" :href="data.link2.link">
+            <BIconBoxArrowUpRight /> {{ $t(data.link2.text) }}
+          </a>
+        </p>
+      </div>
+
+      <button type="button" class="btn btn-sm project-toggle mt-2" @click="toggleData()">
+        <span v-if="showData">
+          <BIconChevronUp /> Less
+        </span>
+        <span v-else>
+          <BIconChevronDown /> More
+        </span>
+      </button>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
 import { ref } from 'vue'
 import AppCarousel from '../AppCarousel.vue'
-import { BIconChevronUp, BIconChevronDown } from 'bootstrap-icons-vue'
+import {
+  BIconChevronUp,
+  BIconChevronDown,
+  BIconArrowsFullscreen,
+  BIconBoxArrowUpRight
+} from 'bootstrap-icons-vue'
 
 export default {
   components: {
     AppCarousel,
     BIconChevronUp,
-    BIconChevronDown
+    BIconChevronDown,
+    BIconArrowsFullscreen,
+    BIconBoxArrowUpRight
   },
 
   props: {
@@ -51,7 +77,7 @@ export default {
   },
 
   setup (props: any) {
-    const showData = ref(true)
+    const showData = ref(false)
 
     const toggleData = () => {
       showData.value = !showData.value

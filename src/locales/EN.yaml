@@ -2,41 +2,46 @@
 index:
   card:
     title: David Moreno Gámez
-    subtitle: SRE/DevOps Engineer
+    subtitle: >-
+      AI Platform Engineer | AIOps & AI Agents | Kubernetes, OpenShift & Cloud
+      | Python, FastAPI & Terraform
     text: >-
-      SRE/DevOps focused on the Kubernetes/OpenShift and cloud world, supporter
-      of GitOps and everything as code.
+      AI Platform Engineer with a solid foundation in Kubernetes, Red Hat
+      OpenShift, and Linux in enterprise environments, specialized in building
+      platforms that integrate AI agents and AIOps capabilities into operational
+      workflows.
 who:
   title: What I do?
 
   text1: >-
-    Extensive experience administering Kubernetes, OpenShift, and Linux
-    environments. Specializing in infrastructure as code management and
-    automation (CI/CD, IaC, CCA), with a deep understanding of Kubernetes
-    functionality, which has allowed me to identify and resolve infrastructure
-    issues, successfully bringing projects to production.
+    My background combines strong expertise in automation and Infrastructure as
+    Code with backend software development focused on applied AI. I regularly
+    work with Python, FastAPI, Ansible, Terraform, GitLab CI, Jenkins, and Azure
+    DevOps to standardize deployments, reduce operational overhead, and promote
+    declarative, GitOps-driven infrastructure.
 
   text2: >-
-    I have solid knowledge of Linux system administration and automation,
-    especially in Red Hat environments, using tools such as Ansible, Python,
-    Shell Script, and Terraform for cloud environments. I adopt a GitOps
-    approach and promote declarative infrastructure, aligned with Kubernetes
-    principles.
+   I maintain hands-on knowledge of
+   Kubernetes internals to diagnose and resolve complex production issues.
 
   text3: >-
-    In addition, I have experience as a web developer, which has allowed me to
-    hone my skills in Git, programming, and CI/CD (Gitlab, Jenkins, Azure
-    DevOps, etc.), facilitating the adoption of the "everything as code"
-    approach.
+    I currently take part in the design and development of an AIOps-oriented
+    platform, contributing to the integration of AI agents into operational
+    workflows.
 
   text4: >-
-    Currently, I'm focused on expanding my skills in Site Reliability
-    Engineering (SRE), DevOps, and Platform Engineering across on-premise,
-    hybrid, and public cloud environments. My goal is to drive automation,
-    resilience, and operational efficiency, always with a collaborative
-    approach to problem-solving and continuous IT improvement.
+    My work includes building backend components in Python and
+    FastAPI, Retrieval-Augmented Generation (RAG) systems over vector databases,
+    asynchronous processing architectures based on webhooks and queues, and
+    OAuth integrations with enterprise collaboration platforms.
 
-  text5: ''
+  text5: >-
+    I see myself as a T-shaped engineer, with depth in Platform Engineering and
+    applied AI, and the ability to move comfortably between infrastructure,
+    development, and operations. My focus is on building reliable, automated,
+    and well-integrated platforms where modern engineering practices meet
+    AI-driven capabilities serving operational workflows.
+
 
 tech:
   title: Technologies
@@ -81,7 +86,7 @@ tech:
       skill: '70'
 
   text7:
-    - name: Python/Flask/Django
+    - name: Python/FastAPI/Flask
       skill: '80'
     - name: Shell
       skill: '80'

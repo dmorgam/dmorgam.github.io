@@ -26,10 +26,10 @@
             <div class="nav-item">
               <weatherApplet />
             </div>
-            <div class="nav-item d-flex align-items-center">
-              <select class="form-control form-control-sm ms-2 me-2" v-model="$root.$i18n.locale">
-                <option value="en">🇬🇧 English</option>
-                <option value="es">🇪🇸 Español</option>
+            <div class="nav-item d-flex align-items-center ms-2 me-2">
+              <select class="lang-select" v-model="$root.$i18n.locale" aria-label="Language">
+                <option value="en">🇬🇧 EN</option>
+                <option value="es">🇪🇸 ES</option>
               </select>
             </div>
         </div>
