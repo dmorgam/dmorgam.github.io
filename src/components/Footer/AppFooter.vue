@@ -4,8 +4,8 @@
       <div class="footer-brand">
         <div class="footer-logo">DM</div>
         <div>
-          <p class="footer-name">David Moreno Gámez</p>
-          <p class="footer-role">SRE / DevOps Engineer</p>
+          <p class="footer-name">{{ $t('index.card.title') }}</p>
+          <p class="footer-role">{{ $t('index.card.subtitle') }}</p>
         </div>
       </div>
 
@@ -24,7 +24,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© {{ year }} David Moreno Gamez</span>
+      <span>© {{ year }} {{ $t('index.card.title') }}</span>
       <span class="footer-tag">Built with Vue 3 · Bootstrap 5</span>
     </div>
   </footer>

@@ -6,7 +6,7 @@
         <div class="hero-blob hero-blob-2"></div>
 
         <div class="hero-inner container">
-          <img src="img/dmorgam.png" class="hero-avatar mb-4" alt="David Moreno Gámez" />
+          <img src="img/dmorgam.png" class="hero-avatar mb-4" alt="{{ $t('index.card.title') }}" />
 
           <h1 class="hero-title mb-2">{{ $t('index.card.title') }}</h1>
 
