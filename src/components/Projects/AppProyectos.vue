@@ -9,6 +9,18 @@
         </div>
       </div>
 
+      <section class="projects-section" id="ai">
+        <h2 class="section-title">
+          <span class="badge bg-pill">
+            <BIconCaretRightFill />
+            {{ $t('menus.projectsSidebar.ai') }}
+          </span>
+        </h2>
+        <div class="projects-grid">
+          <AppFicha v-for="(item, index) in projectsData.filter(i => i.type === 'ai')" :key="index" :item="item" />
+        </div>
+      </section>
+
       <section class="projects-section" id="container">
         <h2 class="section-title">
           <span class="badge bg-pill">

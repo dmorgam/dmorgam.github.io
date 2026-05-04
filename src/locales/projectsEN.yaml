@@ -1,4 +1,39 @@
 ---
+
+hub_logicalis:
+  title: >-
+    MCP HUB, mcp proxy and semantic search of Tools and Documentation - 2026
+    - LOGICALIS
+  text1: >-
+    Gateway that unifies dozens of remote MCP tools and specific documentation
+    into a single MCP, providing the model with a single entry point.
+
+  text2: >-
+    Instead of exposing hundreds of tools to the LLM, it indexes the entire
+    catalog in a vector DB and applies semantic RAG. The MCP client only sees
+    3 tools (discover tools, execute tools, query docs) and receives only the
+    relevant tools and docs at each step.
+
+  text3: >-
+    Multi-Tenant by design, federated auth via Entra ID and cloud native
+    deployment on kubernetes. This piece orchestrates heterogeneous tooling
+    with minimal context cost.
+
+hooks_logicalis:
+  title: AI WebHooks Orchestrator, automated actions - 2026 - LOGICALIS
+  text1: >-
+    The application receives events via webhooks and processes them
+    asynchronously in a Redis queue.
+
+  text2: >-
+    Events are processed by an AI agent connected to MCP, executing the
+    required actions based on the prompt.
+
+  text3: >-
+    Extensible and domain-agnostic design. Adaptable to diverse use cases
+    through declarative configuration. The app is containerized and ready to
+    run in cloud native environments like kubernetes.
+
 rhel-sgad:
   title: Red Hat Enterprise Linux Administration - 2022,2023 - SGAD
   text1: >-

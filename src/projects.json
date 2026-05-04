@@ -1,5 +1,35 @@
 [
   {
+    "type": "ai",
+    "name": "AI WebHooks async event processing",
+    "tags": "<span class='badge bg-success'>Python</span> + <span class='badge bg-success'>FastAPI</span> + <span class='badge bg-danger'>Redis</span>",
+    "title": "projects.hooks_logicalis.title",
+    "slides": [
+      { "id": 0, "src": "img/hooks.png" }
+    ],
+    "texts": [
+      { "text": "projects.hooks_logicalis.text1" },
+      { "text": "projects.hooks_logicalis.text2" },
+      { "text": "projects.hooks_logicalis.text3" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "ai",
+    "name": "MCP HUB proxy and RAG",
+    "tags": "<span class='badge bg-success'>Python</span> + <span class='badge bg-success'>MCP</span>",
+    "title": "projects.hub_logicalis.title",
+    "slides": [
+      { "id": 0, "src": "img/mcp_hub.png" }
+    ],
+    "texts": [
+      { "text": "projects.hub_logicalis.text1" },
+      { "text": "projects.hub_logicalis.text2" },
+      { "text": "projects.hub_logicalis.text3" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
     "type": "container",
     "name": "OpenShiftK8s",
     "tags": "<span class='badge bg-danger'>OpenShift</span> + <span class='badge bg-primary'>Kubernetes</span>",

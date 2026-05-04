@@ -31,6 +31,7 @@ export default {
     const menus = {
       title: 'Proyectos',
       items: [
+        { title: 'menus.projectsSidebar.ai', link: '#ai' },
         { title: 'menus.projectsSidebar.container', link: '#container' },
         { title: 'menus.projectsSidebar.cd', link: '#cd' },
         { title: 'menus.projectsSidebar.systems', link: '#systems' },

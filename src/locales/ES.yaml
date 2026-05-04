@@ -57,11 +57,11 @@ tech:
     - name: Ansible Automation Platform
       skill: '70'
     - name: Terraform
-      skill: '70'
+      skill: '80'
     - name: AWS
       skill: '60'
     - name: Azure
-      skill: '35'
+      skill: '50'
     - name: Nginx
       skill: '60'
     - name: Mysql
@@ -81,11 +81,11 @@ tech:
     - name: Containerd
       skill: '60'
     - name: Helm
-      skill: '70'
+      skill: '80'
 
   text7:
     - name: Python/FastAPI/Flask
-      skill: '80'
+      skill: '90'
     - name: Shell
       skill: '80'
     - name: Powershell
@@ -93,7 +93,7 @@ tech:
     - name: Javascript/Node
       skill: '60'
     - name: Go
-      skill: '30'
+      skill: '40'
     - name: PHP/Laravel
       skill: '40'
 
@@ -132,6 +132,7 @@ menus:
     credly: Credenciales Digitales
 
   projectsSidebar:
+    ai: AIOps/IA
     container: Containers/Kubernetes
     systems: Sistemas Linux
     cd: Herramientas CD/IaC
