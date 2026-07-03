@@ -25,7 +25,9 @@
 
     <div class="footer-bottom">
       <span>© {{ year }} {{ $t('index.card.title') }}</span>
-      <span class="footer-tag">Built with Vue 3 · Bootstrap 5</span>
+      <a class="footer-tag" href="https://github.com/dmorgam/dmorgam.github.io" target="_blank" rel="noopener">
+        src: github.com/dmorgam/dmorgam.github.io
+      </a>
     </div>
   </footer>
 </template>
