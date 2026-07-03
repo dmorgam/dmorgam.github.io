@@ -1,5 +1,62 @@
 ---
 
+aiops_platform:
+  title: >-
+    Plataforma AIOps agéntica, arquitectura de microservicios - 2025/26 -
+    LOGICALIS
+  text1: >-
+    Diseño y desarrollo de una plataforma de AIOps basada en agentes de IA,
+    compuesta por microservicios desacoplados: pasarela unificada de tools
+    (MCP Hub), agentes conversacionales y desatendidos, ingesta de eventos por
+    webhooks y una capa de gobierno de acciones.
+
+  text2: >-
+    Los agentes operan sobre sistemas corporativos (Kubernetes, red,
+    observabilidad, ITSM, documentación interna) a través de un catálogo común
+    de tools MCP con selección semántica, de forma controlada y auditable.
+
+  text3: >-
+    Ecosistema cloud native de extremo a extremo: FastAPI, despliegue en
+    Kubernetes con Helm, CI/CD en Azure DevOps e imágenes reproducibles.
+    Multi-tenant y extensible por configuración, sin tocar código.
+
+agents_logicalis:
+  title: >-
+    Agentes IA conversacionales y desatendidos con guardrails - 2026 -
+    LOGICALIS
+  text1: >-
+    Servicios de agente construidos sobre LangGraph y Azure OpenAI: chat en
+    streaming (SSE) consumido por frontends corporativos como Microsoft Teams,
+    y ejecuciones desatendidas disparadas por eventos de infraestructura.
+
+  text2: >-
+    Las ejecuciones desatendidas aplican guardrails en código, no en prompt:
+    listas de permitido/denegado de tools, modo dry-run, timeouts por tool y
+    por ejecución, límites de pasos y auditoría estructurada de cada run.
+
+  text3: >-
+    Bucle ReAct con function calling contra el catálogo MCP, sesiones
+    cacheadas y trazabilidad end-to-end mediante identificador de sesión que
+    atraviesa todos los servicios.
+
+policy_logicalis:
+  title: >-
+    Gobierno de acciones de agentes IA, Policy Enforcement - 2026 - LOGICALIS
+  text1: >-
+    Servicio de decisión de políticas (PDP) que autoriza cada llamada a tool
+    de los agentes antes de ejecutarse, con diseño fail-closed: ante error o
+    duda, deniega.
+
+  text2: >-
+    Pipeline de dos capas: autorización determinista RBAC/ABAC con validación
+    de argumentos contra el schema de cada tool, y un LLM judge opcional que
+    evalúa riesgos (exfiltración, inyección, acciones inseguras) y solo puede
+    endurecer la decisión, nunca relajarla.
+
+  text3: >-
+    Permite que agentes autónomos operen sobre infraestructura real dentro de
+    límites verificables y auditables.
+
 hub_logicalis:
   title: >-
     MCP HUB, proxy de mcps y busqueda semántica de Tools y Documentación - 2026
@@ -10,9 +67,10 @@ hub_logicalis:
 
   text2: >-
     En lugar de exponer cientos de tools al LLM, indexa todo el catálogo en vector
-    DB y aplica RAG semántico. El cliente MCP solo ve 3 tools (descubrir tools,
-    ejecutar tools, consultar docs) y recibe únicamente las tools y docs relevantes
-    por cada paso.
+    DB y aplica RAG semántico. El cliente MCP solo ve 4 tools (descubrir tools,
+    ejecutar tools, consultar docs e historial de conversación) y recibe
+    únicamente lo relevante en cada paso. Los MCPs remotos se registran en
+    caliente, incluso en modo self-service vía CRDs y un operator de Kubernetes.
 
   text3: >-
     Multi-Tenant por diseño, auth federada por entra ID y despliegue cloud native
@@ -23,11 +81,13 @@ hooks_logicalis:
   title: Orquestador IA WebHooks, acciones automatizadas - 2026 - LOGICALIS
   text1: >-
     La aplicación recibe eventos vía webhooks y los procesa asíncronamente en
-    una cola de Redis.
+    una cola de Redis con ventana de espera, deduplicación y cancelación de
+    eventos (por ejemplo si la alerta se resuelve sola antes de actuar).
 
   text2: >-
-    Los eventos son procesados por un agente de IA conectado a MCP, ejecutando
-    las acciones requeridas según el prompt.
+    Cada evento vencido dispara la ejecución de un agente de IA conectado a
+    MCP, que ejecuta las acciones requeridas según el prompt configurado y
+    bajo guardrails.
 
   text3: >-
     Diseño extensible y agnóstico al dominio. Adaptable a casos de uso diversos

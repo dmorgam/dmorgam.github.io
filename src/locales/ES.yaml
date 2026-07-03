@@ -6,9 +6,9 @@ index:
       AI Platform Engineer
     text: >-
       AI Platform Engineer con sólida base en Kubernetes, Red Hat OpenShift y
-      Linux en entornos empresariales, especializado en la construcción de
-      plataformas que integran agentes de IA y capacidades AIOps en flujos
-      operativos.
+      Linux en entornos empresariales. Diseño y construyo plataformas donde
+      agentes de IA operan sobre infraestructura real, con la fiabilidad y
+      las prácticas del Platform Engineering clásico.
 who:
   title: ¿A qué me dedico?
 
@@ -20,19 +20,22 @@ who:
     carga operativa y promover infraestructura declarativa orientada a GitOps.
 
   text2: >-
-    Mantengo conocimiento práctico de los internals de Kubernetes para
-    diagnosticar y resolver problemas complejos en producción.
+    Sigo operando Kubernetes y OpenShift a diario: internals, operators, CRDs
+    y diagnóstico de problemas complejos en producción. La capa de agentes no
+    sustituye esa base, se apoya en ella.
 
   text3: >-
-    Actualmente participo en el diseño y desarrollo de una plataforma orientada
-    a AIOps, contribuyendo a la integración de agentes de IA en flujos
-    operativos.
+    Actualmente diseño y desarrollo una plataforma AIOps agéntica compuesta
+    por microservicios: agentes conversacionales y desatendidos conectados a
+    un catálogo unificado de tools vía MCP, con guardrails y una capa de
+    gobierno que controla las acciones de los agentes.
 
   text4: >-
-   Mi trabajo incluye el desarrollo de componentes backend en Python y FastAPI,
-   sistemas de Retrieval-Augmented Generation (RAG) sobre bases de datos
-   vectoriales, arquitecturas de procesado asíncrono basadas en webhooks y
-   colas, e integraciones OAuth con plataformas de colaboración corporativas.
+   Esto incluye componentes backend en Python y FastAPI, agentes LLM con
+   guardrails aplicados en código, sistemas de Retrieval-Augmented Generation
+   (RAG) sobre bases de datos vectoriales, procesado asíncrono basado en
+   webhooks y colas, e integraciones OAuth con plataformas de colaboración
+   corporativas.
 
   text5: >-
     Me defino como un perfil T-shaped, con profundidad en Platform Engineering
@@ -43,79 +46,89 @@ who:
 
 tech:
   title: Tecnologías
-  text1: 'Sistemas/IaC/Configuración:'
-  text2: 'Contenedores:'
-  text3: 'Lenguajes Programación:'
-  text4: 'Herramientas:'
-  text5:
-    - name: Linux
-      skill: '90'
-    - name: Rhel
-      skill: '80'
-    - name: Ansible
-      skill: '80'
-    - name: Ansible Automation Platform
-      skill: '70'
-    - name: Terraform
-      skill: '80'
-    - name: AWS
-      skill: '60'
-    - name: Azure
-      skill: '50'
-    - name: Nginx
-      skill: '60'
-    - name: Mysql
-      skill: '40'
+  groups:
+    - title: 'IA aplicada / Agentes:'
+      items:
+        - name: Agentes LLM (LangGraph)
+          skill: '80'
+        - name: MCP (Model Context Protocol)
+          skill: '90'
+        - name: RAG / Bases de datos vectoriales
+          skill: '80'
+        - name: Azure OpenAI
+          skill: '80'
+        - name: Guardrails y gobierno de agentes
+          skill: '75'
 
-  text6:
-    - name: Openshift
-      skill: '80'
-    - name: Kubernetes
-      skill: '90'
-    - name: VMware Tanzu
-      skill: '80'
-    - name: Docker
-      skill: '80'
-    - name: Podman
-      skill: '80'
-    - name: Containerd
-      skill: '60'
-    - name: Helm
-      skill: '80'
+    - title: 'Contenedores:'
+      items:
+        - name: Kubernetes
+          skill: '90'
+        - name: Openshift
+          skill: '80'
+        - name: Helm
+          skill: '80'
+        - name: Docker
+          skill: '80'
+        - name: Podman
+          skill: '80'
+        - name: VMware Tanzu
+          skill: '80'
+        - name: Containerd
+          skill: '60'
 
-  text7:
-    - name: Python/FastAPI/Flask
-      skill: '90'
-    - name: Shell
-      skill: '80'
-    - name: Powershell
-      skill: '50'
-    - name: Javascript/Node
-      skill: '60'
-    - name: Go
-      skill: '40'
-    - name: PHP/Laravel
-      skill: '40'
+    - title: 'Sistemas/IaC/Cloud:'
+      items:
+        - name: Linux
+          skill: '90'
+        - name: Rhel
+          skill: '80'
+        - name: Ansible
+          skill: '80'
+        - name: Ansible Automation Platform
+          skill: '70'
+        - name: Terraform
+          skill: '80'
+        - name: Azure (AKS)
+          skill: '65'
+        - name: AWS
+          skill: '60'
+        - name: Nginx
+          skill: '60'
 
-  text8:
-    - name: Git
-      skill: '80'
-    - name: Gitlab
-      skill: '60'
-    - name: pip
-      skill: '70'
-    - name: Jenkins
-      skill: '60'
-    - name: Azure DevOps
-      skill: '60'
-    - name: GitHub Actions
-      skill: '60'
-    - name: Hashicorp Vault
-      skill: '40'
-    - name: Grafana
-      skill: '50'
-    - name: Prometheus
-      skill: '60'
+    - title: 'Lenguajes Programación:'
+      items:
+        - name: Python/FastAPI/Flask
+          skill: '90'
+        - name: Shell
+          skill: '80'
+        - name: Powershell
+          skill: '50'
+        - name: Javascript/Node
+          skill: '60'
+        - name: Go
+          skill: '40'
+
+    - title: 'CI/CD y Herramientas:'
+      items:
+        - name: Git
+          skill: '80'
+        - name: Azure DevOps
+          skill: '75'
+        - name: GitLab CI
+          skill: '60'
+        - name: GitHub Actions
+          skill: '60'
+        - name: Jenkins
+          skill: '60'
+        - name: Redis
+          skill: '70'
+        - name: Grafana
+          skill: '50'
+        - name: Prometheus
+          skill: '60'
+        - name: Hashicorp Vault
+          skill: '40'
 
 menus:
   navbar:

@@ -55,47 +55,10 @@
           <h2 class="section-heading">{{ $t('tech.title') }}</h2>
         </header>
         <div class="section-body">
-          <div class="row g-4">
-            <div class="col-md-6">
-              <h6 class="skill-group-title">{{ $t('tech.text1') }}</h6>
-              <div class="skill-row" v-for="item in $tm('tech.text5')" :key="item.name">
-                <div class="skill-row-head">
-                  <span class="skill-name">{{ item.name }}</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar"
-                       :style="{ width: visible ? item.skill + '%' : '0%' }"
-                       :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <h6 class="skill-group-title mt-4">{{ $t('tech.text2') }}</h6>
-              <div class="skill-row" v-for="item in $tm('tech.text6')" :key="item.name">
-                <div class="skill-row-head">
-                  <span class="skill-name">{{ item.name }}</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar"
-                       :style="{ width: visible ? item.skill + '%' : '0%' }"
-                       :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <h6 class="skill-group-title">{{ $t('tech.text3') }}</h6>
-              <div class="skill-row" v-for="item in $tm('tech.text7')" :key="item.name">
-                <div class="skill-row-head">
-                  <span class="skill-name">{{ item.name }}</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar"
-                       :style="{ width: visible ? item.skill + '%' : '0%' }"
-                       :aria-valuenow="item.skill" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <h6 class="skill-group-title mt-4">{{ $t('tech.text4') }}</h6>
-              <div class="skill-row" v-for="item in $tm('tech.text8')" :key="item.name">
+          <div class="skills-grid">
+            <div class="skill-group" v-for="group in $tm('tech.groups')" :key="group.title">
+              <h6 class="skill-group-title">{{ group.title }}</h6>
+              <div class="skill-row" v-for="item in group.items" :key="item.name">
                 <div class="skill-row-head">
                   <span class="skill-name">{{ item.name }}</span>
                 </div>

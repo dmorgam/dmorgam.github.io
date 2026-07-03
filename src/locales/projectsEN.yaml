@@ -1,5 +1,59 @@
 ---
 
+aiops_platform:
+  title: >-
+    Agentic AIOps platform, microservices architecture - 2025/26 - LOGICALIS
+  text1: >-
+    Design and development of an AI-agent-based AIOps platform, composed of
+    decoupled microservices: a unified tool gateway (MCP Hub), conversational
+    and unattended agents, webhook event ingestion and an action governance
+    layer.
+
+  text2: >-
+    Agents operate over corporate systems (Kubernetes, networking,
+    observability, ITSM, internal documentation) through a shared catalog of
+    MCP tools with semantic selection, in a controlled and auditable way.
+
+  text3: >-
+    End-to-end cloud native ecosystem: FastAPI, Kubernetes deployments with
+    Helm, CI/CD on Azure DevOps and reproducible images. Multi-tenant and
+    extensible through configuration, without touching code.
+
+agents_logicalis:
+  title: >-
+    Conversational and unattended AI agents with guardrails - 2026 - LOGICALIS
+  text1: >-
+    Agent services built on LangGraph and Azure OpenAI: streaming chat (SSE)
+    consumed by corporate frontends such as Microsoft Teams, and unattended
+    runs triggered by infrastructure events.
+
+  text2: >-
+    Unattended runs enforce guardrails in code, not in the prompt: tool
+    allow/deny lists, dry-run mode, per-tool and per-run timeouts, step limits
+    and structured auditing of every run.
+
+  text3: >-
+    ReAct loop with function calling against the MCP catalog, cached sessions
+    and end-to-end traceability through a session identifier that travels
+    across every service.
+
+policy_logicalis:
+  title: >-
+    Action governance for AI agents, Policy Enforcement - 2026 - LOGICALIS
+  text1: >-
+    Policy Decision Point (PDP) service that authorizes every agent tool call
+    before it executes, with a fail-closed design: on error or doubt, deny.
+
+  text2: >-
+    Two-layer pipeline: deterministic RBAC/ABAC authorization with argument
+    validation against each tool's schema, plus an optional LLM judge that
+    evaluates risks (exfiltration, injection, unsafe actions) and can only
+    harden the decision, never relax it.
+
+  text3: >-
+    Lets autonomous agents operate over real infrastructure within verifiable,
+    auditable limits.
+
 hub_logicalis:
   title: >-
     MCP HUB, mcp proxy and semantic search of Tools and Documentation - 2026
@@ -11,8 +65,10 @@ hub_logicalis:
   text2: >-
     Instead of exposing hundreds of tools to the LLM, it indexes the entire
     catalog in a vector DB and applies semantic RAG. The MCP client only sees
-    3 tools (discover tools, execute tools, query docs) and receives only the
-    relevant tools and docs at each step.
+    4 tools (discover tools, execute tools, query docs and conversation
+    history) and receives only what is relevant at each step. Remote MCPs
+    register at runtime, including self-service via CRDs and a Kubernetes
+    operator.
 
   text3: >-
     Multi-Tenant by design, federated auth via Entra ID and cloud native
@@ -23,11 +79,14 @@ hooks_logicalis:
   title: AI WebHooks Orchestrator, automated actions - 2026 - LOGICALIS
   text1: >-
     The application receives events via webhooks and processes them
-    asynchronously in a Redis queue.
+    asynchronously in a Redis queue with a delay window, deduplication and
+    event cancellation (for instance when an alert resolves itself before
+    action is taken).
 
   text2: >-
-    Events are processed by an AI agent connected to MCP, executing the
-    required actions based on the prompt.
+    Each due event triggers the run of an AI agent connected to MCP, which
+    executes the required actions based on the configured prompt and under
+    guardrails.
 
   text3: >-
     Extensible and domain-agnostic design. Adaptable to diverse use cases

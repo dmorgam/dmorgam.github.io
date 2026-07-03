@@ -512,6 +512,11 @@ html {
 }
 
 /* === Skill bars === */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+  gap: 2rem 3rem;
+}
 .skill-group-title {
   font-family: var(--font-mono);
   font-size: 0.72rem;

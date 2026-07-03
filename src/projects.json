@@ -1,16 +1,16 @@
 [
   {
     "type": "ai",
-    "name": "AI WebHooks async event processing",
-    "tags": "<span class='badge bg-success'>Python</span> + <span class='badge bg-success'>FastAPI</span> + <span class='badge bg-danger'>Redis</span>",
-    "title": "projects.hooks_logicalis.title",
+    "name": "Agentic AIOps platform",
+    "tags": "<span class='badge bg-success'>Python</span> + <span class='badge bg-success'>MCP</span> + <span class='badge bg-primary'>Kubernetes</span> + <span class='badge bg-info'>Azure</span>",
+    "title": "projects.aiops_platform.title",
     "slides": [
-      { "id": 0, "src": "img/hooks.png" }
+      { "id": 0, "src": "img/aiops_platform.png" }
     ],
     "texts": [
-      { "text": "projects.hooks_logicalis.text1" },
-      { "text": "projects.hooks_logicalis.text2" },
-      { "text": "projects.hooks_logicalis.text3" }
+      { "text": "projects.aiops_platform.text1" },
+      { "text": "projects.aiops_platform.text2" },
+      { "text": "projects.aiops_platform.text3" }
     ],
     "link": { "text": "", "link": "" }
   },
@@ -26,6 +26,51 @@
       { "text": "projects.hub_logicalis.text1" },
       { "text": "projects.hub_logicalis.text2" },
       { "text": "projects.hub_logicalis.text3" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "ai",
+    "name": "LLM agents with guardrails",
+    "tags": "<span class='badge bg-success'>Python</span> + <span class='badge bg-warning'>LangGraph</span> + <span class='badge bg-info'>Azure OpenAI</span>",
+    "title": "projects.agents_logicalis.title",
+    "slides": [
+      { "id": 0, "src": "img/agents.png" }
+    ],
+    "texts": [
+      { "text": "projects.agents_logicalis.text1" },
+      { "text": "projects.agents_logicalis.text2" },
+      { "text": "projects.agents_logicalis.text3" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "ai",
+    "name": "AI WebHooks async event processing",
+    "tags": "<span class='badge bg-success'>Python</span> + <span class='badge bg-success'>FastAPI</span> + <span class='badge bg-danger'>Redis</span>",
+    "title": "projects.hooks_logicalis.title",
+    "slides": [
+      { "id": 0, "src": "img/hooks.png" }
+    ],
+    "texts": [
+      { "text": "projects.hooks_logicalis.text1" },
+      { "text": "projects.hooks_logicalis.text2" },
+      { "text": "projects.hooks_logicalis.text3" }
+    ],
+    "link": { "text": "", "link": "" }
+  },
+  {
+    "type": "ai",
+    "name": "Policy enforcement for AI agents",
+    "tags": "<span class='badge bg-success'>Python</span> + <span class='badge bg-success'>FastAPI</span> + <span class='badge bg-danger'>RBAC</span>",
+    "title": "projects.policy_logicalis.title",
+    "slides": [
+      { "id": 0, "src": "img/policy.png" }
+    ],
+    "texts": [
+      { "text": "projects.policy_logicalis.text1" },
+      { "text": "projects.policy_logicalis.text2" },
+      { "text": "projects.policy_logicalis.text3" }
     ],
     "link": { "text": "", "link": "" }
   },
