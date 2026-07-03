@@ -74,7 +74,7 @@
       </section>
       <div class="row mt-5">
          <div class="col" id="credly">
-            <section class="section-block">
+            <section class="section-block section-light">
               <header class="section-head">
                 <h2 class="section-heading">{{ $t('menus.indexSidebar.credly') }}</h2>
               </header>
