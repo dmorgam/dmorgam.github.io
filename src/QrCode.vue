@@ -9,10 +9,8 @@
         <div class="row alert alert-secondary p-4">
           <div class="col-sm-6">
             <div class="input-group mb-3">
-              <div class="input-group-text">
-                <label class="input-group-text">{{ $t('qrcode.format') }}</label>
-              </div>
-              <select v-model="tipo" class="custom-select">
+              <span class="input-group-text">{{ $t('qrcode.format') }}</span>
+              <select v-model="tipo" class="form-select">
                 <option value="url">{{ $t('qrcode.formatMenu.url') }}</option>
                 <option value="vcard">{{ $t('qrcode.formatMenu.vcard') }}</option>
                 <option value="text">{{ $t('qrcode.formatMenu.text') }}</option>
@@ -25,16 +23,16 @@
           </div>
           <div class="col-sm-6">
             <div class="card">
-              <div class="card-body">
+              <div class="card-body text-center">
                 <h5 class="card-title">{{ $t('qrcode.resultTitle') }}</h5>
                 <hr>
-                <img :src="imageData">
-
-                <div class="w-100">
-                  <button v-if="imageData !== ''" v-on:click="downloadImg()" class="btn btn-info">
-                    {{ $t('qrcode.download') }}
-                  </button>
+                <div class="qr-output d-flex align-items-center justify-content-center">
+                  <img v-if="imageData !== ''" :src="imageData" class="qr-img" :alt="$t('qrcode.resultTitle')">
+                  <div v-else class="qr-placeholder">···</div>
                 </div>
+                <button v-if="imageData !== ''" v-on:click="downloadImg()" class="btn btn-info mt-3">
+                  {{ $t('qrcode.download') }}
+                </button>
               </div>
             </div>
           </div>
