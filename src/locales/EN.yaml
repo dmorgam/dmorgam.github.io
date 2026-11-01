@@ -137,6 +137,7 @@ menus:
     tools: Tools
     toolsMenu:
       qrcode: QR code generator
+      tokengen: Token/password generator
 
   indexSidebar:
     start: Start
@@ -180,6 +181,30 @@ qrcode:
     st: Street
     city: City
     country: Country
+
+tokengen:
+  title: Token/password generator
+  type: Type
+
+  typeMenu:
+    password: Password
+    hex: Hex
+    base64: Base64
+    uuid: UUID v4
+
+  button: Generate
+  copy: Copy
+  copied: Copied!
+  resultTitle: Generated Token
+  password:
+    length: Length
+    upper: Uppercase
+    lower: Lowercase
+    digits: Numbers
+    symbols: Symbols
+    ambiguous: Avoid ambiguous (Il1O0)
+  bytes: Bytes
+  urlSafe: URL safe
 
 projects-info-alert: >-
   Here is a small indicative sample of some of the projects that I have carried

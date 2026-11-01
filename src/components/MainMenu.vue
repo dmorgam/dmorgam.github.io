@@ -17,8 +17,8 @@
                <a class="nav-link dropdown-toggle" href="javascript:void(0)" :id="item.name" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  {{ $t(item.name) }}
                </a>
-               <div class="dropdown-menu" v-for="(itm, index) in item.submenu" :key="index">
-                 <router-link class="dropdown-item" :to="itm.src">{{ $t(itm.name) }}</router-link>
+               <div class="dropdown-menu">
+                 <router-link v-for="(itm, index) in item.submenu" :key="index" class="dropdown-item" :to="itm.src">{{ $t(itm.name) }}</router-link>
                 </div>
              </li>
           </div>
@@ -61,7 +61,10 @@ export default {
         route: 'Tools',
         name: 'menus.navbar.tools',
         src: '',
-        submenu: [{ route: 'Qrcode', name: 'menus.navbar.toolsMenu.qrcode', src: '/qrcode', submenu: [] as MenuItem[] }]
+        submenu: [
+          { route: 'Qrcode', name: 'menus.navbar.toolsMenu.qrcode', src: '/qrcode', submenu: [] as MenuItem[] },
+          { route: 'TokenGen', name: 'menus.navbar.toolsMenu.tokengen', src: '/tokengen', submenu: [] as MenuItem[] }
+        ]
       }
     ]
 

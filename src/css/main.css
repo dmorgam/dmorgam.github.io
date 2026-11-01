@@ -105,6 +105,12 @@ a:hover {
   border-color: var(--color-accent-strong);
   color: var(--color-crust);
 }
+.btn-info:disabled,
+.btn-success:disabled {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-crust);
+}
 
 /* === Forms === */
 .form-control,
@@ -131,6 +137,21 @@ a:hover {
 .form-select option {
   background: var(--color-surface);
   color: var(--color-text);
+}
+.form-check-input {
+  background-color: var(--color-border-dark);
+  border: 1px solid var(--color-border-strong);
+}
+.form-check-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-soft);
+}
+.form-check-input:checked {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.form-check-input:checked[type=checkbox] {
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23181926' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
 }
 
 /* === Dropdowns === */
@@ -176,6 +197,33 @@ a:hover {
 .qr-placeholder {
   width: 180px;
   height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+}
+
+/* === Token generator === */
+.token-output {
+  min-height: 120px;
+}
+.token-value {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-sm);
+  background: var(--color-crust);
+  color: var(--color-text);
+  font-size: 1rem;
+  word-break: break-all;
+  user-select: all;
+}
+.token-placeholder {
+  width: 100%;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;

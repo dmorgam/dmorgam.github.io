@@ -137,6 +137,7 @@ menus:
     tools: Herramientas
     toolsMenu:
       qrcode: Generador de QR
+      tokengen: Generador de tokens/contraseñas
 
   indexSidebar:
     start: Inicio
@@ -178,6 +179,28 @@ qrcode:
     st: Calle
     city: Ciudad
     country: País
+
+tokengen:
+  title: Generador de tokens/contraseñas
+  type: Tipo
+  typeMenu:
+    password: Contraseña
+    hex: Hex
+    base64: Base64
+    uuid: UUID v4
+  button: Generar
+  copy: Copiar
+  copied: ¡Copiado!
+  resultTitle: Token Generado
+  password:
+    length: Longitud
+    upper: Mayúsculas
+    lower: Minúsculas
+    digits: Números
+    symbols: Símbolos
+    ambiguous: Evitar ambiguos (Il1O0)
+  bytes: Bytes
+  urlSafe: Apto para URL
 
 projects-info-alert: >-
   Aqui se presenta una pequeña muestra orientativa de algunos de los proyectos
