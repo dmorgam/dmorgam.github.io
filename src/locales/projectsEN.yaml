@@ -2,40 +2,57 @@
 
 aiops_platform:
   title: >-
-    Agentic AIOps platform, microservices architecture - 2025/26 - LOGICALIS
+    Multi-agent agentic AIOps platform, microservices architecture - 2025/26 -
+    LOGICALIS
   text1: >-
-    Design and development of an AI-agent-based AIOps platform, composed of
-    decoupled microservices: a unified tool gateway (MCP Hub), conversational
-    and unattended agents, webhook event ingestion and an action governance
-    layer.
+    Design and development of a multi-agent AIOps platform running in
+    production, composed of decoupled microservices: an orchestrator that
+    delegates to specialist agents, a unified tool gateway (MCP Hub), webhook
+    event ingestion and an action governance layer with human approval.
 
   text2: >-
-    Agents operate over corporate systems (Kubernetes, networking,
-    observability, ITSM, internal documentation) through a shared catalog of
-    MCP tools with semantic selection, in a controlled and auditable way.
+    Agents operate over corporate systems (Kubernetes, virtualization,
+    networking and security, ITSM, directory, cloud and internal
+    documentation) through a shared catalog of ~400 tools from 18 MCP servers,
+    both in-house and vendor-provided, with semantic selection, in a
+    controlled and auditable way.
 
   text3: >-
     End-to-end cloud native ecosystem: FastAPI, Kubernetes deployments with
-    Helm, CI/CD on Azure DevOps and reproducible images. Multi-tenant and
-    extensible through configuration, without touching code.
+    Helm and GitOps (Argo CD, External Secrets), infrastructure with Terraform
+    and CI/CD on Azure DevOps with semantic versioning. Multi-tenant,
+    model-provider agnostic (Azure OpenAI, AWS Bedrock) and extensible through
+    configuration, without touching code.
+
+  text4: >-
+    Built for several deployment models: SaaS, dedicated in the customer's
+    cloud, on top of the customer's own Kubernetes platform, or with an
+    on-premise extension (k3s) to integrate local tools. End-to-end
+    observability with OpenTelemetry and an audit trail aligned with ISO/IEC
+    42001, currently being rolled out.
 
 agents_logicalis:
   title: >-
-    Conversational and unattended AI agents with guardrails - 2026 - LOGICALIS
+    Multi-agent system: orchestrator and specialist agents with guardrails -
+    2026 - LOGICALIS
   text1: >-
-    Agent services built on LangGraph and Azure OpenAI: streaming chat (SSE)
-    consumed by corporate frontends such as Microsoft Teams, and unattended
-    runs triggered by infrastructure events.
+    LangGraph-based orchestrator with two strategies: ReAct for simple
+    requests and plan-execute for complex ones (planning with structured
+    output, parallel subtasks, replanning and synthesis). It serves streaming
+    chat (SSE) to Microsoft Teams and a web UI, and unattended runs triggered
+    by infrastructure events.
 
   text2: >-
-    Unattended runs enforce guardrails in code, not in the prompt: tool
-    allow/deny lists, dry-run mode, per-tool and per-run timeouts, step limits
-    and structured auditing of every run.
+    Each subtask is delegated to specialist agents running as their own
+    service, each with its own role, prompt, model and a narrow tool scope.
+    They register at runtime through a CRD and a Kubernetes operator, without
+    restarting the orchestrator.
 
   text3: >-
-    ReAct loop with function calling against the MCP catalog, cached sessions
-    and end-to-end traceability through a session identifier that travels
-    across every service.
+    Guardrails enforced in code, not in the prompt: tool allow/deny lists,
+    dry-run mode, per-tool and per-run timeouts, time budgets, required tools
+    and structured auditing of every run. End-to-end traceability through a
+    per-run and per-subtask identifier that travels across every service.
 
 policy_logicalis:
   title: >-
@@ -45,35 +62,41 @@ policy_logicalis:
     before it executes, with a fail-closed design: on error or doubt, deny.
 
   text2: >-
-    Two-layer pipeline: deterministic RBAC/ABAC authorization with argument
-    validation against each tool's schema, plus an optional LLM judge that
-    evaluates risks (exfiltration, injection, unsafe actions) and can only
-    harden the decision, never relax it.
+    Four-layer pipeline: deterministic RBAC (Casbin) for both user and agent
+    with least privilege, argument validation against each tool's schema,
+    human-in-the-loop supervision that holds sensitive actions until the
+    person who requested them approves them from the chat, and an LLM judge
+    that evaluates risks (exfiltration, injection, unsafe actions) and can
+    escalate to a human, but never relax a decision.
 
   text3: >-
-    Lets autonomous agents operate over real infrastructure within verifiable,
-    auditable limits.
+    Every decision is recorded with its reason, the layers that made it and an
+    audit identifier. Lets autonomous agents operate over real infrastructure
+    within verifiable, auditable limits.
 
 hub_logicalis:
   title: >-
-    MCP HUB, mcp proxy and semantic search of Tools and Documentation - 2026
+    MCP HUB, MCP proxy and semantic search of tools and documentation - 2026
     - LOGICALIS
   text1: >-
-    Gateway that unifies dozens of remote MCP tools and specific documentation
-    into a single MCP, providing the model with a single entry point.
+    Gateway that unifies hundreds of tools from remote MCP servers (~400 from
+    18 servers), operational documentation and conversational memory into a
+    single MCP, providing the model with a single entry point.
 
   text2: >-
     Instead of exposing hundreds of tools to the LLM, it indexes the entire
-    catalog in a vector DB and applies semantic RAG. The MCP client only sees
-    4 tools (discover tools, execute tools, query docs and conversation
-    history) and receives only what is relevant at each step. Remote MCPs
-    register at runtime, including self-service via CRDs and a Kubernetes
-    operator.
+    catalog in a vector database (Milvus) and applies semantic RAG. The MCP
+    client only sees 4 tools (discover tools, execute tools, query docs and
+    conversation history) and receives only what is relevant at each step.
+    Remote MCPs register at runtime, including self-service via CRDs and a
+    Kubernetes operator.
 
   text3: >-
-    Multi-Tenant by design, federated auth via Entra ID and cloud native
-    deployment on kubernetes. This piece orchestrates heterogeneous tooling
-    with minimal context cost.
+    Multi-tenant by design, with per-role scopes that limit which tools and
+    documents each agent can see. It acts as the policy enforcement point:
+    it asks the PDP before every execution and holds actions pending human
+    approval. Cloud native deployment on Kubernetes. It orchestrates
+    heterogeneous tooling with minimal context cost.
 
 hooks_logicalis:
   title: AI WebHooks Orchestrator, automated actions - 2026 - LOGICALIS
@@ -116,7 +139,7 @@ docker-sgad:
     Support of different Docker Stacks (Swarm,compose), fixing environments.
 
   text3: >-
-    Building of auxiliar containers to help different projects deployments.
+    Building of auxiliary containers to help different projects deployments.
 
 ocp_logicalis:
   title: OpenShift and Kubernetes Administration - 2024/25 - LOGICALIS
@@ -145,29 +168,29 @@ tanzu:
     Configuration of Operators and plugins inside clusters.
 
 ansible:
-  title: Playbooks Developement in Ansible - 2022,2023 - SGAD
+  title: Playbooks Development in Ansible - 2022,2023 - SGAD
   text1: >-
-    Developement/Improvement of Ansible playbooks for automated configuration
+    Development/Improvement of Ansible playbooks for automated configuration
     of RedHat Enterprise Linux servers.
 
   text2: >-
-    Configuration of network parameters, system, selinux,RedHat Satellite
+    Configuration of network parameters, system, selinux, RedHat Satellite
     packages, Web Servers like Apache, Application servers like Tomcat or
     Weblogic.
 
 cdtools:
   title: >-
-    Tools to help CD process and virtualized infraestructure deploy
+    Tools to help CD process and virtualized infrastructure deployment
     - 2022,2023 - SGAD
 
   text1: >-
-    Developement/Improvement of Flask & Python tools to help in the process of
+    Development/Improvement of Flask & Python tools to help in the process of
     continuous deploy, bringing automation and graphical interfaces to improve
     usability.
 
   text2: >-
-    Scripts developement to automate configuration of virtualize
-    infraestructure in RHEL machines.
+    Scripts developement to automate configuration of virtualized
+    infrastructure in RHEL machines.
 
 automation_logicalis:
   title: Multi-Team Automation Initiative - 2025 - LOGICALIS
@@ -189,8 +212,8 @@ terraform_rosa:
     different environments and clients.
 
 terraform:
-  title: Deployment of infraestructure with Terraform - 2023 - SGAD
-  text1: Developement of infraestructure as code in Terraform.
+  title: Deployment of infrastructure with Terraform - 2023 - SGAD
+  text1: Development of infrastructure as code in Terraform.
   text2: >-
     Deployment of Kubernetes clusters with Terraform in VMware Tanzu,
     using VMware mission control api.

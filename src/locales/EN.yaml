@@ -25,10 +25,11 @@ who:
    that foundation, it builds on it.
 
   text3: >-
-    I currently design and develop an agentic AIOps platform composed of
-    microservices: conversational and unattended agents connected to a unified
-    tool catalog via MCP, with guardrails and a governance layer that controls
-    agent actions.
+    I currently design and develop a multi-agent AIOps platform, already in
+    production, composed of microservices: an orchestrator that delegates to
+    specialist agents, conversational and unattended, connected to a unified
+    catalog of hundreds of tools via MCP, with guardrails, human approval and
+    a governance layer that authorizes every agent action.
 
   text4: >-
     This includes backend components in Python and FastAPI, LLM agents with

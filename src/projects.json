@@ -10,7 +10,8 @@
     "texts": [
       { "text": "projects.aiops_platform.text1" },
       { "text": "projects.aiops_platform.text2" },
-      { "text": "projects.aiops_platform.text3" }
+      { "text": "projects.aiops_platform.text3" },
+      { "text": "projects.aiops_platform.text4" }
     ],
     "link": { "text": "", "link": "" }
   },

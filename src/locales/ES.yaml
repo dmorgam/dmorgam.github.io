@@ -25,10 +25,11 @@ who:
     sustituye esa base, se apoya en ella.
 
   text3: >-
-    Actualmente diseño y desarrollo una plataforma AIOps agéntica compuesta
-    por microservicios: agentes conversacionales y desatendidos conectados a
-    un catálogo unificado de tools vía MCP, con guardrails y una capa de
-    gobierno que controla las acciones de los agentes.
+    Actualmente diseño y desarrollo una plataforma AIOps multiagente, ya en
+    producción, compuesta por microservicios: un orquestador que delega en
+    agentes especialistas, conversacionales y desatendidos, conectados a un
+    catálogo unificado de cientos de tools vía MCP, con guardrails, aprobación
+    humana y una capa de gobierno que autoriza cada acción de los agentes.
 
   text4: >-
    Esto incluye componentes backend en Python y FastAPI, agentes LLM con
@@ -203,7 +204,7 @@ tokengen:
   urlSafe: Apto para URL
 
 projects-info-alert: >-
-  Aqui se presenta una pequeña muestra orientativa de algunos de los proyectos
+  Aquí se presenta una pequeña muestra orientativa de algunos de los proyectos
   que he llevado a cabo.
 
 projects: {}

@@ -2,42 +2,58 @@
 
 aiops_platform:
   title: >-
-    Plataforma AIOps agéntica, arquitectura de microservicios - 2025/26 -
-    LOGICALIS
+    Plataforma AIOps agéntica multiagente, arquitectura de microservicios -
+    2025/26 - LOGICALIS
   text1: >-
-    Diseño y desarrollo de una plataforma de AIOps basada en agentes de IA,
-    compuesta por microservicios desacoplados: pasarela unificada de tools
-    (MCP Hub), agentes conversacionales y desatendidos, ingesta de eventos por
-    webhooks y una capa de gobierno de acciones.
+    Diseño y desarrollo de una plataforma AIOps multiagente en producción,
+    compuesta por microservicios desacoplados: un orquestador que delega en
+    agentes especialistas, una pasarela unificada de tools (MCP Hub), ingesta
+    de eventos por webhooks y una capa de gobierno de acciones con aprobación
+    humana.
 
   text2: >-
-    Los agentes operan sobre sistemas corporativos (Kubernetes, red,
-    observabilidad, ITSM, documentación interna) a través de un catálogo común
-    de tools MCP con selección semántica, de forma controlada y auditable.
+    Los agentes operan sobre sistemas corporativos (Kubernetes, virtualización,
+    red y seguridad, ITSM, directorio, cloud y documentación interna) a través
+    de un catálogo común de ~400 tools de 18 servidores MCP, propios y de
+    fabricante, con selección semántica y de forma controlada y auditable.
 
   text3: >-
     Ecosistema cloud native de extremo a extremo: FastAPI, despliegue en
-    Kubernetes con Helm, CI/CD en Azure DevOps e imágenes reproducibles.
-    Multi-tenant y extensible por configuración, sin tocar código.
+    Kubernetes con Helm y GitOps (Argo CD, External Secrets), infraestructura
+    con Terraform y CI/CD en Azure DevOps con versionado semántico.
+    Multi-tenant, agnóstica al proveedor de modelos (Azure OpenAI, AWS
+    Bedrock) y extensible por configuración, sin tocar código.
+
+  text4: >-
+    Preparada para varios modelos de despliegue: SaaS, dedicada en la nube del
+    cliente, sobre su propia plataforma Kubernetes o con una extensión
+    on-premise (k3s) para integrar herramientas locales. Observabilidad
+    end-to-end con OpenTelemetry y registro de auditoría alineado con ISO/IEC
+    42001, en fase de implantación.
 
 agents_logicalis:
   title: >-
-    Agentes IA conversacionales y desatendidos con guardrails - 2026 -
-    LOGICALIS
+    Sistema multiagente: orquestador y agentes especialistas con guardrails -
+    2026 - LOGICALIS
   text1: >-
-    Servicios de agente construidos sobre LangGraph y Azure OpenAI: chat en
-    streaming (SSE) consumido por frontends corporativos como Microsoft Teams,
-    y ejecuciones desatendidas disparadas por eventos de infraestructura.
+    Orquestador sobre LangGraph con dos estrategias: ReAct para consultas
+    sencillas y plan-execute para las complejas (planificación con salida
+    estructurada, subtareas en paralelo, replanificación y síntesis). Sirve
+    chat en streaming (SSE) a Microsoft Teams y a una interfaz web, y
+    ejecuciones desatendidas disparadas por eventos de infraestructura.
 
   text2: >-
-    Las ejecuciones desatendidas aplican guardrails en código, no en prompt:
-    listas de permitido/denegado de tools, modo dry-run, timeouts por tool y
-    por ejecución, límites de pasos y auditoría estructurada de cada run.
+    Cada subtarea se delega en agentes especialistas que corren como servicio
+    propio, cada uno con su rol, su prompt, su modelo y un scope acotado de
+    tools. Se registran en caliente mediante un CRD y un operator de
+    Kubernetes, sin reiniciar el orquestador.
 
   text3: >-
-    Bucle ReAct con function calling contra el catálogo MCP, sesiones
-    cacheadas y trazabilidad end-to-end mediante identificador de sesión que
-    atraviesa todos los servicios.
+    Guardrails en código, no en prompt: listas de permitido/denegado de tools,
+    modo dry-run, timeouts por tool y por ejecución, presupuesto de tiempo,
+    tools obligatorias y auditoría estructurada de cada run. Trazabilidad
+    end-to-end con un identificador por ejecución y subtarea que atraviesa
+    todos los servicios.
 
 policy_logicalis:
   title: >-
@@ -48,34 +64,42 @@ policy_logicalis:
     duda, deniega.
 
   text2: >-
-    Pipeline de dos capas: autorización determinista RBAC/ABAC con validación
-    de argumentos contra el schema de cada tool, y un LLM judge opcional que
-    evalúa riesgos (exfiltración, inyección, acciones inseguras) y solo puede
-    endurecer la decisión, nunca relajarla.
+    Pipeline de cuatro capas: autorización determinista RBAC (Casbin) de
+    usuario y agente con mínimo privilegio, validación de argumentos contra el
+    schema de cada tool, supervisión humana (human-in-the-loop) que retiene
+    las acciones sensibles hasta que las aprueba desde el chat la persona que
+    las pidió, y un LLM judge que evalúa riesgos (exfiltración, inyección,
+    acciones inseguras) y puede escalar a una persona, pero nunca relajar una
+    decisión.
 
   text3: >-
-    Permite que agentes autónomos operen sobre infraestructura real dentro de
-    límites verificables y auditables.
+    Cada decisión queda registrada con su motivo, las capas que la tomaron y
+    un identificador de auditoría. Permite que agentes autónomos operen sobre
+    infraestructura real dentro de límites verificables y auditables.
 
 hub_logicalis:
   title: >-
-    MCP HUB, proxy de mcps y busqueda semántica de Tools y Documentación - 2026
-    - LOGICALIS
+    MCP HUB, proxy de MCPs y búsqueda semántica de tools y documentación -
+    2026 - LOGICALIS
   text1: >-
-    Gateway que unifica decenas de tools MCP remotos y documentación específica
-    en un único MCP, proporcionando al modelo un único punto de entrada.
+    Gateway que unifica cientos de tools de servidores MCP remotos (~400 de 18
+    servidores), documentación operativa y memoria conversacional en un único
+    MCP, proporcionando al modelo un único punto de entrada.
 
   text2: >-
-    En lugar de exponer cientos de tools al LLM, indexa todo el catálogo en vector
-    DB y aplica RAG semántico. El cliente MCP solo ve 4 tools (descubrir tools,
-    ejecutar tools, consultar docs e historial de conversación) y recibe
-    únicamente lo relevante en cada paso. Los MCPs remotos se registran en
-    caliente, incluso en modo self-service vía CRDs y un operator de Kubernetes.
+    En lugar de exponer cientos de tools al LLM, indexa todo el catálogo en una
+    base de datos vectorial (Milvus) y aplica RAG semántico. El cliente MCP
+    solo ve 4 tools (descubrir tools, ejecutar tools, consultar docs e
+    historial de conversación) y recibe únicamente lo relevante en cada paso.
+    Los MCPs remotos se registran en caliente, incluso en modo self-service
+    vía CRDs y un operator de Kubernetes.
 
   text3: >-
-    Multi-Tenant por diseño, auth federada por entra ID y despliegue cloud native
-    en kubernetes. Esta pieza orquesta tooling eterogeneo con un coste mínimo de
-    contexto.
+    Multi-tenant por diseño, con scopes por rol que limitan qué tools y
+    documentos ve cada agente. Actúa como punto de aplicación de políticas:
+    consulta al PDP antes de cada ejecución y retiene las acciones pendientes
+    de aprobación humana. Despliegue cloud native en Kubernetes. Orquesta
+    tooling heterogéneo con un coste mínimo de contexto.
 
 hooks_logicalis:
   title: Orquestador IA WebHooks, acciones automatizadas - 2026 - LOGICALIS
@@ -108,7 +132,7 @@ rhel-sgad:
     WebLogic, PHP fpm, Apache, Nginx.
 
 docker-sgad:
-  title: Gestion entornos containerizados - 2022,2023 - SGAD
+  title: Gestión de entornos containerizados - 2022,2023 - SGAD
   text1: >-
     Containerización de aplicaciones internas (algunas mantenidas por mí) para
     habilitar el despliegue en entornos containerizados.
@@ -134,17 +158,17 @@ ocp_logicalis:
     código, observabilidad, CI/CD y GitOps.
 
   text3: >-
-    Configuración de operadores y gestion del ciclo de vida.
+    Configuración de operadores y gestión del ciclo de vida.
 
 
 tanzu:
   title: Administración de clústeres Kubernetes de VMware Tanzu - 2023 - SGAD
   text1: >-
-    Administration de VMware Tanzu kubernetes clúster, aprovisionamiento de
+    Administración de VMware Tanzu kubernetes clúster, aprovisionamiento de
     clústeres, namespaces, policies etc...
 
   text2: >-
-    Despliegue de applicaciones en los clústeres, usando yamls en crudo y
+    Despliegue de aplicaciones en los clústeres, usando yamls en crudo y
     herramientas de templating como HELM.
 
   text3: Configuración de Operadores y plugins dentro de los clústeres.
@@ -156,7 +180,7 @@ ansible:
     de servidores RedHat Enterprise Linux.
 
   text2: >-
-    Configuración de parametros de red, sistema, selinux, paquetería de RedHat
+    Configuración de parámetros de red, sistema, selinux, paquetería de RedHat
     Satellite, Servidores Web como Apache, servidores de Aplicaciones como
     Tomcat o Weblogic.
 
@@ -178,13 +202,13 @@ automation_logicalis:
   title: Iniciativa de automatización multi equipo - 2025 - LOGICALIS
   text1: Desarrollo de automatismos en varios lenguajes para varios equipos
   text2: >-
-    Desarrollo de autmatismos en python, ansible, powershell ademas de con
+    Desarrollo de automatismos en python, ansible, powershell además de con
     tools de despliegues como Azure DevOps, GitHub actions, Helm Charts.
     Desarrollos para varios equipos (devops, wintel, bbdd, linux, backup).
 
 terraform_rosa:
   title: Despliegue de ROSA HCP con varias features - 2025 - LOGICALIS
-  text1: Desarrollo de codigo terraform con workspaces y multistage.
+  text1: Desarrollo de código terraform con workspaces y multistage.
   text2: >-
     Automatización IAC de ROSA HCP en terraform con subdivision de varios
     módulos, workspaces por cada entorno, y generación de roles, quotas,
@@ -193,7 +217,7 @@ terraform_rosa:
 
 terraform:
   title: Despliegue de infraestructura con Terraform - 2023 - SGAD
-  text1: Desarrollo de infraestructura como codigo en Terraform.
+  text1: Desarrollo de infraestructura como código en Terraform.
   text2: >-
     Despliegue con Terraform de clústeres de Kubernetes en VMware Tanzu, a
     través de la api de VMware mission control.
@@ -207,7 +231,7 @@ caceres:
     sqlserver del ERP de la empresa.
 
   text2: >-
-    Además, dispone de varias webapps internas para la gestion de bodega, stock
+    Además, dispone de varias webapps internas para la gestión de bodega, stock
     y un sistema de gestión de reservas personalizado con exportación a excel,
     pdf y generación de reportes.
 
@@ -253,7 +277,7 @@ mayorista:
 
 colacion:
   title: >-
-    Aplicación de Gestion de horarios de colación - 2020 - Comercial Caceres
+    Aplicación de Gestión de horarios de colación - 2020 - Comercial Caceres
   text1: >-
     Aplicación para administrar el tiempo de colación de los trabajadores con
     temporizador, ticket de colación y registro de colaciones por cada
@@ -282,7 +306,7 @@ afiche:
     distinto tipo.
 
   text3: >-
-    Dispone de una interfaz de gestión de los productos en cada catagoría para
+    Dispone de una interfaz de gestión de los productos en cada categoría para
     gestionar los productos mostrados.
 
   text4: Ir a la Web
@@ -295,7 +319,7 @@ personal:
     demostrativos.
 
   text2: >-
-    Generación de códigos QR, consulta de cmabio de divisas, widget del tiempo
+    Generación de códigos QR, consulta de cambio de divisas, widget del tiempo
     etc...
 
   text3: Puede ver el repositorio aquí.
